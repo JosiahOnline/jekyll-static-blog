@@ -2,6 +2,7 @@
 # Editing for English Version
 layout: eng
 title: English Version
+version: english
 nav1: HOME
 nav2: WELCOME
 nav3: ANNOUNCEMENTS
@@ -26,6 +27,25 @@ pastor: See you there!<br>By Archdeacon Moses Chin
 button1: Plan a Visit
 button2: Our Journey
 pcc: Archdeacon Moses Chin and PCC Members
+
+# Announcements
+#Upcoming Events
+upcoming-events: Latest News 27th JAN 2018
+top-news1: Weekly Bulletin
+top-descriptions1: Now you can download latest bulletin <span>here</span>!
+
+#Ongoing Events
+ongoing-events: Ongoing Events
+top-news2: Church Services
+top-descriptions2: Click <span>here</span> for more information!
+
+#Past Events
+past-events: Past Events
+top-news3: Inspired Christmas Night
+top-descriptions3: Special Guest - 羅小白 S.White
+top-pgraph3: Click <span>here</span> for all pictures & videos
+more: More
+
 feedback1: Your feedback matters!
 feedback2: This website is currently in <span>BETA</span> version and our aim is to inform visitors about our latest activities, news, events and announcements. We appreciate if you can rate this website for better improvement. Do click <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank">here</a></span> and let us know your feedback. Thank you!
 newsletter1: COGS Newsletter

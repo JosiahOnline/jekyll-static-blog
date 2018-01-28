@@ -2,6 +2,7 @@
 # Editing for Chinese Version
 layout: chi
 title: Chinese Version
+version: chinese
 nav1: 首页
 nav2: 欢迎
 nav3: 通告
@@ -26,6 +27,25 @@ pastor: 到时候见！<br>由会吏长 陈赐雄
 button1: 计划拜访
 button2: 我们的旅程
 pcc: 会吏长陈赐雄和本堂理事委员会
+
+# Announcements
+#Upcoming Events
+upcoming-events: 最新消息 1月27日2018年
+top-news1: 每周周刊
+top-descriptions1: 现在您可以在<span class="chi_nounderline">这里</span>下载最新的周刊!
+
+#Ongoing Events
+ongoing-events: 正在进行的活动
+top-news2: 教会崇拜
+top-descriptions2: 点击<span class="chi_nounderline">这里</span>获取更多信息!
+
+#Past Events
+past-events: 过去的活动
+top-news3: 鼓动人心
+top-descriptions3: 特别嘉宾 - 羅小白 S.White
+top-pgraph3: 点击<span class="chi_nounderline">这里</span>查看所有图片和视频！
+more: 更多
+
 feedback1: 您的意见很重要！
 feedback2: 本网站目前在<span>测试</span>版本中。我们的目的是告知访客关于我们的最新活动，新闻和通告。我们感谢您能评价这个网站以获得更好的改进。请点击 <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank" class="chi_nounderline">这里</a></span> 并让我们知道您的意见。谢谢！
 newsletter1: 善牧堂 通讯

@@ -13,7 +13,7 @@ ongoing: Ongoing
 past: Past
 
 #Upcoming Events
-upcoming-events: Latest News 20th JAN 2018
+upcoming-events: Latest News 27th JAN 2018
 top-news1: Weekly Bulletin
 top-descriptions1: Now you can download latest bulletin <span>here</span>!
 

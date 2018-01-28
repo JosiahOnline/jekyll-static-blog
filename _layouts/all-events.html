@@ -122,8 +122,8 @@
                     </a>
                 </article>
                 <div class="top-news">
-                  {% for post in site.posts %}
-                    {% if post.version contains page.version  and post.event == "ongoing" %}
+                  {% for post in site.categories.ongoing %}
+                    <!-- {% if post.version contains page.version  and post.event == "ongoing" %} -->
                         <article class="news">
                             <a rel="canonical" href="{{ post.url }}">
                             <img class="news-image" src="{{post.image-path}}">
@@ -142,7 +142,7 @@
                             <a class="share-toggle share-icon" href="#"></a>
                         </div>
                         </article>
-                        {% endif %}
+                        <!-- {% endif %} -->
                         {% endfor %}
             </div>
               <!-- End of Top News -->
@@ -167,8 +167,8 @@
                         </a>
                 </article>
                 <div class="top-news">
-                  {% for post in site.posts %}
-                    {% if post.version contains page.version  and post.event == "past"%}
+                  {% for post in site.categories.past %}
+                    <!-- {% if post.version contains page.version  and post.event == "past"%} -->
                         <article class="news">
                             <a rel="canonical" href="{{ post.url }}">
                             <img class="news-image" src="{{post.image-path}}">
@@ -187,7 +187,7 @@
                             <a class="share-toggle share-icon" href="#"></a>
                         </div>
                         </article>
-                        {% endif %}
+                        <!-- {% endif %} -->
                         {% endfor %}
             </div>
               <!-- End of Top News -->
