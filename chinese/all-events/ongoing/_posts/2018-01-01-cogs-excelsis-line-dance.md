@@ -1,12 +1,12 @@
 ---
-layout: church-services
+layout: post
 year: 2018
 version: chinese
 event: ongoing
 title: COGS Excelsis 排舞
-descriptions: 每逢星期二
+description: 每逢星期二
 categories: all-events ongoing
-image-path: http://www.cogssandakan.com/News/img/dance.jpg
-share-link: www.cogssandakan.com/CHI/News/Ongoing/COGS_Excelsis_Line_Dance.html
-permalink: /:categories/:year/:title
+image-path: /assets/img/ongoing/dance.jpg
+share-link: /all-events/ongoing/cogs-excelsis-line-dance
+permalink: /:categories/:title
 ---

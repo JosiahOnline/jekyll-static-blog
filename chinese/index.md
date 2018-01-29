@@ -31,20 +31,71 @@ pcc: 会吏长陈赐雄和本堂理事委员会
 # Announcements
 #Upcoming Events
 upcoming-events: 最新消息 1月27日2018年
-top-news1: 每周周刊
-top-descriptions1: 现在您可以在<span class="chi_nounderline">这里</span>下载最新的周刊!
+main-news1: 每周周刊
+main-description1: 现在您可以在<span class="chi_nounderline">这里</span>下载最新的周刊!
 
 #Ongoing Events
 ongoing-events: 正在进行的活动
-top-news2: 教会崇拜
-top-descriptions2: 点击<span class="chi_nounderline">这里</span>获取更多信息!
+main-news2: 教会崇拜
+main-description2: 点击<span class="chi_nounderline">这里</span>获取更多信息!
+
+#Ongoing News 1
+on-news1: COGS 关怀小组
+on-description1: 在一起我们更坚强
+on-image-path1: /assets/img/ongoing/CGroup.jpg
+on-share-link1: /chinese/all-events/ongoing/cogs-care-groups
+
+#Ongoing News 2
+on-news2: COGS 基督少年軍(BB)
+on-description2: 每逢星期六
+on-image-path2: /assets/img/ongoing/boysbrigade.jpg
+on-share-link2: /chinese/all-events/ongoing/cogs-boys-brigade
+
+#Ongoing News 3
+on-news3: COGS 篮球队
+on-description3: 每逢星期六和星期天
+on-image-path3: /assets/img/ongoing/basketball.jpg
+on-share-link3: /chinese/all-events/ongoing/cogs-basketball
+
+#Ongoing News 4
+on-news4: COGS Excelsis 排舞
+on-description4: 每逢星期二
+on-image-path4: /assets/img/ongoing/dance.jpg
+on-share-link4: /chinese/all-events/ongoing/cogs-excelsis-line-dance
+
 
 #Past Events
 past-events: 过去的活动
-top-news3: 鼓动人心
-top-descriptions3: 特别嘉宾 - 羅小白 S.White
-top-pgraph3: 点击<span class="chi_nounderline">这里</span>查看所有图片和视频！
-more: 更多
+main-news3: 鼓动人心
+main-description3: 特别嘉宾 - 羅小白 S.White
+main-pgraph3: 点击<span class="chi_nounderline">这里</span>查看所有图片和视频！
+
+#Past News 1
+past-news1: 圣诞节圣餐崇拜
+past-description1: 25/12/2017
+past-image-path1: http://res.cloudinary.com/trippleninja/image/upload/v1514464675/Christmas%20Day%20Service%2017/christmas1.jpg
+past-share-link1: /chinese/all-events/past/2017/12/25/cogs-christmas-service
+
+#Past News 2
+past-news2: 平安夜崇拜(联合)
+past-description2: 24/12/2017
+past-image-path2: http://res.cloudinary.com/trippleninja/image/upload/v1514464898/Christmas%20Eve%20Service%2017/Eve1.jpg
+past-share-link2: /chinese/all-events/past/2017/12/24/cogs-christmas-eve-celebration
+
+#Past News 3
+past-news3: 乐道区关怀小组圣诞晚宴
+past-description3: 17/12/2017
+past-image-path3: http://res.cloudinary.com/trippleninja/image/upload/v1514464329/Logos%20Zone%20Christmas%20Dinner%2017/LogosDinner10.jpg
+past-share-link3: /chinese/all-events/past/2017/12/17/logos-zone-christmas-dinner
+
+#Past News 4
+past-news4: 儿童圣诞庆典 (英文/中文)
+past-description4: 09/12/2017
+past-image-path4: http://res.cloudinary.com/trippleninja/image/upload/v1514464583/Children%20Christmas%20Celebration%2017/22.jpg
+past-share-link4: /chinese/all-events/past/2017/12/09/cogs-children-christmas-celebration
+
+more: More
+all-events: /chinese/all-events/
 
 feedback1: 您的意见很重要！
 feedback2: 本网站目前在<span>测试</span>版本中。我们的目的是告知访客关于我们的最新活动，新闻和通告。我们感谢您能评价这个网站以获得更好的改进。请点击 <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank" class="chi_nounderline">这里</a></span> 并让我们知道您的意见。谢谢！

@@ -1,0 +1,5791 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Oswald, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    /*overflow: auto;*/
+}
+
+nav,
+section {
+    display: block
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+img {
+    border: 0
+}
+
+input,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+
+/* ==========================================================================
+   Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
+   ========================================================================== */
+
+@font-face {
+    font-family: 'webflow-icons';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg6SAy0AAAC8AAAAYGNtYXAaVcxaAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5ZgscV1gAAAFwAAABhGhlYWQCkFKvAAAC9AAAADZoaGVhB0MDyQAAAywAAAAkaG10eBIAA10AAANQAAAAIGxvY2EBMADyAAADcAAAABJtYXhwAAwATQAAA4QAAAAgbmFtZWTuiIAAAAOkAAABe3Bvc3QAAwAAAAAFIAAAACAAAwQAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADmAwPA/8D/wAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIOYD//3//wAAAAAAIOYA//3//wAB/+MaBAADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQEgAAADIAOAAAUAAAkBBwkBFwMg/kBAAYD+gEABwAHAQP6A/oBAAAEA4AAAAuADgAAFAAATARcJAQfgAcBA/oABgEABwAHAQP6A/oBAAAADAMAA4ANAAsAAGAAxAEoAAAEhIg4CHQEUHgIzITI+Aj0BNC4CIxUhIg4CHQEUHgIzITI+Aj0BNC4CIxUhIg4CHQEUHgIzITI+Aj0BNC4CIwMg/cAHCwkFBQkLBwJABwsJBQUJCwf9wAcLCQUFCQsHAkAHCwkFBQkLB/3ABwsJBQUJCwcCQAcLCQUFCQsHAsAFCQsHIAcLCQUFCQsHIAcLCQXABQkLByAHCwkFBQkLByAHCwkFwAUJCwcgBwsJBQUJCwcgBwsJBQAAAAABAJ0AtAOBApUABQAACQIHCQEDJP7r/upcAXEBcgKU/usBFFv+egGGAAAAAAEAAAABAADSLAJOXw889QALBAAAAAAAz/iHGQAAAADP+IcZAAAAAAOBA4AAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAA4EAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAABAABIAQAAOAEAADABAAAnQAAAAAACgAUAB4AMgBGAKwAwgAAAAEAAAAIAEsAAwAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAaAAAAAQAAAAAAAgAOAHEAAQAAAAAAAwAaADAAAQAAAAAABAAaAH8AAQAAAAAABQAWABoAAQAAAAAABgANAEoAAQAAAAAACgA0AJkAAwABBAkAAQAaAAAAAwABBAkAAgAOAHEAAwABBAkAAwAaADAAAwABBAkABAAaAH8AAwABBAkABQAWABoAAwABBAkABgAaAFcAAwABBAkACgA0AJkAdwBlAGIAZgBsAG8AdwAtAGkAYwBvAG4AcwBWAGUAcgBzAGkAbwBuACAAMQAuADAAdwBlAGIAZgBsAG8AdwAtAGkAYwBvAG4Ac3dlYmZsb3ctaWNvbnMAdwBlAGIAZgBsAG8AdwAtAGkAYwBvAG4AcwBSAGUAZwB1AGwAYQByAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHMARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('truetype'), url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVcAAoAAAAABRQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAZMAAAGTuzUomU9TLzIAAAKIAAAAYAAAAGAOkgMtY21hcAAAAugAAABMAAAATBpVzFpnYXNwAAADNAAAAAgAAAAIAAAAEGhlYWQAAAM8AAAANgAAADYCkFKvaGhlYQAAA3QAAAAkAAAAJAdDA8lobXR4AAADmAAAACAAAAAgEgADXW1heHAAAAO4AAAABgAAAAYACFAAbmFtZQAAA8AAAAF7AAABe2TuiIBwb3N0AAAFPAAAACAAAAAgAAMAAAEABAQAAQEBDndlYmZsb3ctaWNvbnMAAQIAAQA6+BwC+BsD+BgEHgoACXf/i4seCgAJd/+LiwwHi0v6lPpUBR0AAACaDx0AAACfER0AAAAJHQAAAYoSAAkBAQ4bHR8iJywxNndlYmZsb3ctaWNvbnN3ZWJmbG93LWljb25zdTB1MXUyMHVFNjAwdUU2MDF1RTYwMnVFNjAzAAACAYkABgAIAQEEBwoNJDvH4P6UDv6UDv6UDvyUDvm0+FQV/FT4VEtL+BT8FPwU/BTLSwUO93T4VBX4VPhUy0v8FPwU+BT8FEtLBQ75tPlUFfzUiwV5i319i3kIi2sFi3mZfZ2LCPjUiwWdi5mZi50Ii6sFi519mXmLCIv7VBX81IsFeYt9fYt5CItrBYt5mX2diwj41IsFnYuZmYudCIurBYudfZl5iwiL+1QV/NSLBXmLfX2LeQiLawWLeZl9nYsI+NSLBZ2LmZmLnQiLqwWLnX2ZeYsIDvm4+SkV+6n7qvuq96ovLvgG/Bj4BvgYBQ76lBT6lBWLDAoAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA5gMDwP/A/8ADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDmA//9//8AAAAAACDmAP/9//8AAf/jGgQAAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAAC1pQTjXw889QALBAAAAAAAz/iHGQAAAADP+IcZAAAAAAOBA4AAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAA4EAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAABAABIAQAAOAEAADABAAAnQAAUAAACAAAAAAADgCuAAEAAAAAAAEAGgAAAAEAAAAAAAIADgBxAAEAAAAAAAMAGgAwAAEAAAAAAAQAGgB/AAEAAAAAAAUAFgAaAAEAAAAAAAYADQBKAAEAAAAAAAoANACZAAMAAQQJAAEAGgAAAAMAAQQJAAIADgBxAAMAAQQJAAMAGgAwAAMAAQQJAAQAGgB/AAMAAQQJAAUAFgAaAAMAAQQJAAYAGgBXAAMAAQQJAAoANACZAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHMAVgBlAHIAcwBpAG8AbgAgADEALgAwAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHN3ZWJmbG93LWljb25zAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHMAUgBlAGcAdQBsAGEAcgB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block
+}
+
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898EC;
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+input.w-button {
+    -webkit-appearance: button
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 44px;
+    margin-top: 20px
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+a:focus {
+    outline: 0
+}
+
+.w-form {
+    margin: 0 0 15px
+}
+
+.w-form-done {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #dddddd
+}
+
+.w-form-fail {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffdede
+}
+
+.w-input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc
+}
+
+.w-input:-moz-placeholder {
+    color: #999
+}
+
+.w-input::-moz-placeholder {
+    color: #999;
+    opacity: 1
+}
+
+.w-input:-ms-input-placeholder {
+    color: #999
+}
+
+.w-input::-webkit-input-placeholder {
+    color: #999
+}
+
+.w-input:focus {
+    border-color: #3898EC;
+    outline: 0
+}
+
+textarea.w-input {
+    height: auto
+}
+
+.w-row {
+    margin-left: -10px;
+    margin-right: -10px
+}
+
+.w-row:before,
+.w-row:after {
+    content: " ";
+    display: table
+}
+
+.w-row:after {
+    clear: both
+}
+
+.w-col {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.w-col-6 {
+    width: 50%
+}
+
+@media screen and (max-width: 767px) {
+    .w-row,
+    .w-row {
+        margin-left: 0;
+        margin-right: 0
+    }
+    .w-col {
+        width: 100%;
+        left: auto;
+        right: auto
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .w-col {
+        width: 100%
+    }
+}
+
+
+/* ==========================================================================
+   Start of custom Webflow CSS
+   ========================================================================== */
+
+body {
+    height: 100%;
+    padding-left: 329px;
+    background-color: #edeff2;
+    color: rgba(0, 0, 0, .74);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    border-radius: 0.2em;
+    background-color: #cf404d;
+    -webkit-transition: background-color 300ms ease;
+    -o-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.button.full-width {
+    display: block;
+    width: 100%;
+    background-color: #2e80b6;
+    font-size: 1rem;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.button.full-width:hover {
+    background-color: #cf404d;
+}
+
+.section {
+    position: relative;
+    padding: 5em 0;
+    background-color: #F0F2F2;
+}
+
+.section.section-contact {
+    min-height: 1100px;
+    /*
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+*/
+    background-color: #fafafa;
+}
+
+.call-to-action-section {
+    background-color: #141e28;
+    color: #fff;
+}
+
+.call-to-action-heading {
+    text-align: right;
+}
+
+.align-right {
+    display: block;
+    margin-top: 32px;
+    text-align: right;
+}
+
+.call-to-action-form {}
+
+.fly-in-text, .chi-fly-in-text {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.fly-in-text li, .chi-fly-in-text li  {
+    margin-bottom: 0.45em;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 3px 8px #000;
+    display: inline-block;
+    opacity: 1;
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.fly-in-text li:nth-child(7){
+    margin-right: 30px;
+}
+
+.fly-in-text li:last-child, .chi-fly-in-text li:last-child {
+    margin-right: 0;
+}
+
+.fly-in-text.hidden li, .chi-fly-in-text.hidden li {
+    opacity: 0;
+}
+
+.fly-in-text.hidden li:nth-child(1), .chi-fly-in-text.hidden li:nth-child(1) {
+    -webkit-transform: translateX(-200px) translateY(-200px);
+    -ms-transform: translateX(-200px) translateY(-200px);
+    transform: translateX(-200px) translateY(-200px);
+}
+
+.fly-in-text.hidden li:nth-child(2), .chi-fly-in-text.hidden li:nth-child(2) {
+    -webkit-transform: translateX(20px) translateY(100px);
+    -ms-transform: translateX(20px) translateY(100px);
+    transform: translateX(20px) translateY(100px);
+}
+
+.fly-in-text.hidden li:nth-child(3) {
+    -webkit-transform: translateX(-150px) translateY(-80px);
+    -ms-transform: translateX(-150px) translateY(-80px);
+    transform: translateX(-150px) translateY(-80px);
+}
+
+.fly-in-text.hidden li:nth-child(4), .chi-fly-in-text.hidden li:nth-child(4) {
+    -webkit-transform: translateX(10px) translateY(-200px);
+    -ms-transform: translateX(10px) translateY(-200px);
+    transform: translateX(10px) translateY(-200px);
+}
+
+.fly-in-text.hidden li:nth-child(5), .chi-fly-in-text.hidden li:nth-child(3) {
+    -webkit-transform: translateX(-300px) translateY(200px);
+    -ms-transform: translateX(-300px) translateY(200px);
+    transform: translateX(-300px) translateY(200px);
+}
+
+.fly-in-text.hidden li:nth-child(6) {
+    -webkit-transform: translateX(20px) translateY(-20px);
+    -ms-transform: translateX(20px) translateY(-20px);
+    transform: translateX(20px) translateY(-20px);
+}
+
+.fly-in-text.hidden li:nth-child(7) {
+    -webkit-transform: translateX(30px) translateY(200px);
+    -ms-transform: translateX(30px) translateY(200px);
+    transform: translateX(30px) translateY(200px);
+}
+
+.fly-in-text.hidden li:nth-child(8) {
+    -webkit-transform: translateX(10px) translateY(-200px);
+    -ms-transform: translateX(10px) translateY(-200px);
+    transform: translateX(10px) translateY(-200px);
+}
+
+.fly-in-text.hidden li:nth-child(9) {
+    -webkit-transform: translateX(-150px) translateY(-80px);
+    -ms-transform: translateX(-150px) translateY(-80px);
+    transform: translateX(-150px) translateY(-80px);
+}
+
+.fly-in-text.hidden li:nth-child(10) {
+    -webkit-transform: translateX(-200px) translateY(-200px);
+    -ms-transform: translateX(-200px) translateY(-200px);
+    transform: translateX(-200px) translateY(-200px);
+}
+
+.fly-in-text.hidden li:nth-child(11) {
+    -webkit-transform: translateX(-70px) translateY(200px);
+    -ms-transform: translateX(-70px) translateY(200px);
+    transform: translateX(-70px) translateY(200px);
+}
+
+.fly-in-text.hidden li:nth-child(12) {
+    -webkit-transform: translateX(30px) translateY(-100px);
+    -ms-transform: translateX(30px) translateY(-100px);
+    transform: translateX(30px) translateY(-100px);
+}
+
+.fly-in-text.hidden li:nth-child(13) {
+    -webkit-transform: translateX(20px) translateY(80px);
+    -ms-transform: translateX(20px) translateY(80px);
+    transform: translateX(20px) translateY(80px);
+}
+
+.hero-subheading {
+    margin: 0.5em auto 0.8em;
+    color: #fff;
+    font-size: 1.7rem;
+    text-shadow: 1px 3px 8px #000;
+}
+
+.hollow-button {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
+    border: 0.02em solid #1db0fc;
+    border-radius: 0.2em;
+    -webkit-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+    -o-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+    transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+    color: #1db0fc;
+    line-height: 1.1em;
+    text-decoration: none;
+}
+
+.hollow-button:hover {
+    border-color: #000;
+    color: #000;
+}
+
+.hollow-button.white {
+    border-color: #2e80b6;
+    background-color: #2e80b6;
+    color: #fff;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.hollow-button.white:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #cf404d;
+}
+
+.hollow-button.red {
+    border-color: #cf404d;
+    background-color: #cf404d;
+    color: #fff;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.hollow-button.red:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #2e80b6;
+}
+
+.section-heading.centered {
+    padding: 30px;
+    margin-bottom: 0;
+    color: #313131;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-subheading.center {
+    font-family: 'Droid Sans', sans-serif;
+    color: #0b0000;
+    font-size: 1.8rem;
+    line-height: 1em;
+    text-align: center;
+}
+
+.section-title-group {
+    margin-bottom: 3em;
+}
+
+.form-field {
+    padding: 1.2em 0.6em;
+    margin-right: 1px;
+    margin-bottom: 10px;
+    border: 0px solid #000;
+    border-radius: 0.2em;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    font-size: 1rem;
+}
+
+.form-field:focus {
+    -webkit-box-shadow: 0 0 0 1px #2e80b6;
+    box-shadow: 0 0 0 1px #2e80b6;
+}
+
+.form-field.text-area {
+    min-height: 150px;
+}
+
+.form-wrapper.squeezed {
+    margin-bottom: 60px;
+}
+
+.footer {
+    background-color: transparent;
+    position: absolute;
+}
+
+.home-container {
+    position: relative;
+    top: 90%;
+    -webkit-transform: perspective(1px) translateY(-90%);
+    transform: perspective(1px) translateY(-90%);
+}
+
+.hero-title-wrapper {
+    position: relative;
+    top: 55%;
+    -webkit-transform: perspective(1px) translateY(-55%);
+    transform: perspective(1px) translateY(-55%);
+    text-align: center;
+}
+
+.plan-visit {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F0F2F2;
+    padding-top: 10%;
+}
+
+.plan-visit .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.container .title {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title h1,
+h3 {
+    color: black;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.title h3 {
+    margin: 15px auto;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.form-row {
+    width: 32.5%;
+}
+
+.submit-button {
+    border-radius: 0.2em;
+    background-color: #2e80b6;
+    color: white;
+    margin-top: 10px;
+}
+
+.close-button {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+    background-color: #cf404d;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 0 10px;
+    min-height: 50px;
+    margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+select {
+    font-weight: 400;
+    font-size: 18px;
+    width: 18%;
+    padding: 5px 10px;
+    height: 40px;
+    background-color: white;
+    border-radius: 2px;
+    border-width: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.attend-service,
+.select-date,
+.service-date {
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#attendance-date {
+    text-align: left;
+    height: 40px;
+    border-radius: 2px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-width: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.main-nav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 20%;
+    height: 100vh;
+    background-color: #141e28;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.main-content {
+    z-index: 999;
+}
+
+.mobile-nav {
+    display: none;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: none;
+    height: 2.6rem;
+    width: 3rem;
+    padding: 0;
+    margin-left: 10px;
+    background-image: url("/assets/img/menu1.png");
+    background-size: 3rem;
+    background-repeat: no-repeat
+}
+
+.nav-container {
+    text-align: center;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto;
+    grid-gap: 45px;
+}
+
+.brand-logo,
+.brand-logo p {
+    color: #edeff2;
+    font-size: 1.6rem;
+    line-height: 1.1em;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+.beta {
+    position: relative;
+    top: -8px;
+    left: -4px;
+    background-color: #cf404d;
+    font-size: 0.7rem;
+    padding: 0.4em 0.6em;
+    border-radius: 0.3em;
+    color: #edeff2;
+}
+
+.multiple-lang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.multiple-lang div a {
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.multiple-lang div a:hover {
+    color: #f9c635;
+}
+
+.nav-container .navbar {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 100%;
+    grid-gap: 50px;
+}
+
+.social-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+.social-container p {
+    color: #edeff2;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.social-container p:hover {
+    color: #f9c635;
+}
+
+.nav-link {
+    display: block;
+    padding: 1.2em 0px;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #cf404d;
+}
+
+.home-section {
+    height: 100vh;
+    background-image: url("/assets/img/worship2a.jpg");
+    background-position: 17% 50%;
+    background-size: cover;
+}
+
+.success-message {
+    text-align: center;
+}
+
+.paragraph-form {
+    margin-bottom: 0px;
+}
+
+.transparent-layer {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(20, 30, 40, 1);
+    -webkit-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
+    /*background: url(/assets/img/overlay.png) rgba(0, 0, 0, 0.25) repeat 0px 0px*/
+}
+
+.body {
+    padding-left: 20%;
+}
+
+.title {
+    display: block;
+    color: rgba(255, 0, 0, .74);
+    font-size: 1.2rem;
+    line-height: 0.8em;
+    text-align: left;
+}
+
+.bulletin-row {
+    width: 20rem;
+    height: 7rem;
+    border: 1px solid #edeff2;
+    border-radius: 0.2em;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.bulletin-image {
+    height: 100%;
+    -webkit-box-flex: 1.4;
+    -ms-flex: 1.4;
+    flex: 1.4;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-image: url("/assets/img/bulletin/bulletin1.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.bulletin-description {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.date-published {
+    display: block;
+    margin: 0.4em 0;
+    color: #141e28;
+    font-size: 1.1rem;
+    line-height: 1.3em;
+    text-align: left;
+}
+
+.bulletin-download {
+    padding: 0.5em 0.8em;
+    border-radius: 0.2em;
+    background-color: rgba(255, 14, 14, .74);
+    color: #edeff2;
+    font-size: 1rem;
+    line-height: 1.1em;
+    text-align: left;
+}
+
+.bulletin-download:hover {
+    background-color: #2e80b6;
+}
+
+.share-website {
+    padding: 10px;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 0.2em;
+    background: #F0F2F2;
+}
+
+.share-container {
+    padding: 2% 4%;
+}
+
+.share-container a {
+    text-decoration: none;
+}
+
+.share-container p {
+    font-size: 0.9rem;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+}
+
+.share-button {
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.25em;
+    color: white;
+    border-radius: 0.2em;
+    background-color: #2e80b6;
+    padding: 0.6em 1.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    -o-transition: transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.share-button:hover {
+    background-color: #cf404d;
+}
+
+.welcome-column-1 {
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+.welcome-column-2 {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.visit {
+    margin-right: 10px;
+    background-color: #cf404d;
+}
+
+.visit,
+.history,
+.hollow-button,
+.close-button {
+    font-size: 1rem;
+    line-height: 1.1em;
+    padding: 0.6em 1.2em;
+    border-radius: 0.2em;
+}
+
+.visit:hover {
+    background-color: #2e80b6;
+    color: #ecf0f1;
+}
+
+.welcome-button-container {
+    text-align: right;
+}
+
+.history {
+    background-color: #fff;
+    color: #000;
+}
+
+.history:hover {
+    border-color: #2e80b6;
+    background-color: #2e80b6;
+    color: #ecf0f1;
+}
+
+.welcome-pgraph,
+.welcome-author {
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    padding-bottom: 1em;
+    text-align: right;
+}
+
+.group-photo-caption {
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.group-photo-container {
+    padding-bottom: 1em;
+    text-align: left;
+}
+
+.photo-pcc {
+    border-radius: 0.2em;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.call-to-action-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.call-to-action-description {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.call-to-action-form {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.submit-button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.6em 1em;
+    margin-top: 0;
+    border-radius: 0.2em;
+    background-color: #f36;
+    text-align: right;
+}
+
+.submit-button:hover {
+    background-color: #2e80b6;
+}
+
+.text-field {
+    display: inline-block;
+    width: 300px;
+    font-size: 1rem;
+    padding: 1em 0.6em;
+    margin-bottom: 0;
+    margin-right: 10px;
+    border-radius: 0.2em;
+}
+
+.form {
+    display: block;
+    margin-top: -5px;
+    text-align: left;
+}
+
+.cogs-news-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nospam {
+    margin-top: -5px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.call-to-action-pgraph {
+    text-align: right;
+}
+
+.news-container {
+    margin-bottom: 100px;
+}
+
+.add-radius img {
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+}
+
+.events-icon {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.events-icon h2 {
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .74);
+}
+
+.events-icon img {
+    width: 50px;
+    height: 50px;
+    cursor: context-menu;
+}
+
+.main-news {
+    height: 34em;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.main-news:hover .main-news-description {
+    opacity: 1;
+}
+
+.main-news a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-news {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 30px 25px;
+}
+
+.news {
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.news a {
+    text-decoration: none;
+    display: inline-block;/*For transform scale purpose*/
+    overflow: hidden;
+    height: 100%;
+}
+
+.news > a {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.news:hover .newsdescription {
+    background-color: #2e80b6;
+
+}
+
+.news:hover .card__share {
+    display: block;
+}
+
+.round-radius {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.main-image {
+    min-width: 100%;
+    height: 34em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+}
+
+.news-image {
+    position: relative;
+    height: 55%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 0%;
+       object-position: 50% 0%;
+    overflow: hidden;
+}
+.news:hover .news-image {
+    -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+    /*-webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+    overflow: hidden;*/
+}
+
+.main-news-description {
+    position: relative;
+    height: 100%;
+    top: -34em;
+    height: 100%;
+    background-color: #141e28;
+    opacity: 0.9;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.newsdescription {
+    height: 45%;
+    background-color: #141e28;
+    text-align: left;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 1.4em 1.2em;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.top-news-title,
+.news-pgraph2 {
+    text-decoration: none;
+    color: white;
+}
+
+.top-news-title {
+    padding-top: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.news-pgraph2 {
+    font-size: 0.9rem;
+    line-height: 1.2em;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.main-news-title {
+    font-size: 4rem;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.news-pgraph3 {
+    font-size: 2rem;
+    line-height: 1.4em;
+    margin-bottom: 5px;
+}
+
+.news-pgraph1 {
+    font-size: 1.5rem;
+    line-height: 1em;
+    margin-bottom: 0;
+}
+
+.news-pgraph1 span,
+.news-pgraph3 span {
+    color: #f36;
+    text-decoration: underline;
+}
+
+.fa-whatsapp {
+    background-color: #25D366;
+}
+
+.web__share {
+    display: none;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: -webkit-transform 0.35s ease;
+    transition: -webkit-transform 0.35s ease;
+    -o-transition: transform 0.35s ease;
+    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+}
+
+.card__share {
+    display: none;
+    float: right;
+    position: relative;
+    margin-top: -155px;
+    margin-right: 5px;
+    z-index: 3;
+}
+
+.card__social {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    visibility: hidden;
+    width: 170px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: -webkit-transform 0.35s ease;
+    transition: -webkit-transform 0.35s ease;
+    -o-transition: transform 0.35s ease;
+    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+}
+
+.card__social--active {
+    visibility: visible;
+    /*z-index: 3;*/
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translateX(-48px);
+    -ms-transform: translateX(-48px);
+    transform: translateX(-48px);
+    -webkit-transition: -webkit-transform 0.35s ease;
+    transition: -webkit-transform 0.35s ease;
+    -o-transition: transform 0.35s ease;
+    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+    z-index: 1000;
+}
+
+.share-toggle.share-expanded:before {
+    content: "\f00d";
+}
+
+.share-toggle {
+    z-index: 200;
+}
+
+.share-toggle:before {
+    content: "\f1e0";
+    font-family: 'FontAwesome';
+    color: #3498db;
+}
+
+.share-icon {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.share-icon:hover,
+.share-icon:focus {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00abe3;
+}
+
+.googleplus {
+    background-color: #d3492c;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.facebook,
+.twitter,
+.googleplus,
+.whatsapp {
+    color: #fff;
+}
+
+.facebook:hover,
+.twitter:hover,
+.googleplus:hover,
+.whatsapp:hover {
+    color: #eee;
+}
+
+.more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.more a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.more h3:hover {
+    color: #f36;
+}
+
+.separator:before {
+    background: black;
+    content: "";
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 2px;
+}
+
+.more h3 {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.more img {
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    text-align: center;
+}
+
+.location {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #2e80b6;
+    border-radius: 0.2em;
+    padding: 2em 2em 1em;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.googlemap {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding-left: 10px;
+}
+
+.googlemap iframe {
+    width: 100%;
+    height: 88.5%;
+    border-radius: 0.2em;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+address,
+.contact-info p,
+.office-hour p {
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.location h2,
+.contact-info h2,
+.office-hour h2 {
+    color: white;
+    font-size: 1.9rem;
+}
+
+.location h2 {
+    padding-top: 5px;
+}
+
+.direction-button {
+    width: 100%;
+    margin: 0.5em auto;
+    padding: 0.6em 0;
+    border-radius: 0.2em;
+    background-color: #2e80b6;
+    font-size: 1rem;
+    line-height: 1.1em;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.send-message-button {
+    height: 50px;
+}
+
+.direction-button:hover {
+    background-color: #cf404d;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.english a {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    color: #edeff2;
+}
+
+.english a.current, .chinese a.current, .bm a.current {
+    color: #f9c635;
+}
+
+.chinese a{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #edeff2;
+}
+
+.bm a{
+    color: #edeff2;
+}
+
+.mission-statement-section {
+    height: 100vh;
+    background-image: url("/assets/img/worship3a.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: left;
+}
+
+.bible-verse {
+    color: #edeff2;
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.verse-container {
+    position: relative;
+    top: 55%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    overflow: visible;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.transparent-layer-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, .38);
+    z-index: 100;
+}
+
+.bulletin-section {
+    /*    border-top: 3px solid #edeff2;*/
+    background-color: #141e28;
+}
+
+.bulletin-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.bulletin-container-1 {
+    padding-right: 20px;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.bulletin-container-2 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.bulletin-text,
+.feedback-text,
+.call-to-action-heading {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #f9c635;
+}
+
+.bulletin-pgraph,
+.feedback-pgraph,
+.call-to-action-pgraph {
+    color: #edeff2;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    font-weight: 300;
+}
+.feedback-pgraph span, .feedback-pgraph span a {
+    color: #f36;
+    font-weight: bold;
+}
+span.chi_nounderline, .chi_nounderline {
+    text-decoration: none;
+}
+.bulletin-row {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.feedback-section {
+    background-color: #141e28;
+}
+
+.adjust-padding-td {
+    padding: 40px 0;
+}
+
+.adjust-padding-lr {
+    padding: 0 80px;
+}
+
+#announcements .adjust-padding-lr {
+    padding: 0 120px;
+}
+
+
+/* ----------- Laptop with HiDPI ----------- */
+
+@media screen and ( max-width: 1441px) and (orientation: landscape) {
+    html {
+        font-size: 22px;
+    }
+    /*main navigation*/
+    .beta {
+        top: -10px;
+        left: -6px;
+        font-size: 0.8rem;
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 1.9rem;
+    }
+    .multiple-lang div a {
+        font-size: 1rem;
+    }
+    .nav-container {
+        grid-template-rows: 140px auto;
+    }
+    .nav-container, .nav-container .navbar {
+        grid-gap: 60px;
+    }
+    .nav-link {
+        padding: 1.5em 0;
+    }
+    .fly-in-text li {
+        font-size: 5rem;
+    }
+    .hero-subheading {
+        font-size: 2rem;
+    }
+    .section {
+        padding: 9em 0 4em;
+    }
+    #welcome {
+        padding: 9em 0 5em;
+    }
+    .plan-visit {
+        padding-top: 15%;
+    }
+    .googlemap iframe {
+        height: 87.8%;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 80px;
+    }
+}
+
+
+/* ----------- iPad Pro Landscape ----------- */
+
+@media screen and ( max-width: 1370px) and (orientation: landscape) {
+    html {
+        font-size: 20px;
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 1.8rem;
+    }
+    .multiple-lang div a {
+        font-size: 1rem;
+    }
+    .nav-container {
+        grid-template-rows: 120px auto;
+        grid-gap: 110px;
+    }
+    .nav-container .navbar {
+        grid-gap: 140px;
+    }
+    .nav-link {
+        padding: 1.6em 0;
+        font-size: 1.4rem;
+    }
+    .card__share {
+        display: block;
+    }
+    .share-container {
+        padding: 2% 3%;
+    }
+    .bulletin-row {
+        height: 8rem;
+    }
+    .submit-button {
+        padding: 0.66em 1em;
+    }
+    .direction-button {
+        height: 50px;
+    }
+    .adjust-padding-lr {
+        padding: 0 50px;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 70px;
+    }
+}
+
+
+/* ----------- Aspire E1 Laptop Landscape ----------- */
+
+@media screen and ( max-width: 1370px) and (max-height: 670px) {
+    html {
+        font-size: 18px;
+    }
+    .main-nav {
+        padding-top: 30px;
+    }
+    .nav-container {
+        grid-template-rows: 110px auto;
+        grid-gap: 15px;
+    }
+    .nav-container .navbar {
+        grid-gap: 35px;
+    }
+    .nav-link {
+        padding: 1.2em 0;
+    }
+    .share-container p {
+        font-size: 1rem;
+    }
+    .card__share {
+        display: none;
+    }
+    .share-button {
+        font-size: 0.9rem;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+    .plan-visit {
+        padding-top: 7%;
+    }
+    .bulletin-container-1 {
+        -webkit-box-flex: 1.3;
+        -ms-flex: 1.3;
+        flex: 1.3;
+    }
+    .section {
+        padding: 5em 0;
+    }
+    #welcome {
+        padding: 5em 0;
+    }
+    .top-news-title {
+        font-size: 1.2rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.1rem;
+    }
+    .googlemap iframe {
+        height: 87.2%;
+    }
+    .direction-button {
+        line-height: 1.5em;
+    }
+}
+
+
+/* ----------- Laptop with Touch ----------- */
+
+@media screen and ( max-width: 1280px) {
+    html {
+        font-size: 20px;
+    }
+    .nav-container {
+        grid-gap: 70px;
+    }
+    .nav-container .navbar {
+        grid-gap: 110px;
+    }
+    .nav-link {
+        padding: 1.6em 0;
+    }
+    .card__share {
+        display: none;
+    }
+    .align-right {
+        margin-top: 38px;
+    }
+    .plan-visit {
+        padding-top: 15%;
+    }
+    .submit-button {
+        padding: 0.61em 1em;
+    }
+    .nospam {
+        margin-top: 0;
+    }
+    .section {
+        padding: 9em 0 6em;
+    }
+    #welcome {
+        padding: 9em 0 6em;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 50px;
+    }
+}
+
+
+/* ----------- Laptop with MDPI screen----------- */
+
+@media screen and ( max-width: 1280px) and (max-height: 800px) {
+    .nav-container {
+        grid-gap: 40px;
+    }
+    .nav-container .navbar {
+        grid-gap: 50px;
+    }
+    .nav-link {
+        padding: 1.3em 0;
+    }
+    .fly-in-text li {
+        font-size: 4.5rem;
+    }
+    .hero-subheading {
+        font-size: 1.85rem;
+    }
+    .section {
+        padding: 10em 0 6em;
+    }
+    #welcome {
+        padding: 7em 0;
+    }
+}
+
+
+/* ----------- S Tab 10.1 Landscape ----------- */
+
+@media screen and ( max-width: 1281px) and (max-height: 670px) {
+    html {
+        font-size: 18px;
+    }
+    .nav-container, .nav-container .navbar {
+        grid-gap: 30px;
+    }
+    .nav-link {
+        padding: 1.2em 0;
+        font-size: 1.3rem;
+    }
+    .card__share {
+        display: block;
+    }
+    .section {
+        padding: 6em 0 4em;
+    }
+    #welcome {
+        padding: 6em 0;
+    }
+    .newsdescription {
+        padding: 1.4em 1em;
+    }
+    .top-news-title {
+        font-size: 1.1rem;
+    }
+    .news-pgraph2 {
+        font-size: 1rem;
+    }
+    .plan-visit {
+        padding-top: 8%;
+    }
+    .align-right {
+        margin-top: 32px;
+    }
+    .more h3 {
+        margin-bottom: 3px;
+    }
+    .submit-button {
+        padding: 0.52em 1em;
+    }
+    .nospam {
+        margin-top: 10px;
+    }
+    .w-form {
+        margin: 0;
+    }
+}
+
+@media screen and ( max-width: 1281px) and (max-height: 580px) {
+    .main-nav {
+        padding-top: 20px;
+    }
+    .nav-container, .nav-container .navbar {
+        grid-gap: 30px;
+    }
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 1.1em 0;
+    }
+    .news-container {
+        margin-bottom: 60px;
+    }
+    .main-news, .main-image {
+        height: 28em;
+    }
+    .main-news-description {
+        top: -28em;
+    }
+    .share-container p {
+        font-size: 0.9rem;
+    }
+    .card__share {
+        display: none;
+        margin-top: -160px;
+    }
+    .share-website {
+        padding: 10px 5px;
+    }
+    .share-button {
+        font-size: 0.8rem;
+    }
+    .web__share>.share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ----------- Aspire V3 Laptop Landscape ----------- */
+
+@media screen and ( max-width: 1100px) {
+    html {
+        font-size: 16px;
+    }
+    .main-nav {
+        padding-top: 30px;
+    }
+    .nav-container {
+        grid-template-rows: 90px auto;
+    }
+    .nav-container, .nav-container .navbar {
+        grid-gap: 30px;
+    }
+    .beta {
+        top: -6px;
+    }
+    .nav-link {
+        padding: 1em 0;
+    }
+    .share-container p {
+        font-size: 0.9rem;
+        line-height: 1.2em;
+        margin-bottom: 5px;
+    }
+    .share-button {
+        font-size: 0.8rem;
+    }
+    .web__share>.share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 0.9rem;
+    }
+    .card__share {
+        display: none;
+    }
+    .social-container {
+        bottom: 10px;
+    }
+    .social-container p {
+        margin-bottom: 5px;
+    }
+    .bulletin-row {
+        height: 8rem;
+        width: 22em;
+    }
+    .plan-visit {
+        padding-top: 1%;
+    }
+    .select-date,
+    .attend-service {
+        display: none;
+    }
+    .service-time {
+        width: 24%;
+    }
+    /*Annoncement*/
+    #welcome {
+        padding: 4em 0;
+    }
+    .events-icon h2 {
+        font-size: 1.6rem;
+    }
+    .events-icon img {
+        width: 45px;
+        height: 45px;
+    }
+    .main-news, .main-image {
+        height: 24em;
+    }
+    .main-news-description {
+        top: -24em;
+    }
+    .top-news {
+        grid-auto-rows: 250px;
+    }
+    .top-news-title {
+        font-size: 1rem;
+    }
+    .news-pgraph2 {
+        font-size: 0.9rem;
+    }
+    .card__share {
+        margin-top: -137px;
+        margin-right: 0;
+    }
+    .card__social {
+        width: 145px;
+    }
+    .share-icon {
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        font-size: 0.9rem;
+    }
+    .more h3 {
+        margin-bottom: 4px;
+    }
+    .w-form {
+        margin: 0 0 5px;
+    }
+    .submit-button {
+        margin-top: 0;
+    }
+    .googlemap iframe {
+        height: 88.8%;
+    }
+    .send-message-button,
+    .direction-button {
+        height: 40px;
+    }
+    .direction-button {
+        line-height: 1.2em;
+    }
+}
+
+
+/* ----------- iPad Pro Potrait------------------*/
+
+@media screen and ( max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+    .pulse {
+        font-size: 2rem;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+    .body {
+        padding-left: 0%;
+    }
+    .hero-title-wrapper {
+        -webkit-transform: perspective(1px) translateY(-100%);
+        transform: perspective(1px) translateY(-100%);
+    }
+    .transparent-layer {
+        width: 100%;
+    }
+    .hero-subheading {
+        margin-top: 0.2em;
+    }
+    .section {
+        padding: 7em 0em;
+    }
+    #welcome {
+        padding: 8em 0em 14em;
+        height: 78%;
+    }
+    .plan-visit {
+        padding-top: 20%;
+        padding-bottom: 20px;
+    }
+    .title h1 {
+        font-size: 5rem;
+        line-height: 1em;
+    }
+    .title h3 {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+    .close-button {
+        font-size: 1.5rem;
+        padding: 0.6em 0.7em;
+        top: 5%;
+    }
+    .form-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .form-row {
+        width: 100%;
+    }
+    .selection {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    select,
+    #attendance-date {
+        width: 49.5%;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        height: 56px;
+    }
+    #attendance-date {
+        padding-top: 5px;
+    }
+    .plan-submit.button.full-width {
+        height: 56px;
+    }
+    .service-time {
+        width: 99.5%;
+    }
+    .select-date {
+        padding-top: 5px;
+        width: 50px;
+    }
+    .attend-service {
+        padding-top: 5px;
+        width: 120px;
+    }
+    .select-date,
+    .attend-service {
+        display: none;
+    }
+    .plan-submit {
+        margin-bottom: 10%;
+    }
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        background-color: #141e28;
+        height: 8%;
+        width: 100%;
+        -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    }
+    .mobile-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 30px;
+        position: relative;
+        top: 50%;
+        -webkit-transform: perspective(1px) translateY(-50%);
+        transform: perspective(1px) translateY(-50%);
+    }
+    .COGS-title {
+        display: inline-block;
+        -webkit-box-flex: 6;
+        -ms-flex: 6;
+        flex: 6;
+        color: white;
+    }
+    .COGS-title h1,
+    .navburger h1,
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading,
+    .title,
+    .date-published {
+        font-size: 2.5rem;
+    }
+    .navburger .cn_menu {
+        color: transparent;
+    }
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
+        font-size: 2.4rem;
+    }
+    .welcome-pgraph,
+    .welcome-author {
+        font-size: 2.3rem;
+    }
+    .group-photo-caption {
+        font-size: 2.1rem;
+    }
+    .hollow-button,
+    .bulletin-download,
+    .visit,
+    .history {
+        font-size: 2rem;
+    }
+    .COGS-title h1 {
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .navburger {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    .navburger h1 {
+        display: inline-block;
+        color: white;
+        margin-bottom: 0;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    .main-nav {
+        display: none;
+        bottom: auto;
+        width: 100%;
+        padding-top: 10%;
+        float: none;
+        z-index: 1001;
+    }
+    .nav-container {
+        grid-template-rows: 200px auto;
+    }
+    .hamburger {
+        display: inline-block;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    .menu-links {
+        -webkit-transition: 50ms;
+        -o-transition: 50ms;
+        transition: 50ms;
+    }
+    .menu-links a {
+        -webkit-transition: 50ms;
+        -o-transition: 50ms;
+        transition: 50ms
+    }
+    .menu-links .closebtn {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        padding: 0;
+        background-image: url("/assets/img/error.png");
+        background-size: 70px;
+        height: 70px;
+        width: 70px;
+        background-repeat: no-repeat
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    .beta {
+        top: -20px;
+        left: -10px;
+        font-size: 2rem;
+    }
+    .multiple-lang {
+        margin-top: 15px;
+    }
+    .multiple-lang div a {
+        font-size: 2.5rem;
+        line-height: 1em;
+    }
+    .chinese {
+        margin: 0 15px;
+    }
+    .nav-container, .nav-container .navbar {
+        grid-gap: 70px;
+    }
+    .nav-link {
+        font-size: 3rem;
+        padding: 1.5em 0;
+    }
+    .share-website {
+        width: 100%;
+        margin-left: 0;
+    }
+    .social-container {
+        bottom: unset;
+        margin: 50px auto;
+    }
+    .social-container p {
+        line-height: 1em;
+        margin-bottom: 20px;
+    }
+    .share-container p {
+        font-size: 2.5rem;
+        line-height: 1em;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .share-button {
+        font-size: 2rem;
+    }
+    .web__share>.share-icon {
+        width: 78px;
+        height: 78px;
+        line-height: 78px;
+        font-size: 30px;
+    }
+    .card__share {
+        display: block;
+    }
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
+        line-height: 1.3em;
+    }
+    .title {
+        font-weight: 500;
+    }
+    .container {
+        height: 100%;
+    }
+    .bible-verse {
+        font-size: 3rem;
+        line-height: 1.1em;
+    }
+    .fly-in-text li {
+        font-size: 7rem;
+        line-height: 0.9em;
+        margin-bottom: 15px;
+    }
+    .hero-subheading,
+    .section-subheading.center {
+        font-size: 3rem;
+    }
+    .hero-subheading {
+        line-height: 1em;
+        margin-bottom: 30px;
+    }
+    .bulletin-section {
+        padding: 0;
+    }
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
+        line-height: 1.3em;
+    }
+    .bulletin-container-1 {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .bulletin-pgraph {
+        margin-bottom: 0;
+    }
+    .bulletin-flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: left;
+        -ms-flex-align: left;
+        align-items: left;
+    }
+    .bulletin-row {
+        width: 40em;
+        height: 14em;
+    }
+    /*Welcome Home*/
+    .section-heading.centered {
+        font-size: 6rem;
+        padding-bottom: 50px;
+    }
+    .welcome-column-1 {
+        padding-right: 5px;
+    }
+    .welcome-pgraph,
+    .welcome-author {
+        text-align: left;
+    }
+    .group-photo-container {
+        padding: 15px 0;
+        text-align: center;
+    }
+    .group-photo-caption {
+        text-align: center;
+    }
+    .welcome-button-container {
+        padding-top: 3em;
+        text-align: left;
+        position: absolute;
+        width: 600px;
+    }
+    .feedback-section {
+        padding: 0;
+    }
+    .events-icon img {
+        width: 70px;
+        height: 70px;
+    }
+    .events-icon h2 {
+        font-size: 2rem;
+    }
+    .main-news, .main-image {
+        height: 30em;
+    }
+    .main-news-description {
+        top: -30em;
+    }
+    .main-news-title {
+        font-size: 4.5rem;
+    }
+    .news-pgraph3 {
+        font-size: 2.5rem;
+    }
+    .news-pgraph1 {
+        font-size: 2rem;
+    }
+    .social-container p {
+        font-size: 3rem;
+    }
+    .top-news {
+        grid-auto-rows: 300px;
+        grid-gap: 25px
+    }
+    .newsdescription {
+        padding: 1.7em 1.2em;
+    }
+    .top-news-title {
+        font-size: 1.3rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.2rem;
+    }
+    .card__share {
+        display: block;
+        margin-top: -160px;
+    }
+    .card__social {
+        width: 188px;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 1rem;
+    }
+    .more h3 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+    .call-to-action-section {
+        height: 26%;
+    }
+    .call-to-action-description,
+    .cogs-news-form {
+        margin-bottom: 15px;
+    }
+    .call-to-action-description,
+    .call-to-action-form {
+        padding: 0;
+    }
+    .call-to-action-form {
+        width: 100%;
+    }
+    .call-to-action-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: left;
+        -ms-flex-align: left;
+        align-items: left;
+    }
+    .call-to-action-heading,
+    .call-to-action-pgraph {
+        text-align: left;
+    }
+    .align-right {
+        margin-top: 0;
+    }
+    .cogs-news-form>.text-field {
+        width: 80%;
+    }
+    .text-field,
+    .submit-button,
+    .nospam,
+    .form-field,
+    .button.full-width,
+    .direction-button {
+        font-size: 1.5rem;
+    }
+    .form-field.text-area {
+        min-height: 200px;
+    }
+    .submit-button {
+        padding: 0.65em 1em;
+    }
+    .googlemap iframe {
+        height: 87%;
+    }
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
+        font-size: 2rem;
+    }
+    address,
+    .contact-info p,
+    .office-hour p {
+        font-size: 1.3rem;
+    }
+    .send-message-button,
+    .direction-button {
+        height: 55px;
+    }
+    .pop-container .pop-row {
+        top: 40%;
+    }
+    .pop-container h2 {
+        font-size: 3rem;
+        line-height: 1em;
+        margin-bottom: 40px;
+    }
+    .pop-container a {
+        font-size: 1.8rem;
+    }
+    .footer {
+        background-color: #141e28;
+    }
+    .adjust-padding-td {
+        padding: 50px 0;
+    }
+    .adjust-padding-lr {
+        padding: 0 80px;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 5%;
+    }
+    #announcements {
+        padding: 7em 0 2em;
+    }
+}
+
+
+/* ----------- iPad Landscape ----------- */
+
+@media screen and ( max-width: 1024px) and ( max-height: 770px) {
+    html {
+        font-size: 15px;
+    }
+    .main-nav {
+        padding-top: 5%;
+    }
+    .mobile-nav {
+        height: 10%;
+    }
+    .nav-container {
+        grid-template-rows: 150px auto;
+    }
+    .nav-container, .nav-container .navbar {
+        grid-gap: 30px;
+    }
+    .navbar {
+        padding-top: 0;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 3rem;
+    }
+    .beta {
+        font-size: 1.5rem;
+        top: -14px;
+    }
+    .multiple-lang div a {
+        font-size: 2rem;
+    }
+    .share-container {
+        padding: 0;
+    }
+    .share-container p {
+        font-size: 1.6rem;
+        margin: 20px 0;
+    }
+    .share-button {
+        font-size: 1.4rem;
+    }
+    .hero-title-wrapper {
+        -webkit-transform: perspective(1px) translateY(-30%);
+        transform: perspective(1px) translateY(-30%)
+    }
+    .COGS-title h1,
+    .navburger h1,
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading,
+    .title,
+    .date-published {
+        font-weight: 400;
+    }
+    .menu-links .closebtn {
+        background-size: 45px;
+        height: 45px;
+        width: 45px;
+        top: 2%;
+        right: 4.5%;
+    }
+    .nav-link {
+        font-size: 2rem;
+        padding: 1.1em 0;
+    }
+    .web__share>.share-icon {
+        width: 47px;
+        height: 47px;
+        line-height: 47px;
+        font-size: 20px;
+    }
+    .bulletin-row {
+        width: 38em;
+        height: 14em;
+    }
+    .title,
+    .date-published {
+        font-weight: 500;
+    }
+    #welcome {
+        height: 110%
+    }
+    .news-container {
+        margin-bottom: 80px;
+    }
+    .news-pgraph1 {
+        font-size: 2.3rem;
+    }
+    .top-news-title {
+        font-size: 1.3rem;
+    }
+    .more h3 {
+        margin-bottom: 6px;
+    }
+    .plan-visit {
+        padding-top: 5%;
+    }
+    .call-to-action-section {
+        height: 42%;
+    }
+    .googlemap iframe {
+        height: 86.2%;
+    }
+    .bible-verse {
+        font-size: 2.5rem;
+    }
+    .pop-container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .pop-container a {
+        font-size: 1.4rem;
+    }
+    .footer {
+        padding: 15px 0;
+    }
+}
+
+
+/* ----------- iPad Mini 4 Landscape ----------- */
+
+@media screen and ( max-width: 1024px) and ( max-height: 680px) {
+    html {
+        font-size: 12px;
+    }
+    .main-nav {
+        padding-top: 2%;
+    }
+    .hero-title-wrapper {
+        -webkit-transform: perspective(1px) translateY(-30%);
+        transform: perspective(1px) translateY(-30%)
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 3.5rem;
+        font-weight: 500;
+    }
+    .beta {
+        font-size: 1.5rem;
+        top: -12px;
+        right: -7px;
+    }
+    .navbar {
+        padding-top: 0;
+    }
+    .multiple-lang {
+        margin-top: 5px;
+    }
+    .multiple-lang div a {
+        font-size: 2rem;
+    }
+    .nav-link {
+        font-size: 2rem;
+    }
+    .share-container {
+        padding: 1% 0 2%;
+    }
+    .share-container p {
+        font-size: 2rem;
+        margin: 20px;
+    }
+    .share-button {
+        font-size: 1.5rem;
+    }
+    #welcome {
+        height: 130%;
+    }
+    .bulletin-row {
+        width: 35em;
+        height: 12em;
+    }
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
+        font-size: 2.6rem;
+    }
+    address,
+    .contact-info p,
+    .office-hour p {
+        font-size: 1.6rem;
+    }
+}
+
+/* ----------- Lenova IdeaPad Laptop Landscape ----------- */
+
+@media screen and ( max-width: 1024px) and ( max-height: 510px) {
+    html {
+        font-size: 10px;
+    }
+    .preloader-container {
+        left: 0;
+    }
+    .pulse {
+        font-size: 1.3em;
+    }
+    .body {
+        padding-left: 20%;
+        overflow-x: hidden;
+    }
+    .main-nav {
+        display: block;
+        width: 20%;
+        z-index: 1;
+    }
+    .mobile-nav,
+    .mobile-container,
+    .menu-links .closebtn {
+        display: none;
+    }
+    .mobile-nav {
+        height: 0;
+    }
+    .beta {
+        font-size: 1.1rem;
+        top: -8px;
+        left: -6px;
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+    .multiple-lang {
+        height: 15px;
+    }
+    .multiple-lang div a {
+        font-size: 1.3rem;
+    }
+    .chinese {
+        margin: 0 8px;
+    }
+    .nav-container {
+        grid-template-rows: 90px auto;
+        grid-gap: 25px;
+    }
+    .nav-container .navbar {
+        grid-gap: 35px;
+    }
+    .nav-link {
+        font-size: 1.7rem;
+    }
+    .share-website {
+        width: 90%;
+        margin-left: 5%;
+        padding: 10px 5px;
+    }
+    .share-container {
+        padding: 0;
+    }
+    .share-container p {
+        margin: 5px 5px 10px;
+        font-size: 1.3rem;
+    }
+    .web__share>.share-icon {
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 12px;
+    }
+    .share-button {
+        font-size: 1.2rem;
+    }
+    .navburger {
+        -webkit-box-flex: 0;
+        -ms-flex: 0;
+        flex: 0;
+    }
+    .hero-title-wrapper {
+        -webkit-transform: perspective(1px) translateY(-55%);
+        transform: perspective(1px) translateY(-55%)
+    }
+    .plan-visit {
+        padding-top: 5%;
+    }
+    .fly-in-text li {
+        font-size: 5rem;
+    }
+    .fly-in-text li,
+    .hero-subheading {
+        margin-bottom: 15px;
+    }
+    .hero-subheading,
+    .section-subheading.center {
+        font-size: 2.4rem;
+    }
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading,
+    {
+        font-size: 2.2rem;
+    }
+    .section-heading.centered {
+        padding: 25px;
+    }
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
+        font-size: 1.8rem;
+    }
+    .welcome-column-1 {
+        padding-right: 15px;
+    }
+    .welcome-pgraph,
+    .welcome-author {
+        font-size: 1.9rem;
+        text-align: right;
+    }
+    .group-photo-container {
+        padding: 0 0 10px;
+    }
+    .bulletin-flex {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .bulletin-row {
+        width: 20em;
+        height: 7em;
+    }
+    .bulletin-container-1 {
+        margin-bottom: 0;
+    }
+    .adjust-padding-lr {
+        padding: 0 60px;
+    }
+    .title,
+    .date-published {
+        font-size: 1.8rem;
+    }
+    .group-photo-caption {
+        font-size: 1.6rem;
+    }
+    .bulletin-download,
+    .visit,
+    .history {
+        font-size: 1.5rem;
+    }
+    #welcome {
+        padding: 5em 0 6em;
+    }
+    .welcome-button-container {
+        padding-top: 1em;
+        text-align: right;
+        position: static;
+        width: auto;
+    }
+    .adjust-padding-td {
+        padding: 40px 0;
+    }
+    .news-container {
+        margin-bottom: 60px;
+    }
+    .events-icon img {
+        width: 40px;
+        height: 40px;
+    }
+    .events-icon h2 {
+        font-size: 2rem;
+    }
+    .main-news, .main-image {
+        height: 23em;
+    }
+    .main-news-description {
+        top: -23em;
+    }
+    .top-news {
+        grid-auto-rows: 220px;
+        grid-gap: 25px;
+    }
+    .top-news-title {
+        font-size: 1.5rem;
+    }
+    .newsdescription {
+        padding: 1.2em 1em;
+    }
+    .news-pgraph2 {
+        font-size: 1.4rem;
+    }
+    .card__social {
+        width: 140px;
+    }
+    .card__social--active {
+        -webkit-transform: translateX(-35px);
+            -ms-transform: translateX(-35px);
+                transform: translateX(-35px);
+    }
+    .card__share {
+        display: none;
+        margin-top: -120px;
+        margin-right: 0;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+    .more h3 {
+        font-size: 1.6rem;
+        margin-bottom: 3px;
+    }
+    .pop-container h2 {
+        margin-bottom: 10px;
+    }
+    .call-to-action-section {
+        height: 55%;
+    }
+    .direction-button {
+        line-height: 1.4em;
+    }
+    .hollow-button,
+    .text-field,
+    .submit-button,
+    .nospam,
+    .form-field,
+    .button.full-width,
+    .direction-button,
+    address,
+    .contact-info p,
+    .office-hour p {
+        font-size: 1.6rem;
+    }
+    .button.full-width,
+    .direction-button {
+        height: 40px;
+    }
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
+        font-size: 3rem;
+    }
+    .googlemap iframe {
+        height: 89.4%;
+    }
+    .bible-verse {
+        font-size: 2rem;
+    }
+    .footer {
+        padding: 5px 0;
+        background-color: transparent;
+    }
+}
+
+
+/* ----------- S Note 8.0 Landscape ----------- */
+
+@media screen and ( max-width: 970px) and (max-height: 490px) {
+    html {
+        font-size: 10px;
+    }
+    .mobile-nav {
+        height: 0%;
+    }
+    .nav-container {
+        grid-template-rows: 80px auto;
+        grid-gap: 20px;
+    }
+    .nav-container .navbar {
+        grid-gap: 30px;
+    }
+    .section {
+        padding: 6em 0;
+    }
+    #welcome {
+        padding: 6em 0 8em;
+    }
+    .welcome-button-container {
+        padding-top: 1em;
+    }
+    .fly-in-text li {
+        margin-bottom: 10px;
+    }
+    .adjust-padding-lr {
+        padding: 0 50px;
+    }
+    .section-title-group {
+        margin-bottom: 2em;
+    }
+    #announcements {
+        padding: 4em 0 2em;
+    }
+    .events-icon {
+        margin-bottom: 5px;
+    }
+    .events-icon img {
+        width: 35px;
+        height: 35px;
+    }
+    .main-news, .main-image {
+        height: 22em;
+    }
+    .main-news-description {
+        top: -22em;
+    }
+    .top-news {
+        grid-auto-rows: 220px;
+        grid-gap: 20px 18px;
+    }
+    .news-pgraph2 {
+        font-size: 1.3rem;
+    }
+    .card__share {
+        display: block;
+        margin-top: -118px;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        font-size: 1.3rem;
+    }
+    .more h3 {
+        font-size: 1.7rem;
+        margin-bottom: 4px;
+    }
+    .more img {
+        width: 20px;
+        height: 20px;
+    }
+    .web__share>.share-icon {
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 12px;
+    }
+    .share-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+    }
+    .share-icon:hover,
+    .share-icon:focus {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .title,
+    .date-published {
+        padding-left: 0;
+    }
+    .title,
+    .date-published,
+    .group-photo-caption {
+        font-size: 1.7rem;
+    }
+    .bulletin-download {
+        margin-left: 0;
+    }
+    .hollow-button,
+    .visit,
+    .history,
+    .bulletin-download {
+        font-size: 1.5rem;
+    }
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph,
+    .welcome-pgraph,
+    .welcome-author {
+        font-size: 1.9rem;
+    }
+    .text-field,
+    .submit-button,
+    .nospam,
+    .form-field,
+    .plan-submit.button.full-width {
+        font-size: 1.8rem;
+    }
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
+        font-size: 2.6rem;
+    }
+    .direction-button,
+    address,
+    .contact-info p,
+    .office-hour p {
+        font-size: 1.4rem;
+    }
+    .section-heading.centered {
+        font-size: 5rem;
+        line-height: 1em;
+        padding: 10px;
+    }
+    .submit-button {
+        padding: 9px 15px;
+    }
+    .send-message-button,
+    .direction-button {
+        height: 45px;
+    }
+    .form-field,
+    select,
+    #attendance-date {
+        margin-bottom: 5px;
+    }
+    .form-field,
+    .button.full-width {
+        font-size: 1.4rem;
+    }
+    .selection {
+        padding-bottom: 0;
+    }
+    select,
+    #attendance-date,
+    .form-field,
+    .plan-submit.button.full-width,
+    .button.full-width,
+    .direction-button {
+        height: 36px;
+    }
+    .call-to-action-section {
+        height: 64%;
+    }
+}
+
+
+/* ----------- S Tab 10.1 Potrait ----------- */
+
+@media screen and ( max-width: 800px) and (max-height: 1140px) {
+    html {
+        font-size: 14px;
+    }
+    .menu-links .closebtn {
+        background-size: 50px;
+        height: 50px;
+        width: 50px;
+        right: 3%;
+    }
+    /*Navigation Bar */
+    .nav-container {
+        grid-gap: 40px;
+    }
+    .nav-container .navbar {
+        grid-gap: 70px;
+    }
+    .nav-link {
+        font-size: 2.8rem;
+        padding: 1.4em 0;
+    }
+    .share-container p {
+        font-size: 2.3rem;
+        margin: 0.3em 0 0.6em;
+    }
+    .web__share>.share-icon {
+        width: 68px;
+        height: 68px;
+        line-height: 68px;
+        font-size: 27px;
+    }
+    .social-container {
+        bottom: unset;
+        margin-top: 50px;
+    }
+    .social-container p {
+        font-size: 2.6rem;
+        margin-bottom: 15px;
+    }
+    /*Home Page*/
+    .fly-in-text li {
+        font-size: 6.5rem;
+    }
+    .hero-subheading {
+        font-size: 2.75rem;
+    }
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
+        font-size: 2.5rem;
+        line-height: 1.2em;
+    }
+    .bulletin-row {
+        height: 13em;
+        width: 34em;
+    }
+    .bulletin-image {
+        -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+        flex: 1.5;
+    }
+    .title {
+        font-size: 2.2rem;
+    }
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
+        font-size: 2rem;
+    }
+    .bulletin-download {
+        font-size: 1.8rem;
+    }
+    .visit,
+    .history {
+        font-size: 1.8rem;
+    }
+    .welcome-pgraph,
+    .welcome-author {
+        font-size: 2rem;
+    }
+    .group-photo-caption {
+        font-size: 1.8rem;
+    }
+    .date-published {
+        font-size: 2.2rem;
+        margin: 0.5em 0;
+    }
+    .call-to-action-section {
+        height: 34%;
+    }
+    /*Welcome Message Session*/
+    .section-heading.centered {
+        font-size: 5.5rem;
+        padding-bottom: 35px;
+    }
+    .section-subheading.center {
+        font-size: 2.2rem;
+    }
+    .section-title-group {
+        margin-bottom: 2em;
+    }
+    .welcome-button-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+    }
+    /*Plan a Visit*/
+    .attend-service {
+        display: none;
+    }
+    .service-time {
+        width: 99.6%;
+    }
+    .call-to-action-form {
+        padding: 10px 0;
+    }
+    .cogs-news-form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: left;
+        -ms-flex-align: left;
+        align-items: left;
+    }
+    .cogs-news-form>.text-field {
+        margin-bottom: 15px;
+    }
+    .align-right {
+        margin-top: 0;
+    }
+    .call-to-action-description,
+    .call-to-action-pgraph {
+        margin-bottom: 5px;
+    }
+    #welcome {
+        height: 88%;
+        padding: 8em 0em 12em;
+    }
+    /*Announcement*/
+    #announcements {
+        padding: 6em 0 0;
+    }
+    .news-container {
+        margin-bottom: 80px;
+    }
+    .top-news {
+        grid-auto-rows: 220px;
+        grid-gap: 20px 18px;
+    }
+    .top-news-title {
+        font-size: 1.2rem;
+        line-height: 1.2em;
+    }
+    .newsdescription {
+        padding: 1.2em 1em;
+    }
+    .news-pgraph2 {
+        font-size: 1.1rem;
+    }
+    .card__share {
+        margin-top: -120px;
+        margin-right: 0;
+    }
+    .card__social {
+        width: 140px;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 0.9rem;
+    }
+    .more h3 {
+        margin-bottom: 6px;
+    }
+    .submit-button {
+        padding: 0.55em 1em;
+    }
+    .pop-container .pop-row {
+        width: 50%;
+    }
+    /*Contact Session*/
+    .direction-button {
+        line-height: 1.3em;
+    }
+    /*Bible Words*/
+    .verse-container {
+        top: 50%;
+    }
+    .bible-verse {
+        font-size: 3rem;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 3%;
+    }
+    .adjust-padding-lr {
+        padding: 0 50px;
+    }
+}
+
+
+/* ----------- iPad Potrait----------- */
+
+@media screen and ( max-width: 768px) {
+    .main-nav {
+        padding-top: 50px;
+    }
+    .nav-container {
+        grid-gap: 50px;
+    }
+    .nav-container .navbar {
+        grid-gap: 75px;
+    }
+    .nav-link {
+        padding: 1.1em 0;
+    }
+    #announcements {
+        padding: 6em 0 0;
+    }
+    .top-news {
+        grid-gap: 15px 10px;
+    }
+    .card__social--active {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transform: translateX(-43px);
+        -ms-transform: translateX(-43px);
+        transform: translateX(-43px);
+    }
+    #welcome {
+        height: 95%;
+    }
+    .plan-visit {
+        padding: 5% 0;
+    }
+    select,
+    #attendance-date,
+    .form-field {
+        margin-bottom: 0.5em;
+    }
+    .googlemap iframe {
+        height: 87.7%;
+    }
+    .call-to-action-section {
+        height: 37%;
+    }
+    .bible-verse {
+        font-size: 3rem;
+    }
+}
+
+
+/* ----------- iPad Mini4 Potrait----------- */
+
+@media screen and ( max-width: 768px) and (max-height: 930px) {
+    html {
+        font-size: 12px;
+    }
+    .nav-container {
+        grid-template-rows: 150px auto;
+    }
+    .nav-container, .nav-container .navbar {
+        grid-gap: 70px;
+    }
+    .nav-link {
+        padding: 1.2em 0;
+    }
+    .beta {
+        top: -17px;
+    }
+    .menu-links .closebtn {
+        top: 23px;
+        right: 22px;
+    }
+    .web__share>.share-icon {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        font-size: 26px;
+    }
+    .social-container {
+        margin-top: 25px;
+    }
+    .social-container p {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    .plan-visit {
+        padding: 5% 0;
+    }
+    select,
+    #attendance-date,
+    .form-field {
+        margin-bottom: 0.5em;
+    }
+    .submit-button,
+    .send-message-button.button,
+    .direction-button {
+        padding: 10px 15px;
+    }
+    /*Announcement*/
+    .top-news-title {
+        font-size: 1.3rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.1rem;
+    }
+    /*Contact us*/
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
+        font-size: 2.5rem;
+    }
+    address,
+    .contact-info p,
+    .office-hour p {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ----------- iPone 6 Plus Landscape ----------- */
+
+@media screen and ( max-width: 740px) and (max-height: 420px) {
+    html {
+        font-size: 10px
+    }
+    .menu-links .closebtn {
+        height: 3rem;
+        width: 3rem;
+        background-size: 3rem;
+        top: 3%;
+        right: 4%;
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 3rem;
+    }
+    .beta {
+        font-size: 1.3rem;
+        top: -10px;
+        right: 5px;
+        left: unset;
+    }
+    .web__share>.share-icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 19px;
+    }
+    .hollow-button {
+        font-size: 1.6rem;
+    }
+    .bulletin-row {
+        height: 12em;
+        width: 33em;
+    }
+    #welcome {
+        height: 270%;
+        padding: 8em 0em;
+    }
+    select,
+    #attendance-date,
+    .form-field,
+    .plan-submit.button.full-width {
+        font-size: 1.6rem;
+        height: 40px;
+    }
+    .main-news-title {
+        font-size: 8rem;
+    }
+    .welcome-button-container {
+        position: relative;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+    .call-to-action-section {
+        height: 70%;
+    }
+    .column-remove-padding {
+        padding: 0;
+    }
+    address,
+    .contact-info p,
+    .office-hour p {
+        font-size: 1.7rem;
+    }
+    .bible-verse {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* ----------- iPone 6 Landscape ----------- */
+
+@media screen and ( max-width: 670px) and (max-height: 380px) {
+    #welcome {
+        height: 300%;
+    }
+    .bulletin-row {
+        height: 11em;
+        width: 29em;
+        padding: 0;
+    }
+    .bulletin-description {
+        padding-left: 10px;
+    }
+    .bulletin-download {
+        font-size: 2rem;
+    }
+    .main-news-title {
+        font-size: 7rem;
+    }
+    .news-pgraph1 {
+        font-size: 3rem;
+    }
+    .call-to-action-section {
+        height: 85%;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 40px;
+    }
+    .adjust-padding-lr {
+        padding: 0 40px;
+    }
+    .bible-verse {
+        font-size: 2rem;
+    }
+}
+
+
+/* ----------- S Galaxy S5 ----------- */
+
+@media screen and ( max-width: 640px) and (max-height: 360px) {
+    .mobile-nav {
+        height: 15%;
+    }
+    #welcome {
+        height: 320%;
+    }
+    .card__social {
+        width: 435%;
+    }
+    .card__social--active {
+        -webkit-transform: translateX(-44px);
+        -ms-transform: translateX(-44px);
+        transform: translateX(-44px);
+    }
+    .address {
+        height: 37em;
+    }
+    .googlemap iframe {
+        height: 33.7em;
+    }
+}
+
+
+/* ----------- S Galaxy Note 3 Neo ----------- */
+
+@media screen and ( max-width: 640px) and (max-height: 280px) {
+    html {
+        font-size: 9px;
+    }
+    #welcome {
+        height: 405%;
+    }
+    .call-to-action-section {
+        height: 110%;
+    }
+    .address {
+        min-height: 30em;
+        height: 31em;
+    }
+    .googlemap iframe {
+        min-height: 27em;
+        height: 27.8em;
+    }
+}
+
+
+/* ----------- iPhone 7 Landscape ----------- */
+
+@media screen and ( max-width: 635px) and (max-height: 420px) {
+    .main-news-description {
+        top: -300px;
+    }
+    .main-news {
+        height: 300px;
+    }
+    .main-news-title {
+        font-size: 4em;
+        margin-bottom: 25px;
+    }
+    .news-pgraph1 {
+        font-size: 1.7em;
+    }
+}
+
+
+/* ----------- S Note 8.0 Potrait after hide address bar - window.innerHeight
+window.outerHeight include toolbar and address bar----------- */
+
+@media screen and ( max-width: 610px) and (max-height: 940px) {
+    .brand-logo,
+    .brand-logo p {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .beta {
+        font-size: 1.5rem;
+        top: -12px;
+        left: -8px;
+    }
+    .multiple-lang {
+        margin-top: 10px;
+    }
+    .multiple-lang div a,
+    .share-container p,
+    .social-container p {
+        font-size: 2rem;
+    }
+    .menu-links .closebtn {
+        background-size: 50px;
+        height: 50px;
+        width: 50px;
+        right: 4%;
+    }
+    .nav-container {
+        grid-template-rows: 140px auto;
+    }
+    .nav-container .navbar {
+        grid-gap: 50px;
+    }
+    .navbar {
+        padding-top: 0;
+    }
+    .nav-link {
+        font-size: 2.2rem;
+        padding: 1.4em 0;
+    }
+    .share-button {
+        font-size: 1.5rem;
+    }
+    .share-container {
+        width: 100%;
+    }
+    .web__share>.share-icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 23px;
+    }
+    /* Temporary disable
+    .social-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin: 30px auto;
+    } */
+    .social-container p {
+        margin-right: 5px;
+        margin-bottom: 0;
+        padding-top: 4px;
+    }
+    .home-container {
+        top: 100%;
+    }
+    .fly-in-text {
+        margin: 0 auto;
+    }
+    .fly-in-text li {
+        font-size: 5rem;
+    }
+    .hero-subheading {
+        width: 100%;
+    }
+    .bulletin-row {
+        width: 33em;
+        height: 12em;
+    }
+    .bulletin-description {
+        padding-left: 32px;
+    }
+    .section-heading.centered {
+        font-size: 4rem;
+        padding-bottom: 20px;
+    }
+    .section-subheading.center {
+        font-size: 2rem;
+    }
+    #welcome {
+        padding: 6em 0;
+    }
+    .COGS-title h1,
+    .navburger h1,
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading,
+    .title,
+    .date-published {
+        font-size: 2.1rem;
+    }
+    .hollow-button,
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph,
+    .bulletin-download,
+    .welcome-pgraph,
+    .welcome-author,
+    .group-photo-caption,
+    .visit,
+    .history {
+        font-size: 1.8rem;
+    }
+    .welcome-column-1 {
+        margin-bottom: 32%;
+    }
+    .welcome-column-2 {
+        padding-left: 0;
+    }
+    .welcome-button-container {
+        width: 100%;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 40px;
+    }
+    #announcements {
+        padding: 5em 0 0;
+    }
+    .main-news {
+        margin-bottom: 20px;
+    }
+    .main-news, .main-image {
+        height: 28em;
+    }
+    .main-news-description {
+        top: -28em;
+    }
+    .main-news-title {
+        padding: 0 10%;
+    }
+    .news-pgraph3 {
+        font-size: 2rem;
+    }
+    .news-pgraph3, .news-pgraph1 {
+        padding: 0 6%;
+        font-weight: 300;
+    }
+    .news-pgraph1 {
+        font-size: 1.8rem;
+    }
+    .events-icon img {
+        width: 45px;
+        height: 45px;
+    }
+    .events-icon h2 {
+        font-size: 2rem;
+    }
+    .top-news {
+        grid-template-columns: 100%;
+        grid-auto-rows: 170px;
+        grid-gap: 20px;
+    }
+    .news > a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .news-image {
+        width: 55%;
+        height: 100%;
+    }
+    .newsdescription {
+        height: 100%;
+        width: 100%;
+        padding: 1.8em 1.5em;
+        border-left: 2px solid white;
+        border-bottom-left-radius: 0;
+    }
+    .top-news-title {
+        font-size: 1.7rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.5rem;
+    }
+    .card__share {
+        margin-top: -56px;
+        margin-right: 5px;
+    }
+    .card__social {
+        width: 210px;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+    .card__social--active {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transform: translateX(-60px);
+        -ms-transform: translateX(-60px);
+        transform: translateX(-60px);
+    }
+    .more h3 {
+        font-size: 1.8rem;
+    }
+    .more img {
+        width: 27px;
+        height: 27px;
+    }
+    .pop-container .pop-row {
+        width: 52%;
+    }
+    .pop-container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .pop-container a {
+        font-size: 1.4rem;
+    }
+    .call-to-action-section {
+        height: 44%;
+    }
+    .call-to-action-heading,
+    .call-to-action-pgraph {
+        text-align: left;
+    }
+    .call-to-action-description {
+        padding: 0;
+    }
+    .call-to-action-form {
+        width: 100%;
+    }
+    .call-to-action-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .cogs-news-form>.text-field {
+        width: 100%;
+    }
+    .submit-button,
+    .cogs-news-form>.text-field {
+        font-size: 1.5rem;
+        line-height: 1em;
+    }
+    .nospam,
+    .form-field {
+        font-size: 1.5rem;
+    }
+    .column-remove-padding {
+        padding: 0;
+    }
+    .send-message-button.full-width {
+        margin-top: 2%;
+        font-size: 1.5rem;
+        height: 50px;
+    }
+    .address {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
+        font-size: 3rem;
+    }
+    address,
+    .contact-info p,
+    .office-hour p {
+        font-size: 1.8rem;
+    }
+    .location {
+        margin-bottom: 40px;
+    }
+    .googlemap {
+        padding-left: 0;
+        height: 32em;
+    }
+    .direction-button {
+        font-size: 1.5rem;
+        line-height: 1.2em;
+        height: 50px;
+    }
+    .bible-verse {
+        font-size: 2.3rem;
+    }
+    .section.section-contact {
+        padding: 6em 0em 8em;
+    }
+    .adjust-padding-lr {
+        padding: 0 40px;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 6%;
+    }
+}
+
+
+/* ----------- S Note 8.0 Potrait ----------- */
+
+@media screen and ( max-width: 610px) and (max-height: 850px) {
+    html {
+        font-size: 12px;
+    }
+    .nav-container {
+        grid-template-rows: 120px auto;
+    }
+    .nav-container .navbar {
+        grid-gap: 60px;
+    }
+    .nav-link {
+        padding: 1.4em 0;
+    }
+    .menu-links .closebtn {
+        background-size: 45px;
+        width: 45px;
+        height: 45px;
+    }
+    .web__share>.share-icon {
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+        font-size: 18px;
+    }
+    .fly-in-text li {
+        font-size: 5.5rem;
+        letter-spacing: 0.01em;
+    }
+    .hero-subheading {
+        font-size: 2.7rem;
+        margin-bottom: 0.8em;
+    }
+    .send-message-button.full-width,
+    .direction-button {
+        height: 45px;
+    }
+    .direction-button {
+        line-height: 1.3em;
+    }
+    .bulletin-container-1 {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
+        font-size: 2.5rem;
+    }
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
+        font-size: 2rem;
+    }
+    .bulletin-row {
+        width: 32em;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .date-published {
+        font-size: 2.2rem;
+    }
+    .bulletin-download {
+        font-size: 2rem;
+    }
+    .section-subheading.center {
+        font-size: 2.2rem;
+    }
+    #welcome {
+        height: 130%;
+        padding: 6em 0;
+    }
+    .welcome-column-1 {
+        height: 100%;
+        margin-bottom: 22%;
+    }
+    .welcome-column-2 {
+        padding-left: 0;
+    }
+    .welcome-pgraph,
+    .welcome-author {
+        font-size: 2.1rem;
+        margin-bottom: 0;
+    }
+    .welcome-button-container {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .group-photo-caption {
+        font-size: 2rem;
+    }
+    .main-news-title {
+        padding: 0 16%;
+    }
+    .main-news, .main-image {
+        height: 26em;
+    }
+    .main-news-description {
+        top: -26em;
+    }
+    .top-news-title {
+        font-size: 2rem;
+    }
+    .newsdescription {
+        padding: 1.8em 1.3em;
+    }
+    .news-pgraph3 {
+        font-size: 2.3rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.8rem;
+    }
+    .news-pgraph1 {
+        font-size: 2.1rem;
+    }
+    .more h3 {
+        font-size: 1.9rem;
+    }
+}
+
+
+/* ----------- iPhone 5 5s Landscape ----------- */
+
+@media screen and ( max-width: 568px) {
+    html {
+        font-size: 10px;
+    }
+    .mobile-nav {
+        height: 15%;
+    }
+    .fly-in-text li,
+    .section-heading.centered,
+    .hero-subheading {
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+    .menu-links .closebtn {
+        top: 10px;
+    }
+    .menu-links a {
+        padding: 0.8em 0;
+    }
+    .multiple-lang {
+        margin-top: 5px;
+    }
+    .share-container {
+        width: 90%;
+    }
+    .web__share>.share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+    }
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+    .bulletin-row {
+        width: 28em;
+        height: 10em;
+    }
+    .bulletin-download {
+        font-size: 2rem;
+    }
+    .welcome-column-1 {
+        margin-bottom: 0;
+    }
+    .group-photo-container {
+        padding: 0;
+    }
+    .group-photo-caption {
+        padding-top: 10px;
+    }
+    #welcome {
+        height: 300%;
+        padding: 4em 0 0;
+    }
+    .welcome-container {
+        margin-bottom: 0;
+    }
+    .main-news {
+        height: 260px;
+    }
+    .main-news-description {
+        top: -260px;
+    }
+    .main-news a .news-image {
+        width: 100%;
+    }
+    .card__social {
+        width: 200px;
+    }
+    .share-toggle,
+    .card__share .card__social .share-icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 17px;
+    }
+    #announcements {
+        padding: 4em 0 0;
+    }
+    .call-to-action-section {
+        height: 88%;
+    }
+    .call-to-action-form {
+        padding: 0;
+        margin-top: 0;
+    }
+    .call-to-action-section .container {
+        height: 210px;
+    }
+    .cogs-news-form {
+        margin-top: 0;
+    }
+    .submit-button,
+    .cogs-news-form>.text-field {
+        line-height: 0;
+        height: 35px;
+    }
+    .nospam {
+        margin-top: 0;
+    }
+    .nospam,
+    .form-field {
+        font-size: 1.3rem;
+    }
+    .bible-verse {
+        font-size: 1.7rem;
+    }
+    .adjust-padding-td {
+        padding: 35px 0;
+    }
+}
+
+
+/* ----------- VIVO 5 Samsung J Landscape ----------- */
+
+@media screen and ( max-width: 560px) and (max-height: 360px) {
+    #welcome {
+        height: 255%;
+    }
+    .call-to-action-section {
+        height: 78%;
+    }
+}
+
+
+/* ----------- iPhone 6S Landscape ----------- */
+
+@media screen and ( max-width: 540px) {
+    .menu-links a {
+        padding: 0.9em 0;
+    }
+    #welcome {
+        height: 240%;
+    }
+    .call-to-action-section {
+        height: 75%;
+    }
+    .form-wrapper.squeezed {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* ----------- HuaWei Mate 9 Landscape ----------- */
+
+@media screen and ( max-width: 530px) {
+    .menu-links a {
+        padding: 0.8em 0;
+    }
+    .bible-verse {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ----------- iPhone 4 Landscape ----------- */
+
+@media screen and ( max-width: 480px) and (max-height: 215px) {
+    .fly-in-text li {
+        font-size: 4rem;
+    }
+    .hero-subheading {
+        font-size: 2rem;
+    }
+    .bulletin-row {
+        width: 25em;
+        height: 9em;
+    }
+    .bulletin-description {
+        padding-left: 0;
+    }
+    .hollow-button,
+    .visit,
+    .history {
+        font-size: 1.3rem;
+    }
+    #welcome {
+        height: 400%;
+    }
+    .section-heading.centered {
+        font-size: 4.5rem;
+    }
+    .COGS-title h1,
+    .navburger h1,
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading,
+    .title,
+    .date-published {
+        font-size: 2rem;
+    }
+}
+
+
+/* ----------- iPhone 6 PLUS Potrait----------- */
+
+@media screen and ( max-width: 420px) and (max-height: 740px) {
+    html {
+        font-size: 14px;
+    }
+    .pulse {
+        font-size: 1.5rem;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+    .main-nav {
+        padding-top: 30px;
+    }
+    .home-container {
+        top: 95%;
+    }
+    .mobile-container {
+        padding: 0 20px;
+    }
+    .COGS-title {
+        -webkit-box-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+    }
+    .COGS-title h1,
+    .navburger h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .hamburger {
+        background-size: 2.5rem;
+    }
+    .mobile-nav {
+        height: 8%;
+    }
+    .nav-container, .nav-container .navbar {
+        grid-gap: 50px;
+    }
+    .menu-links .closebtn {
+        top: 2%;
+        right: 6.6%;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-size: 2.5rem;
+    }
+    .beta {
+        font-size: 1.2rem;
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 3rem;
+    }
+    .multiple-lang {
+        margin-bottom: 0;
+    }
+    .multiple-lang div a,
+    .share-container p,
+    .social-container p {
+        font-size: 1.5rem;
+    }
+    .menu-links a {
+        font-size: 1.8rem;
+        padding: 1.3em 0;
+    }
+    .share-website {
+        padding: 5px;
+    }
+    .share-container {
+        padding: 2% 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+    }
+    .share-container p {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    .share-button {
+        font-size: 1.2rem;
+        padding: 11px 20px;
+    }
+    .web__share>.share-icon {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .social-container {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .hero-title-wrapper {
+        -webkit-transform: perspective(1px) translateY(-40%);
+        transform: perspective(1px) translateY(-40%);
+    }
+    .fly-in-text {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .fly-in-text li {
+        font-size: 3.1rem;
+        text-align: center;
+    }
+    .fly-in-text li:nth-child(7) {
+        margin-right: 15px;
+    }
+    .fly-in-text li,
+    .section-heading.centered,
+    .hero-subheading {
+        padding-bottom: 15px;
+    }
+    .section-heading.centered {
+        font-size: 2.8rem;
+        padding: 10px 0;
+    }
+    .hero-subheading {
+        font-size: 2.2rem;
+        line-height: 1.1em;
+        margin: 0 auto;
+        width: 96%;
+    }
+    .hero-button-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .hollow-button.white {
+        margin-bottom: 15px;
+    }
+    .hollow-button {
+        width: 50%;
+        margin: 0 auto;
+        padding: 0.6em;
+    }
+    .hollow-button,
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph,
+    .bulletin-download,
+    .welcome-pgraph,
+    .welcome-author,
+    .group-photo-caption {
+        font-size: 1.4rem;
+    }
+    .visit,
+    .history {
+        font-size: 1.3rem;
+    }
+    .section-subheading.center {
+        font-size: 1.5rem;
+    }
+    #welcome {
+        height: 120%;
+        padding: 5em 0;
+    }
+    .welcome-column-1 {
+        padding-right: 0;
+        margin-bottom: 110px;
+    }
+    .welcome-pgraph,
+    .welcome-author,
+    .group-photo-caption {
+        font-size: 1.4rem;
+    }
+    .feedback-pgraph {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .welcome-column-2 {
+        height: 90%;
+    }
+    .bulletin-description {
+        padding-left: 10px;
+    }
+    .bulletin-row {
+        width: 21em;
+        height: 8em;
+        padding: 0;
+    }
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
+        font-size: 1.7rem;
+    }
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
+        font-size: 1.4rem;
+    }
+    .bulletin-row {
+        width: 22em;
+        height: 8em;
+    }
+    .title,
+    .date-published {
+        font-size: 1.5rem;
+    }
+    .date-published {
+        margin: 0.4em 0;
+    }
+    .bulletin-download {
+        font-size: 1.25rem;
+    }
+    .plan-visit {
+        padding-top: 25%;
+    }
+    .close-button {
+        font-size: 1.2rem;
+        padding: 7px 10px;
+    }
+    .container .title {
+        margin-bottom: 15px;
+    }
+    .title h1 {
+        font-size: 3rem;
+        margin-bottom: 5px;
+    }
+    .title h3 {
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    .plan-visit .form-container .form-row .form-field {
+        height: 40px
+    }
+    .plan-visit .form-field.text-area {
+        min-height: 130px;
+    }
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time {
+        padding: 0 10px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .plan-visit form .button.full-width {
+        font-size: 1.2rem;
+        height: 40px;
+        margin-top: 1px;
+        padding: 5px;
+    }
+    .form-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .reduce-width {
+        width: 100%;
+    }
+    .selection {
+        height: 135px;
+    }
+    .news-container {
+        margin-bottom: 60px;
+    }
+    .events-icon img {
+        width: 40px;
+        height: 40px;
+    }
+    .events-icon h2 {
+        font-size: 1.6rem;
+    }
+    .main-news, .main-image {
+        height: 20em;
+    }
+    .main-news-description {
+        top: -20em;
+    }
+    .main-news-title {
+        font-size: 3rem;
+        padding: 0 12%;
+    }
+    .news-pgraph3 {
+        font-size: 1.7rem;
+    }
+    .news-pgraph1 {
+        font-size: 1.4rem;
+    }
+    .top-news {
+        grid-auto-rows: 120px;
+        grid-gap: 20px;
+    }
+    .newsdescription {
+        padding: 1em 0.9em;
+        border-left: 1px solid white;
+    }
+    .top-news-title {
+        font-size: 1.3rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.2rem;
+    }
+    .card__share {
+        margin-top: -42px;
+    }
+    .card__social {
+        width: 155px;
+    }
+    .card__social--active {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transform: translateX(-48px);
+        -ms-transform: translateX(-48px);
+        transform: translateX(-48px);
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 1rem;
+    }
+    .separator:before {
+        height: 1.5px;
+    }
+    .more img {
+        width: 20px;
+        height: 20px;
+    }
+    .more h3 {
+        font-size: 1.3rem;
+        margin-bottom: 4px;
+    }
+    .events-icon img {
+        width: 40px;
+        height: 40px;
+    }
+    .events-icon h2 {
+        font-size: 1.6rem;
+    }
+    .pop-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    .pop-container a {
+        font-size: 1rem;
+    }
+    .form-wrapper.squeezed {
+        margin-bottom: 40px;
+    }
+    .call-to-action-section {
+        height: 42%;
+    }
+    .section {
+        padding: 4em 0;
+    }
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 5px auto;
+    }
+    address,
+    .contact-info p,
+    .office-hour p {
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .form-field {
+        padding: 5px 10px;
+    }
+    .form-field,
+    .send-message-button.full-width,
+    .direction-button {
+        font-size: 1.2rem;
+        line-height: 1.4em;
+    }
+    .send-message-button.full-width {
+        height: 38px;
+        padding: 0;
+    }
+    .direction-button {
+        height: 40px;
+        padding: 8px;
+    }
+    .bible-verse {
+        font-size: 1.6rem;
+        line-height: 1.2em;
+    }
+    .submit-button,
+    .cogs-news-form>.text-field {
+        font-size: 1.1rem;
+        height: 38px;
+        padding: 10px 20px;
+    }
+    .nospam {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .call-to-action-section .container {
+        height: 240px;
+    }
+    .section.section-contact {
+        padding: 7em 0em 6em;
+    }
+    .home-container.adjust-padding-lr {
+        padding: 0;
+    }
+    .adjust-padding-lr {
+        padding: 0 30px;
+    }
+    .verse-container {
+        width: 67%;
+    }
+}
+
+
+/* ----------- Galaxy Note 5 Potrait ----------- */
+
+@media screen and ( max-width: 420px) and ( max-height: 660px) {
+    .brand-logo,
+    .brand-logo p {
+        font-size: 2.5rem;
+    }
+    .nav-container {
+        grid-gap: 20px;
+    }
+    .nav-container .navbar {
+        grid-gap: 40px;
+    }
+    .beta {
+        font-size: 1.1rem;
+        top: -10px;
+    }
+    .menu-links a {
+        font-size: 1.6rem;
+        padding: 1.2em 0;
+    }
+    .news-pgraph3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ----------- iPhone 7, iPhone 6 PLUS Potrait ----------- */
+
+@media screen and ( max-width: 420px) and ( max-height: 630px) {
+    .multiple-lang {
+        margin-top: 0;
+    }
+    .multiple-lang div a,
+    .share-container p,
+    .social-container p {
+        font-size: 1.3rem;
+    }
+    .menu-links .closebtn {
+        top: 2.2%;
+        right: 6.5%;
+    }
+    .menu-links a {
+        font-size: 1.6rem;
+        padding: 1.2em 0;
+    }
+    .nav-container {
+        grid-gap: 20px;
+    }
+    .nav-container .navbar {
+        grid-gap: 40px;
+    }
+    .share-button {
+        font-size: 1.1rem;
+    }
+    #welcome {
+        height: 140%;
+    }
+    .cogs-news-form {
+        margin-bottom: 10px;
+    }
+    .call-to-action-section {
+        height: 51%;
+    }
+    .top-news-title {
+        font-size: 1.2rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.1rem;
+    }
+    .share-toggle,
+    .card__share .card__social .share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
+    }
+    .card__social {
+        width: 160px;
+    }
+    .social-container p {
+        padding-top: 6px;
+    }
+    .more h3 {
+        margin-bottom: 2px;
+    }
+    .plan-visit {
+        padding-top: 15%;
+        padding-bottom: 0;
+    }
+    .container .title {
+        padding: 0;
+    }
+    .location {
+        padding: 1.5em;
+    }
+    .bible-verse {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* ----------- iPhone 6  Potrait----------- */
+
+@media screen and ( max-width: 380px) {
+    html {
+        font-size: 12px;
+    }
+    .nav-container {
+        grid-gap: 40px;
+    }
+    .nav-container .navbar {
+        grid-gap: 50px;
+    }
+    .web__share>.share-icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .fly-in-text li,
+    .section-heading.centered {
+        padding-bottom: 12px;
+    }
+    .hero-subheading {
+        padding-bottom: 15px;
+        font-size: 2.1rem;
+    }
+    .hollow-button {
+        padding: 0.65em;
+    }
+    .bulletin-row {
+        width: 20em;
+        height: 7em;
+    }
+    #welcome {
+        height: 115%;
+    }
+    .section-title-group {
+        margin-bottom: 30px;
+    }
+    .welcome-column-1 {
+        margin-bottom: 90px;
+    }
+    .container .title {
+        padding: 0;
+    }
+    .events-icon img {
+        width: 36px;
+        height: 36px;
+    }
+    .main-news {
+        margin-bottom: 15px;
+    }
+    .main-news, .main-image {
+        height: 16em;
+    }
+    .main-news-description {
+        top: -16em;
+    }
+    .main-news-title {
+        padding: 0 16%;
+    }
+    .top-news {
+        grid-auto-rows: 110px;
+        grid-gap: 15px;
+    }
+    .top-news-title {
+        font-size: 1.4rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.3rem;
+    }
+    .pop-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    .cogs-news-form {
+        margin-bottom: 5px;
+    }
+    .location {
+        padding: 15px;
+    }
+    address {
+        margin-bottom: 15px;
+    }
+    .cogs-news-form>.text-field {
+        margin-bottom: 10px;
+    }
+    .submit-button {
+        height: 36px;
+    }
+    .call-to-action-section .container {
+        height: 220px;
+    }
+    .direction-button {
+        padding: 10px;
+    }
+}
+
+
+/* ----------- iPhone 6  Potrait----------- */
+
+@media screen and ( max-width: 380px) and ( max-height: 560px) {
+    .mobile-container {
+        height: 8%;
+    }
+    .nav-container {
+        grid-template-rows: 100px auto;
+        grid-gap: 20px;
+    }
+    .nav-container .navbar {
+        grid-gap: 40px;
+    }
+    .menu-links .closebtn {
+        top: 2%;
+    }
+    .web__share>.share-icon {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 17px;
+    }
+    .plan-visit {
+        padding-top: 12%;
+        margin-bottom: 0;
+    }
+    .close-button {
+        top: 3%;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date {
+        height: 35px;
+    }
+    .selection {
+        height: unset;
+        padding-bottom: 0;
+    }
+    .plan-visit form .button.full-width {
+        margin-bottom: 0;
+    }
+    #welcome {
+        height: 135%;
+    }
+    .more img {
+        width: 18px;
+        height: 18px;
+    }
+    .more h3 {
+        margin-bottom: 4px;
+    }
+}
+
+
+/* ----------- iPhone 6 Potrait ----------- */
+
+@media screen and ( max-width: 380px) and ( max-height: 540px) {
+    html {
+        font-size: 11px
+    }
+    .beta {
+        top: -8px;
+        left: -6px;
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 2.8rem;
+    }
+    .multiple-lang div a {
+        font-size: 1.5rem;
+    }
+    .share-container p,
+    .social-container p {
+        font-size: 1.4rem;
+    }
+    .share-container p {
+        margin-bottom: 10px;
+    }
+    .share-button {
+        font-size: 1.2rem;
+    }
+    .social-container {
+        margin-top: 11px;
+    }
+    .social-container p {
+        font-size: 1.5rem;
+        margin-bottom: -2px;
+    }
+    .multiple-lang {
+        margin-bottom: 20px;
+    }
+    .menu-links a {
+        font-size: 1.8rem;
+        padding: 1em 0;
+    }
+    .hero-subheading {
+        font-size: 2.2rem;
+    }
+    .section-heading.centered {
+        padding-bottom: 5px;
+    }
+    .title,
+    .date-published {
+        font-size: 1.8rem;
+    }
+    .bulletin-download {
+        font-size: 1.5rem;
+    }
+    .welcome-column-1 {
+        height: 75%;
+    }
+    .more img {
+        width: 20px;
+        height: 20px;
+    }
+    .more h3 {
+        font-size: 1.5rem;
+        margin-left: 15px;
+    }
+    .plan-visit {
+        padding-top: 10%;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    .plan-visit .form-field.text-area,
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time,
+    .plan-visit form .button.full-width {
+        font-size: 1.3rem;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time,
+    .plan-visit form .button.full-width {
+        height: 35px;
+    }
+    .selection {
+        height: 120px;
+    }
+    .call-to-action-section {
+        height: 48%;
+    }
+    address,
+    .contact-info p,
+    .office-hour p {
+        font-size: 1.4rem;
+    }
+    .verse-container {
+        width: 65%;
+    }
+}
+
+
+/* ----------- Galaxy Note 8 Potrait  ----------- */
+
+@media screen and ( max-width: 360px) and ( max-height: 668px) {
+    .home-container {
+        top: 100%;
+    }
+    .pop-container .pop-row {
+        width: 55%;
+    }
+    .pop-container a {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* ----------- Galaxy Note 3 Potrait  ----------- */
+
+@media screen and ( max-width: 360px) and ( max-height: 640px) {
+    .brand-logo,
+    .brand-logo p {
+        font-size: 2.8rem;
+    }
+    .beta {
+        top: -10px;
+    }
+    .menu-links a {
+        font-size: 1.8rem;
+        padding: 1.2em 0;
+    }
+    .nav-container {
+        grid-gap: 30px;
+    }
+    .social-container {
+        margin-top: 30px;
+    }
+    .hero-subheading {
+        font-size: 2.2rem;
+        width: 75%;
+    }
+    .bulletin-description,
+    .title,
+    .date-published {
+        text-align: left;
+    }
+    .plan-visit {
+        padding-top: 15%;
+    }
+    .bulletin-row {
+        width: 18em;
+        height: 7em;
+    }
+    .bulletin-description {
+        padding-left: 7px;
+    }
+    .section {
+        padding: 4em 0 3em;
+    }
+    #welcome {
+        height: 120%;
+        padding: 4em 0;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        font-size: 14px;
+    }
+    .welcome-column-2 {
+        height: 80%;
+    }
+    .submit-button,
+    .cogs-news-form>.text-field {
+        height: 35px;
+        padding: 8px 15px;
+        font-size: 1.2rem;
+        border: 0;
+    }
+    .verse-container {
+        width: 75%;
+    }
+    .home-container.adjust-padding-lr {
+        padding: 0;
+    }
+    .adjust-padding-lr {
+        padding: 0 30px;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 20px;
+    }
+}
+
+
+/* ----------- Samsung J Neo Potrait  ----------- */
+
+@media screen and ( max-width: 360px) and ( max-height: 570px) {
+    .COGS-title h1,
+    .navburger h1 {
+        font-weight: 400;
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 2.5rem;
+    }
+    .nav-container {
+        grid-template-rows: 100px auto;
+        grid-gap: 20px;
+    }
+    .nav-container .navbar {
+        grid-gap: 30px;
+    }
+    .navbar {
+        padding-top: 0;
+    }
+    .menu-links a {
+        font-size: 1.6rem;
+    }
+    .menu-links .closebtn {
+        top: 2%;
+    }
+    .web__share>.share-icon {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 17px;
+    }
+    .card__social {
+        width: 155px;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        font-size: 14px;
+    }
+}
+
+
+/* ----------- VIVO 5, S Note 3 Neo Potrait  ----------- */
+
+@media screen and ( max-width: 360px) and ( max-height: 560px) {
+    .menu-links a {
+        font-size: 1.7rem;
+        padding: 1em 0;
+    }
+    #welcome {
+        height: 135%;
+    }
+    .plan-visit {
+        padding-top: 13%;
+    }
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time,
+    .plan-visit form .button.full-width {
+        height: 35px;
+    }
+    .share-container {
+        padding: 3% 2%;
+    }
+    .share-button {
+        font-size: 1.2rem;
+    }
+    .social-container {
+        margin-top: 20px;
+    }
+    .bible-verse {
+        font-size: 1.65rem;
+    }
+}
+
+
+/* ----------- HuaWei Mate9 Potrait  ----------- */
+
+@media screen and ( max-width: 360px) and ( max-height: 530px) {
+    .main-nav {
+        padding-top: 25px;
+    }
+    .menu-links a {
+        padding: 20px 0;
+    }
+    .hollow-button {
+        width: 46%;
+    }
+    .social-container {
+        margin-top: 12px;
+    }
+    .bulletin-row {
+        width: 19em;
+    }
+    .bulletin-description {
+        padding-left: 8px;
+    }
+    .title,
+    .date-published {
+        font-size: 1.7rem;
+    }
+    .bulletin-download {
+        font-size: 1.35rem;
+    }
+    .section-title-group {
+        margin-bottom: 25px;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time {
+        height: 30px;
+    }
+    .menu-links a {
+        font-size: 1.7rem;
+    }
+    .multiple-lang {
+        margin-bottom: 15px;
+    }
+    .call-to-action-section {
+        height: 52%;
+    }
+    .events-icon img {
+        width: 32px;
+        height: 32px;
+    }
+    .events-icon h2 {
+        font-size: 1.5rem;
+    }
+    .more h3 {
+        margin-bottom: 6px;
+    }
+}
+
+
+/* ----------- YES M631Y Potrait  ----------- */
+
+@media screen and ( max-width: 360px) and ( max-height: 512px) {
+    .beta {
+        top: -8px;
+    }
+    .share-container {
+        padding: 2%;
+    }
+    .selection {
+        height: 110px;
+    }
+    .plan-visit {
+        padding-top: 10%;
+    }
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
+        margin: 0 auto;
+        font-size: 1.8rem;
+    }
+}
+
+
+/* ----------- iPhone 5 and 5S Potrait ----------- */
+
+@media screen and ( max-width: 320px) and ( max-height: 570px) {
+    .main-nav {
+        z-index: 1001;
+    }
+    .nav-container {
+        grid-gap: 30px;
+    }
+    .nav-container .navbar {
+        grid-gap: 40px;
+    }
+    .hamburger {
+        margin-left: 7px;
+    }
+    .mobile-container {
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 2.6rem;
+    }
+    .menu-links a {
+        font-size: 1.7rem;
+        padding: 1em 0;
+    }
+    .social-container {
+        margin-top: 25px;
+    }
+    .web__share>.share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .fly-in-text {
+        width: 100%;
+    }
+    .fly-in-text li {
+        font-size: 2.8rem;
+    }
+    .hero-subheading {
+        width: 90%;
+        font-size: 2rem;
+    }
+    .fly-in-text li,
+    .section-heading.centered,
+    .hero-subheading {
+        padding-bottom: 10px;
+    }
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
+        font-size: 1.5rem;
+    }
+    .bulletin-row {
+        width: 17.5em;
+    }
+    .title,
+    .date-published {
+        font-size: 1.4rem;
+    }
+    .bulletin-download {
+        font-size: 1.2rem;
+    }
+    #welcome {
+        height: 135%;
+    }
+    .section-subheading.center {
+        line-height: 1.3em;
+    }
+    #announcements .section-heading.centered {
+        padding-bottom: 5px;
+    }
+    .news-container {
+        margin-bottom: 40px;
+    }
+    .main-news-title {
+        font-size: 3rem;
+        padding: 0 10%;
+    }
+    .news-pgraph3 {
+        font-size: 1.5rem;
+    }
+    .top-news {
+        grid-auto-rows: 100px;
+    }
+    .news-image {
+        max-width: 36%;
+    }
+    .top-news-title {
+        font-size: 1.3rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.2rem;
+    }
+    .card__share {
+        margin-top: -38px;
+    }
+    .card__social {
+        width: 145px;
+    }
+    .card__social--active {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transform: translateX(-45px);
+        -ms-transform: translateX(-45px);
+        transform: translateX(-45px);
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 1rem;
+    }
+    .call-to-action-section {
+        height: 46%;
+    }
+    .section.section-contact {
+        padding: 5em 0 4em;
+    }
+    .adjust-padding-td {
+        padding: 25px 0;
+    }
+    .home-container.adjust-padding-lr {
+        padding: 0;
+    }
+    .adjust-padding-lr {
+        padding: 0 20px;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 4%;
+    }
+}
+
+
+/* ----------- iPhone 4 and 4S Potrait----------- */
+
+@media screen and ( max-width: 320px) and ( max-height: 500px) {
+    .body {
+        padding-left: 0;
+    }
+    .main-nav {
+        display: none;
+        width: 100%;
+    }
+    .mobile-nav {
+        display: block;
+        height: 10%;
+    }
+    .mobile-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .menu-links .closebtn {
+        display: block;
+    }
+    .hero-title-wrapper {
+        -webkit-transform: perspective(1px) translateY(-30%);
+        transform: perspective(1px) translateY(-30%);
+    }
+    .brand-logo,
+    .brand-logo p {
+        font-size: 2.4rem;
+    }
+    .nav-container {
+        grid-gap: 0;
+    }
+    .nav-container .navbar {
+        grid-gap: 30px;
+    }
+    .menu-links a {
+        font-size: 1.6rem;
+        padding: 0.9em 0;
+    }
+    .multiple-lang {
+        margin-bottom: 0;
+    }
+    .multiple-lang div a {
+        font-size: 1.3rem;
+    }
+    .chinese {
+        margin: 0 10px;
+    }
+    .share-button {
+        font-size: 1.1rem;
+    }
+    .share-container p {
+        font-size: 1.5rem;
+    }
+    .social-container {
+        margin-top: 15px;
+    }
+    .web__share>.share-icon {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+    }
+    .hero-subheading {
+        width: 75%;
+    }
+    .fly-in-text li,
+    .section-heading.centered,
+    .hero-subheading {
+        padding-bottom: 10px;
+    }
+    .bulletin-flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .title,
+    .date-published {
+        font-size: 1.6rem;
+    }
+    .bulletin-download {
+        font-size: 1.3rem;
+    }
+    .bulletin-description {
+        padding-left: 7px;
+    }
+    .welcome-pgraph,
+    .welcome-author,
+    .group-photo-caption {
+        font-size: 1.5rem;
+    }
+    #welcome {
+        height: 150%;
+    }
+    .welcome-pgraph, .welcome-author {
+        text-align: left;
+    }
+    .plan-visit {
+        padding-top: 13%;
+    }
+    .plan-visit .form-field.text-area {
+        min-height: 100px;
+    }.events-icon img {
+        width: 36px;
+        height: 36px;
+    }
+    .events-icon h2 {
+        font-size: 1.7rem;
+    }
+    .main-news-title {
+        padding: 0 14%;
+    }
+    .top-news-title {
+        font-size: 1.4rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.3rem;
+    }
+    .more h3 {
+        margin-bottom: 5px;
+    }
+    .call-to-action-section {
+        height: 53%;
+    }
+    .verse-container {
+        top: 45%;
+    }
+    .footer {
+        background-color: #141e28;
+    }
+}
+
+
+/* iPhone 5S Potrait */
+
+@media screen and ( max-width: 320px) and ( max-height: 460px) {
+    .menu-links a {
+        font-size: 1.5rem;
+    }
+    .social-container {
+        margin-top: 12px;
+    }
+    .share-container {
+        padding: 0 10%;
+    }
+    .share-container p {
+        font-size: 1.4rem;
+    }
+    .share-button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+    .web__share>.share-icon {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 14px;
+    }
+    .plan-visit {
+        padding-top: 10%;
+    }
+    .title h1 {
+        font-size: 2.6rem;
+    }
+    .plan-visit form .button.full-width {
+        height: 30px;
+    }
+    #welcome {
+        height: 155%;
+    }
+}
+
+/* Logos Carolling at Four Point Hotel 23rd of Dec 8pm
+Contact Person: Timonthy Wong & Stephen Chung
+Contact Number: 013 880 2480, 017 817 7871
+Join us */
+
+
+/* BB Carolling at Golf Club Children Party 16th Dec 10am
+Contact Person: Eddy Wong (013 898 7880)
+Only for members 5 Sandakan BB Companyto join*/

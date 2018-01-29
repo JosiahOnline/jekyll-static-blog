@@ -1,9 +1,9 @@
 ---
 layout: post
 year: 2018
-version: english
+version: chinese
 event: past
-title: J Generation Camp
+title: J世代青少年营会
 description: 05 - 06/07/2017
 categories: all-events past
 image-path: /assets/img/past/jgeneration2.jpg

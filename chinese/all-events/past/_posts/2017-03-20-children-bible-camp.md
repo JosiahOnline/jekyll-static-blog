@@ -1,9 +1,9 @@
 ---
 layout: post
 year: 2018
-version: english
+version: chinese
 event: past
-title: Children Bible Camp
+title: 儿童圣经营会
 description: 20 - 22/03/2017
 categories: all-events past
 image-path: /assets/img/past/ChildrenBibleCamp.jpg

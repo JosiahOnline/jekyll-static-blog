@@ -107,9 +107,9 @@ url3: /bahasa-malaysia/
       }
     }
   </style>
-  <link href="http://www.cogssandakan.com/css/font.css" rel="stylesheet" type="text/css">
-  <link href="http://www.cogssandakan.com/css/basic.css" rel="stylesheet" type="text/css">
-  <link href="http://www.cogssandakan.com/css/main.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/font.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/basic.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> {% include favicon.html %}
   <link rel="canonical" href="http://www.cogssandakan.com" /> {% include google-analytics.html %}
 
@@ -277,8 +277,8 @@ url3: /bahasa-malaysia/
                   <article class="main-news">
                       <a rel="canonical" href="/assets/bulletin/18-01-28-eng-min.pdf" target="_blank"><img class="main-image round-radius" src="/assets/img/bulletin/bulletin2.jpg">
                           <div class="main-news-description">
-                              <h1 class="main-news-title">{{page.top-news1}}</h1>
-                              <p class="news-pgraph3">{{page.top-descriptions1}}</p>
+                              <h1 class="main-news-title">{{page.main-news1}}</h1>
+                              <p class="news-pgraph3">{{page.main-description1}}</p>
                           </div>
                       </a>
                   </article>
@@ -298,39 +298,89 @@ url3: /bahasa-malaysia/
                 <article class="main-news">
                     <a rel="canonical" href="./News/Past/Inspired_Christmas_Night.html"><img class="main-image round-radius" src="http://res.cloudinary.com/trippleninja/image/upload/v1514560579/Inspired%20Christmas%20Night/Inpsired17.jpg">
                         <div class="main-news-description">
-                            <h1 class="main-news-title">{{page.top-news3}}</h1>
-                            <p class="news-pgraph3">{{page.top-descriptions3}}</p>
-                            <p class="news-pgraph1">{{page.top-pgraph3}}</p>
+                            <h1 class="main-news-title">{{page.main-news3}}</h1>
+                            <p class="news-pgraph3">{{page.main-description3}}</p>
+                            <p class="news-pgraph1">{{page.main-pgraph3}}</p>
                         </div>
                     </a>
                 </article>
                 <div class="top-news">
-                {% for post in site.categories.past limit: 4 %}
-                  {% if post.version contains page.version and post.event == "past" %}
                       <article class="news">
-                          <a rel="canonical" href="{{ post.url }}">
-                          <img class="news-image" src="{{post.image-path}}">
+                          <a rel="canonical" href="{{ page.past-share-link1}}">
+                          <img class="news-image" src="{{page.past-image-path1}}">
                           <div class="newsdescription">
-                              <h1 class="top-news-title">{{post.title}}</h1>
-                              <p class="news-pgraph2">{{post.descriptions}}</p>
+                              <h1 class="top-news-title">{{page.past-news1}}</h1>
+                              <p class="news-pgraph2">{{page.past-description1}}</p>
                           </div>
                       </a>
                       <div class="card__share">
                           <div class="card__social">
-                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//{{page.share-link}}" target="_blank"><span class="fa fa-facebook"></span></a>
-                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//{{page.share-link}}" target="_blank"><span class="fa fa-twitter"></span></a>
-                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//{{page.share-link}}" target="_blank"><span class="fa fa-google-plus"></span></a>
-                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://{{page.share-link}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.cogssandakan.com{{page.past-share-link1}}" target="_blank"><span class="fa fa-facebook"></span></a>
+                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//www.cogssandakan.com{{page.past-share-link1}}" target="_blank"><span class="fa fa-twitter"></span></a>
+                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//www.cogssandakan.com{{page.past-share-link1}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.cogssandakan.com{{page.past-share-link1}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
                           </div>
                           <a class="share-toggle share-icon" href="#"></a>
                       </div>
                       </article>
-                      {% endif %}
-                      {% endfor %}
+                      <article class="news">
+                          <a rel="canonical" href="{{ page.past-share-link2}}">
+                          <img class="news-image" src="{{page.past-image-path2}}">
+                          <div class="newsdescription">
+                              <h1 class="top-news-title">{{page.past-news2}}</h1>
+                              <p class="news-pgraph2">{{page.past-description2}}</p>
+                          </div>
+                      </a>
+                      <div class="card__share">
+                          <div class="card__social">
+                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.cogssandakan.com{{page.past-share-link2}}" target="_blank"><span class="fa fa-facebook"></span></a>
+                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//www.cogssandakan.com{{page.past-share-link2}}" target="_blank"><span class="fa fa-twitter"></span></a>
+                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//www.cogssandakan.com{{page.past-share-link2}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.cogssandakan.com{{page.past-share-link2}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                          </div>
+                          <a class="share-toggle share-icon" href="#"></a>
+                      </div>
+                      </article>
+                      <article class="news">
+                          <a rel="canonical" href="{{ page.past-share-link3}}">
+                          <img class="news-image" src="{{page.past-image-path3}}">
+                          <div class="newsdescription">
+                              <h1 class="top-news-title">{{page.past-news3}}</h1>
+                              <p class="news-pgraph2">{{page.past-description3}}</p>
+                          </div>
+                      </a>
+                      <div class="card__share">
+                          <div class="card__social">
+                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.cogssandakan.com{{page.past-share-link3}}" target="_blank"><span class="fa fa-facebook"></span></a>
+                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//www.cogssandakan.com{{page.past-share-link3}}" target="_blank"><span class="fa fa-twitter"></span></a>
+                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//www.cogssandakan.com{{page.past-share-link3}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.cogssandakan.com{{page.past-share-link3}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                          </div>
+                          <a class="share-toggle share-icon" href="#"></a>
+                      </div>
+                      </article>
+                      <article class="news">
+                          <a rel="canonical" href="{{ page.past-share-link4}}">
+                          <img class="news-image" src="{{page.past-image-path4}}">
+                          <div class="newsdescription">
+                              <h1 class="top-news-title">{{page.past-news4}}</h1>
+                              <p class="news-pgraph2">{{page.past-description4}}</p>
+                          </div>
+                      </a>
+                      <div class="card__share">
+                          <div class="card__social">
+                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.cogssandakan.com{{page.past-share-link4}}" target="_blank"><span class="fa fa-facebook"></span></a>
+                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//www.cogssandakan.com{{page.past-share-link4}}" target="_blank"><span class="fa fa-twitter"></span></a>
+                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//www.cogssandakan.com{{page.past-share-link4}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.cogssandakan.com{{page.past-share-link4}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                          </div>
+                          <a class="share-toggle share-icon" href="#"></a>
+                      </div>
+                      </article>
                     </div>
                     <!-- End of Top News-->
                 <div class="more separator">
-                    <a href="http://www.cogssandakan.com/News/COGS_All_Events.html">
+                    <a href="{{page.all-events}}">
                         <h3>{{page.more}}</h3></h3>
                         <img src="/assets/img/arrow-right.png">
                     </a>
@@ -346,40 +396,89 @@ url3: /bahasa-malaysia/
                 <article class="main-news">
                     <a rel="canonical" href="./News/Ongoing/COGS_Church_Services.html"><img class="main-image round-radius" src="/assets/img/worship1a.jpg">
                         <div class="main-news-description">
-                            <h1 class="main-news-title">{{page.top-news2}}</h1>
-                            <p class="news-pgraph3">{{page.top-descriptions2}}</p>
+                            <h1 class="main-news-title">{{page.main-news2}}</h1>
+                            <p class="news-pgraph3">{{page.main-description2}}</p>
                         </div>
                     </a>
                 </article>
 
                 <div class="top-news">
-                {% for post in site.categories.ongoing limit: 4 %}
-
-                  <!-- {% if post.version == page.version %} -->
                       <article class="news">
-                          <a rel="canonical" href="{{ post.url }}">
-                          <img class="news-image" src="{{post.image-path}}">
+                          <a rel="canonical" href="{{ page.on-share-link1}}">
+                          <img class="news-image" src="{{page.on-image-path1}}">
                           <div class="newsdescription">
-                              <h1 class="top-news-title">{{post.title}}</h1>
-                              <p class="news-pgraph2">{{post.descriptions}}</p>
+                              <h1 class="top-news-title">{{page.on-news1}}</h1>
+                              <p class="news-pgraph2">{{page.on-description1}}</p>
                           </div>
                       </a>
                       <div class="card__share">
                           <div class="card__social">
-                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//{{page.share-link}}" target="_blank"><span class="fa fa-facebook"></span></a>
-                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//{{page.share-link}}" target="_blank"><span class="fa fa-twitter"></span></a>
-                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//{{page.share-link}}" target="_blank"><span class="fa fa-google-plus"></span></a>
-                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://{{page.share-link}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.cogssandakan.com{{page.on-share-link1}}" target="_blank"><span class="fa fa-facebook"></span></a>
+                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//www.cogssandakan.com{{page.on-share-link1}}" target="_blank"><span class="fa fa-twitter"></span></a>
+                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//www.cogssandakan.com{{page.on-share-link1}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.cogssandakan.com{{page.on-share-link1}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
                           </div>
                           <a class="share-toggle share-icon" href="#"></a>
                       </div>
                       </article>
-                      <!-- {% endif %} -->
-                      {% endfor %}
+                      <article class="news">
+                          <a rel="canonical" href="{{ page.on-share-link2}}">
+                          <img class="news-image" src="{{page.on-image-path2}}">
+                          <div class="newsdescription">
+                              <h1 class="top-news-title">{{page.on-news2}}</h1>
+                              <p class="news-pgraph2">{{page.on-description2}}</p>
+                          </div>
+                      </a>
+                      <div class="card__share">
+                          <div class="card__social">
+                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.cogssandakan.com{{page.on-share-link2}}" target="_blank"><span class="fa fa-facebook"></span></a>
+                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//www.cogssandakan.com{{page.on-share-link2}}" target="_blank"><span class="fa fa-twitter"></span></a>
+                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//www.cogssandakan.com{{page.on-share-link2}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.cogssandakan.com{{page.on-share-link2}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                          </div>
+                          <a class="share-toggle share-icon" href="#"></a>
+                      </div>
+                      </article>
+                      <article class="news">
+                          <a rel="canonical" href="{{ page.on-share-link3}}">
+                          <img class="news-image" src="{{page.on-image-path3}}">
+                          <div class="newsdescription">
+                              <h1 class="top-news-title">{{page.on-news3}}</h1>
+                              <p class="news-pgraph2">{{page.on-description3}}</p>
+                          </div>
+                      </a>
+                      <div class="card__share">
+                          <div class="card__social">
+                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.cogssandakan.com{{page.on-share-link3}}" target="_blank"><span class="fa fa-facebook"></span></a>
+                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//www.cogssandakan.com{{page.on-share-link3}}" target="_blank"><span class="fa fa-twitter"></span></a>
+                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//www.cogssandakan.com{{page.on-share-link3}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.cogssandakan.com{{page.on-share-link3}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                          </div>
+                          <a class="share-toggle share-icon" href="#"></a>
+                      </div>
+                      </article>
+                      <article class="news">
+                          <a rel="canonical" href="{{ page.on-share-link4}}">
+                          <img class="news-image" src="{{page.on-image-path4}}">
+                          <div class="newsdescription">
+                              <h1 class="top-news-title">{{page.on-news4}}</h1>
+                              <p class="news-pgraph2">{{page.on-description4}}</p>
+                          </div>
+                      </a>
+                      <div class="card__share">
+                          <div class="card__social">
+                              <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.cogssandakan.com{{page.on-share-link4}}" target="_blank"><span class="fa fa-facebook"></span></a>
+                              <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//www.cogssandakan.com{{page.on-share-link4}}" target="_blank"><span class="fa fa-twitter"></span></a>
+                              <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//www.cogssandakan.com{{page.on-share-link4}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                              <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.cogssandakan.com{{page.on-share-link4}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                          </div>
+                          <a class="share-toggle share-icon" href="#"></a>
+                      </div>
+                      </article>
                     </div>
                     <!-- End of Top News-->
               <div class="more separator">
-                  <a href="http://www.cogssandakan.com/News/COGS_All_Events.html">
+                  <a href="{{page.all-events}}">
                       <h3>{{page.more}}</h3>
                       <img src="/assets/img/arrow-right.png">
                   </a>

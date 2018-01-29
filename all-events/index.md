@@ -15,17 +15,17 @@ past: Past
 #Upcoming Events
 upcoming-events: Latest News 27th JAN 2018
 top-news1: Weekly Bulletin
-top-descriptions1: Now you can download latest bulletin <span>here</span>!
+top-description1: Now you can download latest bulletin <span>here</span>!
 
 #Ongoing Events
 ongoing-events: Ongoing Events
 top-news2: Church Services
-top-descriptions2: Click <span>here</span> for more information!
+top-description2: Click <span>here</span> for more information!
 
 #Past Events
 past-events: Past Events
 top-news3: Inspired Christmas Night
-top-descriptions3: Special Guest - 羅小白 S.White
+top-description3: Special Guest - 羅小白 S.White
 top-pgraph3: Click <span>here</span> for all pictures & videos
 
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
 year: 2018
-version: english
+version: chinese
 event: past
-title: Survival Youth Camp (BM)
+title: 青少年生存营会 (国文堂)
 description: 28 - 30/08/2017
 categories: all-events past
 image-path: /assets/img/past/BMCamp.jpg
