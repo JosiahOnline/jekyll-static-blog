@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Article" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{page.meta-title}}</title>
+    <meta name="description" content="{{page.meta-title}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{page.meta-title}}">
+    <meta itemprop="description" content="{{page.meta-description}}">
+    <meta itemprop="image" content="{{page.image-path}}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cogssandakan">
+    <meta name="twitter:title" content="{{page.meta-title}}">
+    <meta name="twitter:description" content="{{page.meta-description}}">
+    <meta name="twitter:creator" content="@cogssandakan">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image" content="{{page.image-path}}">
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="149572635665595"/><!-- must have app id-->
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="{{site.baseurl}}{{page.share-link}}"/>
+    <meta property="og:title" content="{{page.meta-title}}"/>
+    <meta property="og:description" content="{{page.meta-description}}"/>
+    <meta property="og:image" content="{{page.image-path}}"/>
+    <meta property="og:image:alt" content="{{page.og-image}}"/>
+
+    <link href="/assets/css/font.css"{{ relative_url }} rel="stylesheet" type="text/css">
+    <link href="/assets/css/{{page.theme}}"{{ relative_url }} rel="stylesheet" type="text/css">
+    <link href="/assets/css/{{page.css}}"{{ | relative_url }} rel="stylesheet" type="text/css">
+    <!-- Above syntax solved the problem of inserting a variable inside a liquid tags-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href={{"/assets/img/favicon/favicon2-96x96.png" | relative_url }} rel="shortcut icon" type="image/x-icon">
+    <link href={{"/assets/img/favicon/apple-icon2-180x180.png" | relative_url }} rel="apple-touch-icon">
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P44M4ZR');
+
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109996664-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109996664-1');
+        gtag('set', {
+            'user_id': 'USER_ID'
+        }); // Set the user ID using signed-in user_id.
+
+    </script>
