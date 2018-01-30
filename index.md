@@ -38,7 +38,7 @@ main-description1: Now you can download latest bulletin <span>here</span>!
 ongoing-events: Ongoing Events
 main-news2: Church Services
 main-description2: Click <span>here</span> for more information!
-main-url2: /all-events/ongoing/2018/01/05/church-services
+main-url2: /all-events/ongoing/cogs-church-services
 
 #Ongoing News 1
 on-news1: COGS Care Groups

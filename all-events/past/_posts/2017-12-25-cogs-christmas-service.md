@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: theme4
 year: 2018
 version: english
 event: past

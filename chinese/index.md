@@ -38,7 +38,7 @@ main-description1: 现在您可以在<span class="chi_nounderline">这里</span>
 ongoing-events: 正在进行的活动
 main-news2: 教会崇拜
 main-description2: 点击<span class="chi_nounderline">这里</span>获取更多信息!
-main-url2: /all-events/ongoing/2018/01/05/church-services
+main-url2: /chinese//all-events/ongoing/cogs-church-services
 
 #Ongoing News 1
 on-news1: COGS 关怀小组
