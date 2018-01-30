@@ -38,6 +38,7 @@ main-description1: 现在您可以在<span class="chi_nounderline">这里</span>
 ongoing-events: 正在进行的活动
 main-news2: 教会崇拜
 main-description2: 点击<span class="chi_nounderline">这里</span>获取更多信息!
+main-url2: /all-events/ongoing/2018/01/05/church-services
 
 #Ongoing News 1
 on-news1: COGS 关怀小组
@@ -69,6 +70,7 @@ past-events: 过去的活动
 main-news3: 鼓动人心
 main-description3: 特别嘉宾 - 羅小白 S.White
 main-pgraph3: 点击<span class="chi_nounderline">这里</span>查看所有图片和视频！
+main-url3: /all-events/past/2017/12/17/inspired-christmas-night
 
 #Past News 1
 past-news1: 圣诞节圣餐崇拜

@@ -38,6 +38,7 @@ main-description1: Now you can download latest bulletin <span>here</span>!
 ongoing-events: Ongoing Events
 main-news2: Church Services
 main-description2: Click <span>here</span> for more information!
+main-url2: /all-events/ongoing/2018/01/05/church-services
 
 #Ongoing News 1
 on-news1: COGS Care Groups
@@ -69,6 +70,7 @@ past-events: Past Events
 main-news3: Inspired Christmas Night
 main-description3: Special Guest - 羅小白 S.White
 main-pgraph3: Click <span>here</span> for all pictures & videos
+main-url3: /all-events/past/2017/12/17/inspired-christmas-night
 
 #Past News 1
 past-news1: COGS Christmas Service
