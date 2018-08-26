@@ -737,7 +737,7 @@ select {
     width: 3rem;
     padding: 0;
     margin-left: 10px;
-    background-image: url("/assets/img/menu1.png");
+    background-image: url("../img/menu1.png");
     background-size: 3rem;
     background-repeat: no-repeat
 }
@@ -835,7 +835,7 @@ select {
 
 .home-section {
     height: 100vh;
-    background-image: url("/assets/img/worship2a.jpg");
+    background-image: url("../img/worship2a.jpg");
     background-position: 17% 50%;
     background-size: cover;
 }
@@ -856,7 +856,7 @@ select {
     -webkit-transition: all 3s ease;
     -o-transition: all 3s ease;
     transition: all 3s ease;
-    /*background: url(/assets/img/overlay.png) rgba(0, 0, 0, 0.25) repeat 0px 0px*/
+    /*background: url(../img/overlay.png) rgba(0, 0, 0, 0.25) repeat 0px 0px*/
 }
 
 .body {
@@ -892,7 +892,7 @@ select {
     flex: 1.4;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    background-image: url("/assets/img/bulletin/bulletin1.jpg");
+    background-image: url("../img/bulletin/bulletin1.jpg");
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -1616,7 +1616,7 @@ address,
 
 .mission-statement-section {
     height: 100vh;
-    background-image: url("/assets/img/worship3a.jpg");
+    background-image: url("../img/worship3a.jpg");
     background-position: 50% 50%;
     background-size: cover;
     text-align: left;
@@ -2376,7 +2376,7 @@ span.chi_nounderline, .chi_nounderline {
         top: 2%;
         right: 2%;
         padding: 0;
-        background-image: url("/assets/img/error.png");
+        background-image: url("../img/error.png");
         background-size: 70px;
         height: 70px;
         width: 70px;
