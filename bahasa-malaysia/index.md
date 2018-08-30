@@ -1,6 +1,11 @@
 ---
 # Editing for Bahasa Malaysia Version
 layout: bm
+language: "ms"
+meta-title: Laman Web Rasmi The Church of The Good Shepherd (COGS) - Gereja Anglikan
+meta-description: Anda boleh mencari semua aktiviti termasuk berita, acara, pengumuman dan maklumat yang berkaitan dengan The Church of The Good Shepherd (COGS) di Sandakan.
+urllink: http://www.cogssandakan.com/bahasa-malaysia/
+meta-image-alt: Menyembah di Church of The Good Shepherds(COGS)
 title: BM Version
 nav1: LAMAN UTAMA
 nav2: SELAMAT DATANG

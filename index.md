@@ -1,6 +1,11 @@
 ---
 # Editing for English Version
 layout: eng
+language: "en"
+meta-title: Official Website of The Church of The Good Shepherd (COGS) - Anglican Church
+meta-description: You can find all activities including news, events, announcements and info which are related to The Church of The Good Shepherd (COGS) in Sandakan
+urllink: http://www.cogssandakan.com
+meta-image-alt: Worshipping in The Church of The Good Shepherds(COGS)
 title: English Version
 version: english
 nav1: HOME

@@ -1,6 +1,11 @@
 ---
 # Editing for Chinese Version
 layout: chi
+language: "zh-Hans"
+meta-title: 善牧堂教会(COGS)官方网站 - 圣公会教堂
+meta-description: 您可以找到所有与山打根善牧堂教会有关的活动，包括新闻，通告和信息
+urllink: http://www.cogssandakan.com/chinese/
+meta-image-alt: 在善牧堂教会(COGS)崇拜
 title: Chinese Version
 version: chinese
 nav1: 首页
