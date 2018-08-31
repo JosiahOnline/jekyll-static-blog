@@ -16,6 +16,7 @@ nav6: HUBUNGI
 
 logo: COGS SANDAKAN
 menu: Menu
+fly-text: <ul class="fly-in-text hidden"><li>S</li><li>E</li><li>L</li><li>A</li><li>M</li><li>A</li><li>T</li><li>D</li><li>A</li><li>T</li><li>A</li><li>N</li><li>G</li></ul>
 heading: Laman web rasmi Good Shepherd Church
 welcome: Mesej Salam
 announcements: Pengumuman

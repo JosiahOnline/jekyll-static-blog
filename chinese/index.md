@@ -17,6 +17,7 @@ nav6: 联系
 
 logo: 山打根圣公会善牧堂(COGS)
 menu: Menu
+fly-text: <ul class="chi-fly-in-text hidden"><li>欢</li><li>迎</li><li>光</li><li>临</li></ul>
 heading: 善牧堂教会的官方网站
 welcome: 欢迎词
 announcements: 通告
