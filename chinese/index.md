@@ -11,29 +11,37 @@ version: chinese
 nav1: 首页
 nav2: 欢迎
 nav3: 通告
-nav4: 联系
-p1: 请通知您的家人和朋友关于我们的新网站！
-share1: 分享这个网站
-p2: 社交媒体
-logo: COGS SANDAKAN
+nav4: 教育
+nav5: 下载
+nav6: 联系
+
+logo: 山打根圣公会善牧堂(COGS)
 menu: Menu
-heading1: 善牧堂教会的官方网站
-welcome: 欢迎辞
+heading: 善牧堂教会的官方网站
+welcome: 欢迎词
 announcements: 通告
-download: 每周下载PDF格式的周刊
-pgraph1: 我们每周都会上传周刊，以便您可以在智能手机上阅读（每周崇拜仍有周刊纸张）。
-bulletin1: 最新周刊
-bulletin2: 1月20日2018
-bulletin3: 现在下载
-heading2: 欢迎回来
-subheading2: 在基督里的兄弟姐妹！
-pgraph2: 我们是一个充满活力，激动人心，友善的教会，热爱认识耶稣的人，过蒙福的生活。我们的教堂位置很容易找到，在未来几年内我们会有很大的计划。所以我们热烈的欢迎您到周六或周日的崇拜,  以便了解更多。我们很乐意见到您！
-pastor: 到时候见！<br>由会吏长 陈赐雄
-button1: 计划拜访
-button2: 我们的旅程
-pcc: 会吏长陈赐雄和本堂理事委员会
+blt-text: 每周下载PDF格式的周刊
+blt-pgraph: 我们每周都会上传周刊，以便您可以在智能手机上阅读（每周崇拜仍有周刊纸张）。
+blt-title: 最新周刊
+blt-date: 1月20日2018
+blt-download: 现在下载
+
+heading1: 欢迎回来
+subheading1: 在基督里的兄弟姐妹！
+pgraph1: 我们是一个充满活力，激动人心，友善的教会，热爱认识耶稣的人，过蒙福的生活。我们的教堂位置很容易找到，在未来几年内我们会有很大的计划。所以我们热烈的欢迎您到周六或周日的崇拜,  以便了解更多。我们很乐意见到您！
+pastor-msg: 到时候见！<br>由会吏长 熊添财
+visit-btn: 计划拜访
+history-btn: 我们的旅程
+pcc: 会吏长熊添财和本堂理事委员会
+
+feedback-text: 您的意见很重要！
+feedback-pgraph: 本网站目前在<span>测试</span>版本中。我们的目的是告知访客关于我们的最新活动，新闻和通告。我们感谢您能评价这个网站以获得更好的改进。请点击 <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank" class="chi_nounderline">这里</a></span> 并让我们知道您的意见。谢谢！
 
 # Announcements
+heading2: 通告
+subheading2: 所有最新消息,知讯与重大活动
+date-updated: 更新日期
+date-published: 8月25日2018年
 #Upcoming Events
 upcoming-events: 最新消息 1月27日2018年
 main-news1: 每周周刊
@@ -104,8 +112,6 @@ past-share-link4: /chinese/all-events/past/2017/12/09/cogs-children-christmas-ce
 more: More
 all-events: /chinese/all-events/
 
-feedback1: 您的意见很重要！
-feedback2: 本网站目前在<span>测试</span>版本中。我们的目的是告知访客关于我们的最新活动，新闻和通告。我们感谢您能评价这个网站以获得更好的改进。请点击 <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank" class="chi_nounderline">这里</a></span> 并让我们知道您的意见。谢谢！
 newsletter1: 善牧堂 通讯
 newsletter2: 加入我们的会员，并获得我们最新的新闻和活动。不要错过您所关心的活动细节。
 newsletter3: 请输入您的电子邮件

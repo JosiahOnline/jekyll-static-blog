@@ -11,29 +11,37 @@ version: english
 nav1: HOME
 nav2: WELCOME
 nav3: ANNOUNCEMENTS
-nav4: CONTACT
-p1: Inform your friends and family about our new website!
-share1: Share this website
-p2: Social Media Links
+nav4: EDUCATION
+nav5: DOWNLOAD
+nav6: CONTACT
+
 logo: COGS SANDAKAN
 menu: Menu
-heading1: Official Website of Good Shepherd Church
+heading: Official Website of Good Shepherd Church
 welcome: Welcome Message
 announcements: Announcements
-download: Download weekly bulletin in PDF format
-pgraph1: Every week we will upload the bulletin so that you can read it on your smartphone (bulletin paper still available in every service).
-bulletin1: Latest Bulletin
-bulletin2: 21st JAN 2018
-bulletin3: Download Now
-heading2: Welcome Back
-subheading2: My brothers and sisters in Christ!
-pgraph2: We are a vibrant, exciting and friendly church and passionate about people knowing Jesus and living their best life. Our church location are easy to find and we have big plans in coming years. So come along to one of our Saturday or Sunday services and receive a warm welcome. We'd love to meet you!
-pastor: See you there!<br>By Archdeacon Moses Chin
-button1: Plan a Visit
-button2: Our Journey
-pcc: Archdeacon Moses Chin and PCC Members
+blt-text: Download weekly bulletin in PDF format
+blt-pgraph: Every week we will upload the bulletin so that you can read it on your smartphone (bulletin paper still available in every service).
+blt-title: Latest Bulletin
+blt-date: 21st JAN 2018
+blt-download: Download Now
+
+heading1: Welcome Back
+subheading1: My brothers and sisters in Christ!
+pgraph1: We are a vibrant, exciting and friendly church and passionate about people knowing Jesus and living their best life. Our church location are easy to find and we have big plans in coming years. So come along to one of our Saturday or Sunday services and receive a warm welcome. We'd love to meet you!
+pastor-msg: See you there!<br>By Archdeacon Yong Thiam Choy
+visit-btn: Plan a Visit
+history-btn: Our Journey
+pcc: Archdeacon Yong Thiam Choy and PCC Members
+
+feedback-text: Your feedback matters!
+feedback-pgraph: This website is currently in <span>BETA</span> version and our aim is to inform visitors about our latest activities, news, events and announcements. We appreciate if you can rate this website for better improvement. Do click <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank">here</a></span> and let us know your feedback. Thank you!
 
 # Announcements
+heading2: Announcements
+subheading2: All latest news & major events
+date-updated: Date of Update
+date-published: 25 August 2018
 #Upcoming Events
 upcoming-events: Latest News 27th JAN 2018
 main-news1: Weekly Bulletin
@@ -104,8 +112,6 @@ past-share-link4: /all-events/past/2017/12/09/cogs-children-christmas-celebratio
 more: More
 all-events: /all-events/
 
-feedback1: Your feedback matters!
-feedback2: This website is currently in <span>BETA</span> version and our aim is to inform visitors about our latest activities, news, events and announcements. We appreciate if you can rate this website for better improvement. Do click <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank">here</a></span> and let us know your feedback. Thank you!
 newsletter1: COGS Newsletter
 newsletter2: Join our members and be notified about our latest news and activities. Never miss the details of our events that you care.
 newsletter3: ENTER YOUR EMAIL HERE

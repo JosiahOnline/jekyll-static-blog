@@ -10,29 +10,38 @@ title: BM Version
 nav1: LAMAN UTAMA
 nav2: SELAMAT DATANG
 nav3: PENGUMUMAN
-nav4: HUBUNGI
-p1: Beritahu kepada rakan dan keluarga anda mengenai laman web baru kami!
-share1: Kongsikan Web COGS
-p2: Social Media Links
+nav4: PENDIDIKAN
+nav5: MUAT TURUN
+nav6: HUBUNGI
+
 logo: COGS SANDAKAN
 menu: Menu
-heading1: Laman web rasmi Good Shepherd Church
+heading: Laman web rasmi Good Shepherd Church
 welcome: Mesej Salam
 announcements: Pengumuman
-download: Muat turun buletin mingguan dalam format PDF
-pgraph1: Setiap minggu kami akan memuat naik buletin supaya anda boleh membacanya di telefon pintar anda (buletin yang dicetak masih ada pada setiap kebaktian).
-bulletin1: Buletin Terkini
-bulletin2: 21hb JAN 2018
-bulletin3: Muat turun
-heading2: Selamat Kembali
-subheading2: Saudara dan saudariku dalam Kristus!
-pgraph2: Kami sebuah gereja yang ceria, penuh semangat dan amat mengalu-alukan mereka yang ingin mengenali Yesus dan yang ingin menjalani versi kehidupan mereka yang terbaik. Lokasi gereja kami mudah ditemui dan kami mempunyai rancangan-rancangan yang besar untuk tahun-tahun yang mendatang. Silalah kunjungi salah satu daripada sesi ibadah hari Sabtu atau Ahad dan sambutlah ucapan selamat datang yang penuh kehangatan. Kami ingin bertemu dengan anda!
-pastor: Jumpa di sana!<br>Daripada Archdeacon Moses Chin
-button1: Rancangan Lawatan
-button2: Perjalanan Kami
-pcc: Archdeacon Moses Chin dan Ahli PCC
-feedback1: Maklum balas anda!
-feedback2: Laman web ini kini dalam versi <span>BETA</span> dan sasaran kami adalah untuk memberitahu pelawat tentang aktiviti terkini, berita, kejadian/peristiwa dan pengumuman. Kami berbesar hati sekiranya anda boleh memberi maklum balas demi penambahbaikan laman web ini. Sila klik di <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank">sini</a></span> untuk maklum balas anda. Terima kasih!
+blt-text: Muat turun buletin mingguan dalam format PDF
+blt-pgraph: Setiap minggu kami akan memuat naik buletin supaya anda boleh membacanya di telefon pintar anda (buletin yang dicetak masih ada pada setiap kebaktian).
+blt-title: Buletin Terkini
+blt-date: 21hb JAN 2018
+blt-download: Muat turun
+
+heading1: Selamat Kembali
+subheading1: Saudara dan saudariku dalam Kristus!
+pgraph1: Kami sebuah gereja yang ceria, penuh semangat dan amat mengalu-alukan mereka yang ingin mengenali Yesus dan yang ingin menjalani versi kehidupan mereka yang terbaik. Lokasi gereja kami mudah ditemui dan kami mempunyai rancangan-rancangan yang besar untuk tahun-tahun yang mendatang. Silalah kunjungi salah satu daripada sesi ibadah hari Sabtu atau Ahad dan sambutlah ucapan selamat datang yang penuh kehangatan. Kami ingin bertemu dengan anda!
+pastor-msg: Jumpa di sana!<br>Daripada Archdeacon Yong Thiam Choy
+visit-btn: Rancangan Lawatan
+history-btn: Perjalanan Kami
+pcc: Archdeacon Yong Thiam Choy dan Ahli PCC
+
+feedback-text: Maklum balas anda!
+feedback-pgraph: Laman web ini kini dalam versi <span>BETA</span> dan sasaran kami adalah untuk memberitahu pelawat tentang aktiviti terkini, berita, kejadian/peristiwa dan pengumuman. Kami berbesar hati sekiranya anda boleh memberi maklum balas demi penambahbaikan laman web ini. Sila klik di <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank">sini</a></span> untuk maklum balas anda. Terima kasih!
+
+# Announcements
+heading2: Pengumuman
+subheading2: Semua berita terkini & acara utama
+date-updated: Tarikh Dikemaskini
+date-published: 25hb Ogos 2018
+
 newsletter1: Berita COGS
 newsletter2: Sertai kami dan dapatkan maklumat mengenai berita dan aktiviti terkini. Jangan terlepas sebarang perincian aktiviti kami yang melibatkan anda.
 newsletter3: MASUKKAN EMEL ANDA DI SINI
