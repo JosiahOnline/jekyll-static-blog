@@ -92,7 +92,7 @@
             <div class="news-container reduce-margin tabcontent active" id="upcomingEvents">
                 <div class="events-icon">
                     <a href="#"><img src="{{site.baseurl}}/assets/img/calendar1.png"></a>
-                    <h2>{{page.upcoming-title}}</h2>
+                    <h2>{{page.upcoming-h2}}</h2>
                 </div>
                 {{content}}
                 <!-- End of Top News -->
@@ -104,14 +104,14 @@
             <div class="news-container reduce-margin tabcontent" id="ongoingEvents">
                 <div class="events-icon">
                     <a><img src="{{site.baseurl}}/assets/img/smart-noti.png"></a>
-                    <h2>{{page.ongoing}}</h2>
+                    <h2>{{page.ongoing-h2}}</h2>
                 </div>
                 <article class="main-news" data-groups="upcoming" data-date="2017-12-17" data-title="Weekly Church Services">
-                    <a rel="canonical" href="{{site.baseurl}}{{page.ongoing-link1}}">
+                    <a rel="canonical" href="{{site.baseurl}}{{page.ongoing-link}}">
                         <img class="main-image round-radius" src="{{site.baseurl}}/assets/img/worship1a.jpg">
                         <div class="main-news-description">
-                            <h1 class="main-news-title">{{page.ongoing-news1}}</h1>
-                            <p class="news-pgraph3">{{page.ongoing-pgraph1}}</p>
+                            <h1 class="main-news-title">{{page.ongoing-news}}</h1>
+                            <p class="news-pgraph3">{{page.ongoing-pgraph}}</p>
                         </div>
                     </a>
                 </article>
@@ -148,14 +148,14 @@
             <div class="news-container reduce-margin tabcontent" id="pastEvents">
                 <div class="events-icon add-radius">
                     <a><img src="{{site.baseurl}}/assets/img/trumpet.png"></a>
-                    <h2>{{page.past}}</h2>
+                    <h2>{{page.past-h2}}</h2>
                 </div>
                 <article class="main-news" data-groups="past" data-date="2017-12-17" data-title="Weekly ch Churh Bulletin">
-                    <a rel="canonical" href="http://www.cogssandakan.com/News/Past/Inspired_Christmas_Night.html"><img class="main-image round-radius" src="http://res.cloudinary.com/trippleninja/image/upload/v1514560579/Inspired%20Christmas%20Night/Inpsired17.jpg">
+                    <a rel="canonical" href="{{site.baseurl}}{{page.past-link}}"><img class="main-image round-radius" src="{{page.past-url}}">
                             <div class="main-news-description">
-                                <h1 class="main-news-title">{{page.past-news1}}</h1>
-                                <p class="news-pgraph3">{{page.past-description1}}</p>
-                                <p class="news-pgraph1">{{page.past-pgraph1}}</p>
+                                <h1 class="main-news-title">{{page.past-news}}</h1>
+                                <p class="news-pgraph3">{{page.past-description}}</p>
+                                <p class="news-pgraph1">{{page.past-pgraph}}</p>
                             </div>
                         </a>
                 </article>

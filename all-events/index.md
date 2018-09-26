@@ -4,7 +4,7 @@ lang: en
 title: The Church of The Good Shepherd (COGS) - Latest updates of our Anglican church activities
 description: You can find all upcoming, ongoing and past events from our church(COGS) activities in sandakan
 image: http://www.cogssandakan.com/img/worship2a.jpg
-image-alt: Upcoming Events in The Church of The Good Shepherds(COGS)
+image-alt: All Events in The Church of The Good Shepherds(COGS)
 url: all-events/
 
 layout: all-events
@@ -23,22 +23,24 @@ past: Past
 
 #Upcoming Events
 #events: upcomingeng.html
-#upcoming-title: Upcoming Events
+upcoming-h2: Upcoming Events
 #top-news1: Weekly Bulletin
 #top-description1: Now you can download latest bulletin <span>here</span>!
 
 #Ongoing Events
-ongoing: Ongoing Events
-ongoing-link1: all-events/ongoing/_posts/2018-01-05-cogs-church-services.md
-ongoing-news1: Church Services
-ongoing-pgraph1: Click <span>here</span> for more information!
+ongoing-h2: Ongoing Events
+ongoing-link: all-events/ongoing/_posts/2018-01-05-cogs-church-services.md
+ongoing-news: Church Services
+ongoing-pgraph: Click <span>here</span> for more information!
 
 #Past Events
-past: Past Events
-past-news1: Inspired Christmas Night
-past-description1: Special Guest - 羅小白 S.White
-past-pgraph1: Click <span>here</span> for all pictures & videos
+past-h2: Past Events
+past-link: all-events/past/_posts/2018-01-05-cogs-church-services.md
+past-url: https://res.cloudinary.com/trippleninja/image/upload/v1514560579/Inspired%20Christmas%20Night/Inpsired17.jpg
+past-news: Inspired Christmas Night
+past-description: Special Guest - 羅小白 S.White
+past-pgraph: Click <span>here</span> for all pictures & videos
 
-copyright: COGS SANDAKAN @ Copyright 2017.
+copyright: COGS SANDAKAN @ Copyright 2018.
 ---
 {% include upcoming-english.html %}
