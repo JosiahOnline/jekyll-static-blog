@@ -7,6 +7,7 @@ meta-description: Anda boleh mencari semua aktiviti termasuk berita, acara, peng
 urllink: http://www.cogssandakan.com/bahasa-malaysia/
 meta-image-alt: Menyembah di Church of The Good Shepherds(COGS)
 title: BM Version
+version: bahasa malaysia
 nav1: LAMAN UTAMA
 nav2: SELAMAT DATANG
 nav3: PENGUMUMAN
@@ -37,11 +38,30 @@ pcc: Archdeacon Yong Thiam Choy dan Ahli PCC
 feedback-text: Maklum balas anda!
 feedback-pgraph: Laman web ini kini dalam versi <span>BETA</span> dan sasaran kami adalah untuk memberitahu pelawat tentang aktiviti terkini, berita, kejadian/peristiwa dan pengumuman. Kami berbesar hati sekiranya anda boleh memberi maklum balas demi penambahbaikan laman web ini. Sila klik di <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank">sini</a></span> untuk maklum balas anda. Terima kasih!
 
-# Announcements
-heading2: Pengumuman
-subheading2: Semua berita terkini & acara utama
-date-updated: Tarikh Dikemaskini
-date-published: 25hb Ogos 2018
+education: Pendidikan
+diocese: Anglikan Sabah Diosis
+edutitle: Pendidikan Kami
+tadika: Tadika Good Shepherd
+tadikadescription: Aktiviti Pra Sekolah yang sesuai
+edupgraph: Klik di <span>sini</span> untuk maklumat lanjut!
+
+vision: Sekolah Rendah Visi
+visiondescription: Watak Di Atas Akademik
+
+download: Muat Turun
+cogsform: Borang Permohonan & Lain-lain
+downloadfree: Muat Turun Percuma
+fast-pray: 40 Hari Puasa & Doa
+fast-title: Tuaian 07 Ogos -15 Sept
+fastpgraph: Muat turun salinan PERCUMA buku<br><span>dalam PDF di sini
+baptism: Borong Baptisan
+baptismpdf: assets/download/Baptism.pdf
+downloadprint: Muat turun & Cetak
+
+confirmation: Borang Penetapan
+confirmationpdf: assets/download/Confirmation.pdf
+marriage: Borang Permohonan Perkahwinan
+marriagepdf: assets/download/Marriage.pdf
 
 newsletter1: Berita COGS
 newsletter2: Sertai kami dan dapatkan maklumat mengenai berita dan aktiviti terkini. Jangan terlepas sebarang perincian aktiviti kami yang melibatkan anda.
@@ -67,5 +87,5 @@ map-direction: Klik Untuk Arah
 bible-verse: Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal.
 bible1: Yohanes 3
 bible2: 16
-copyright: COGS SANDAKAN © 2017.
+copyright: COGS SANDAKAN © 2018.
 ---
