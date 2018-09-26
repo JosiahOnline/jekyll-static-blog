@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/Organization" prefix="og: http://ogp.me/ns#">
+<html lang={{page.lang}} itemscope itemtype="http://schema.org/Organization" prefix="og: http://ogp.me/ns#">
 
 <head>
     <meta charset="utf-8">
-    <title>The Church of The Good Shepherd (COGS) - Latest updates of our Anglican church activities</title>
-    <meta name="description" content="You can find all upcoming, ongoing and past events from our church(COGS) activities in sandakan">
+    <title>"{{page.title}}"</title>
+    <meta name="description" content="{{page.description}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="The Church of The Good Shepherd (COGS) - Latest updates of our Anglican church activities">
-    <meta itemprop="description" content="You can find all upcoming, ongoing and past events from our church(COGS) activities in sandakan">
-    <meta itemprop="image" content="http://www.cogssandakan.com/img/worship2a.jpg">
+    <meta itemprop="name" content="{{page.title}}">
+    <meta itemprop="description" content="{{page.description}}">
+    <meta itemprop="image" content="{{page.image}}">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@cogssandakan">
-    <meta name="twitter:title" content="The Church of The Good Shepherd (COGS) - Latest updates of our Anglican church activities">
-    <meta name="twitter:description" content="You can find all upcoming, ongoing and past events from our church(COGS) activities in sandakan">
+    <meta name="twitter:title" content="{{page.title}}">
+    <meta name="twitter:description" content="{{page.description}}">
     <meta name="twitter:creator" content="@cogssandakan">
     <!-- Twitter summary card with large image must be at least 280x150px -->
-    <meta name="twitter:image" content="http://www.cogssandakan.com/img/worship2a.jpg">
+    <meta name="twitter:image" content="{{page.image}}">
 
     <!-- Open Graph data -->
     <meta property="fb:app_id" content="149572635665595" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.cogssandakan.com/News/COGS_All_Events.html" />
-    <meta property="og:title" content="The Church of The Good Shepherd (COGS) - Latest updates of our Anglican church activities" />
-    <meta property="og:description" content="You can find all upcoming, ongoing and past events from our church(COGS) activities in sandakan" />
-    <meta property="og:image" content="http://www.cogssandakan.com/img/worship2a.jpg" />
-    <meta property="og:image:alt" content="Upcoming Events in The Church of The Good Shepherds(COGS)" />
+    <meta property="og:url" content="{{site.baseurl}}{{page.url}}" />
+    <meta property="og:title" content="{{page.title}}"/>
+    <meta property="og:description" content="{{page.description}}" />
+    <meta property="og:image" content="{{page.image}}" />
+    <meta property="og:image:alt" content="{{page.image-alt}}" />
 
     <link href="{{site.baseurl}}/assets/css/font.css" rel="stylesheet" type="text/css">
     <link href="{{site.baseurl}}/assets/css/basic.css" rel="stylesheet" type="text/css">
     <link href="{{site.baseurl}}/assets/css/events_template.css" rel="stylesheet" type="text/css">
       <link href="{{site.baseurl}}/assets/css/articles.css" rel="stylesheet" type="text/css">
 
-    <link href="http://www.cogssandakan.com/img/favicon/favicon2-96x96.png" rel="shortcut icon" type="image/x-icon">
-    <link href="http://www.cogssandakan.com/img/favicon/apple-icon2-180x180.png" rel="apple-touch-icon">
+    <link href="{{site.baseurl}}/assets/img/favicon/favicon2-96x96.png" rel="shortcut icon" type="image/x-icon">
+    <link href="{{site.baseurl}}/assets/img/favicon/apple-icon2-180x180.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     {% include google-analytics.html %}
@@ -55,7 +55,7 @@
         <div class="top-nav">
             <div class="top-container">
                 <div class="text-block">{{page.logo}}</div>
-                <a href="http://www.cogssandakan.com/index.html" class="link">{{page.home}}</a>
+                <a href="{{site.baseurl}}/{{page.homelink}}" class="link">{{page.home}}</a>
             </div>
         </div>
         <div class="main-message">
@@ -78,20 +78,20 @@
                         <button class="button tablinks" data-events="pastEvents">{{page.past}}<span class="button-pulse"></span></button>
                     </div>
                 </div>
-                <div class="filter-group">
+                <!-- <div class="filter-group">
                     <p>Sort</p>
                     <div class="sort-buttons">
                         <button class="button tablinks active">Default<span class="button-pulse"></span></button>
                         <button class="button tablinks">Title<span class="button-pulse"></span></button>
                         <button class="button tablinks">Date<span class="button-pulse"></span></button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="setting-width">
             <div class="news-container reduce-margin tabcontent active" id="upcomingEvents">
                 <div class="events-icon">
-                    <a href="#"><img src="http://www.cogssandakan.com/img/calendar1.png"></a>
+                    <a href="#"><img src="{{site.baseurl}}/assets/img/calendar1.png"></a>
                     <h2>{{page.upcoming-title}}</h2>
                 </div>
                 {{content}}
@@ -104,14 +104,14 @@
             <div class="news-container reduce-margin tabcontent" id="ongoingEvents">
                 <div class="events-icon">
                     <a><img src="{{site.baseurl}}/assets/img/smart-noti.png"></a>
-                    <h2>{{page.ongoing-events}}</h2>
+                    <h2>{{page.ongoing}}</h2>
                 </div>
                 <article class="main-news" data-groups="upcoming" data-date="2017-12-17" data-title="Weekly Church Services">
-                    <a rel="canonical" href="http://www.cogssandakan.com/News/Ongoing/COGS_Church_Services.html">
-                        <img class="main-image round-radius" src="http://www.cogssandakan.com/News/img/worship1a.jpg">
+                    <a rel="canonical" href="{{site.baseurl}}{{page.ongoing-link1}}">
+                        <img class="main-image round-radius" src="{{site.baseurl}}/assets/img/worship1a.jpg">
                         <div class="main-news-description">
-                            <h1 class="main-news-title">{{page.top-news2}}</h1>
-                            <p class="news-pgraph3">{{page.top-description2}}</p>
+                            <h1 class="main-news-title">{{page.ongoing-news1}}</h1>
+                            <p class="news-pgraph3">{{page.ongoing-pgraph1}}</p>
                         </div>
                     </a>
                 </article>
@@ -148,14 +148,14 @@
             <div class="news-container reduce-margin tabcontent" id="pastEvents">
                 <div class="events-icon add-radius">
                     <a><img src="{{site.baseurl}}/assets/img/trumpet.png"></a>
-                    <h2>{{page.past-events}}</h2>
+                    <h2>{{page.past}}</h2>
                 </div>
                 <article class="main-news" data-groups="past" data-date="2017-12-17" data-title="Weekly ch Churh Bulletin">
                     <a rel="canonical" href="http://www.cogssandakan.com/News/Past/Inspired_Christmas_Night.html"><img class="main-image round-radius" src="http://res.cloudinary.com/trippleninja/image/upload/v1514560579/Inspired%20Christmas%20Night/Inpsired17.jpg">
                             <div class="main-news-description">
-                                <h1 class="main-news-title">{{page.top-news3}}</h1>
-                                <p class="news-pgraph3">{{page.top-description3}}</p>
-                                <p class="news-pgraph1">{{page.top-pgraph3}}</p>
+                                <h1 class="main-news-title">{{page.past-news1}}</h1>
+                                <p class="news-pgraph3">{{page.past-description1}}</p>
+                                <p class="news-pgraph1">{{page.past-pgraph1}}</p>
                             </div>
                         </a>
                 </article>
@@ -189,7 +189,7 @@
         </div>
         <!-- End of Past events -->
 
-        <div class="share-info">
+        <!-- <div class="share-info">
             <div class="share-container">
                 <div class="share-button" target="_blank"><span>Share this Info</span></div>
                 <div class="web__share">
@@ -199,26 +199,8 @@
                     <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.cogssandakan.com/News/COGS_All_Events.html" target="_blank"><span class="fa fa-whatsapp"></span></a>
                 </div>
             </div>
-        </div>
-        <div id="footerSec" class="footer section">
-            <div class="footer-container w-container">
-                <div class="social-media-text">COGS SANDAKAN @ Copyright 2017. </div>
-                <div class="social-icons">
-                    <a class="social-icon-link " target="_blank" href="https://www.facebook.com/cogssandakan">
-                        <img src="http://www.cogssandakan.com/img/fb.png" width="30">
-                    </a>
-                    <a class="social-icon-link " target="_blank" href="https://twitter.com/cogssandakan">
-                        <img src="http://www.cogssandakan.com/img/twitter.png" width="30">
-                    </a>
-                    <a class="social-icon-link " target="_blank" href="https://instagram.com/cogssandakan">
-                        <img src="http://www.cogssandakan.com/img/instag.png" width="30">
-                    </a>
-                    <a class="social-icon-link " target="_blank" href="https://plus.google.com/u/0/107266476292640136953">
-                        <img src="http://www.cogssandakan.com/img/google-plus.png" width="30">
-                    </a>
-                </div>
-            </div>
-        </div>
+        </div> -->
+        {%include footer.html%}
     </div>
     <!-- End of Main Section -->
     <div id="rotateDevice" class="rotate-screen">
