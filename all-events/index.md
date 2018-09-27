@@ -1,8 +1,8 @@
 ---
 #metatag
 lang: en
-title: The Church of The Good Shepherd (COGS) - Latest updates of our Anglican church activities
-description: You can find all upcoming, ongoing and past events from our church(COGS) activities in sandakan
+meta-title: The Church of The Good Shepherd (COGS) - Latest updates of our Anglican church activities
+meta-description: You can find all upcoming, ongoing and past events from our church(COGS) activities in sandakan
 image: http://www.cogssandakan.com/img/worship2a.jpg
 image-alt: All Events in The Church of The Good Shepherds(COGS)
 url: all-events/

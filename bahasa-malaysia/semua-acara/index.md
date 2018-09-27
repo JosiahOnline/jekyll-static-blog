@@ -1,8 +1,8 @@
 ---
 #metatag
 lang: ms
-title: The Church of The Good Shepherd (COGS) - aktiviti gereja Anglikan yang terkini di Sandakan
-description: Anda boleh mencari semua acara yang akan datang, yang sedang berlangsung dan lalu dari aktiviti gereja (COGS) kami di sandakan
+meta-title: The Church of The Good Shepherd (COGS) - aktiviti gereja Anglikan yang terkini di Sandakan
+meta-description: Anda boleh mencari semua acara yang akan datang, yang sedang berlangsung dan lalu dari aktiviti gereja (COGS) kami di sandakan
 image: http://www.cogssandakan.com/img/worship2a.jpg
 image-alt: Semua acara dan aktiviti dalam gereja Anglikan (COGS)
 url: bahasa-malaysia/semua-acara/

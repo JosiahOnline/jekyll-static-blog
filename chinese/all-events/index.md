@@ -1,8 +1,8 @@
 ---
 #metatag
 lang: zh-Hans
-title: 善牧堂教会(COGS) - 我们山打根圣公会教会最新的活动
-description: 您可以找到有关善牧堂教会(COGS)所有即将开始的，正在进行的以及过去的活动。
+meta-title: 善牧堂教会(COGS) - 我们山打根圣公会教会最新的活动
+meta-description: 您可以找到有关善牧堂教会(COGS)所有即将开始的，正在进行的以及过去的活动。
 image: http://www.cogssandakan.com/img/worship2a.jpg
 image-alt: 山打根圣公会善牧堂的所有活动(COGS)
 url: chinese/all-events/

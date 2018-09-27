@@ -1,7 +1,7 @@
 ---
 # Editing for Bahasa Malaysia Version
 layout: bm
-language: "ms"
+lang: "ms"
 meta-title: Laman Web Rasmi The Church of The Good Shepherd (COGS) - Gereja Anglikan
 meta-description: Anda boleh mencari semua aktiviti termasuk berita, acara, pengumuman dan maklumat yang berkaitan dengan The Church of The Good Shepherd (COGS) di Sandakan.
 urllink: http://www.cogssandakan.com/bahasa-malaysia/
@@ -25,6 +25,7 @@ blt-text: Muat turun buletin mingguan dalam format PDF
 blt-pgraph: Setiap minggu kami akan memuat naik buletin supaya anda boleh membacanya di telefon pintar anda (buletin yang dicetak masih ada pada setiap kebaktian).
 blt-title: Buletin Terkini
 blt-date: 21hb JAN 2018
+blt-link: 28-01-2018-bm-min.pdf
 blt-download: Muat turun
 
 heading1: Selamat Kembali

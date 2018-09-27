@@ -1,7 +1,7 @@
 ---
 # Editing for English Version
 layout: eng
-language: "en"
+lang: "en"
 meta-title: Official Website of The Church of The Good Shepherd (COGS) - Anglican Church
 meta-description: You can find all activities including news, events, announcements and info which are related to The Church of The Good Shepherd (COGS) in Sandakan
 urllink: http://www.cogssandakan.com
@@ -25,6 +25,7 @@ blt-text: Download weekly bulletin in PDF format
 blt-pgraph: Every week we will upload the bulletin so that you can read it on your smartphone (bulletin paper still available in every service).
 blt-title: Latest Bulletin
 blt-date: 21st JAN 2018
+blt-link: 18-01-28-eng-min.pdf
 blt-download: Download Now
 
 heading1: Welcome Back

@@ -5,25 +5,25 @@ url3: /bahasa-malaysia/
 ---
 <!DOCTYPE html>
 <!-- Update your html tag to include the itemscope and itemtype attributes, and og for Open Graph. -->
-<html lang={{page.language}} itemscope itemtype="http://schema.org/Organization" prefix="og: http://ogp.me/ns#">
+<html lang={{page.lang}} itemscope itemtype="http://schema.org/Organization" prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8">
-  <title>{{page.meta-title}}</title>
-  <meta name="description" content={{page.meta-description}}>
+  <title>"{{page.meta-title}}"</title>
+  <meta name="description" content="{{page.meta-description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content={{page.meta-title}}>
-  <meta itemprop="description" content={{page.meta-description}}>
+  <meta itemprop="name" content="{{page.meta-title}}">
+  <meta itemprop="description" content="{{page.meta-description}}">
   <meta itemprop="image" content="{{site.baseurl}}/assets/img/worship2a.jpg">
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@cogssandakan">
-  <meta name="twitter:title" content={{page.meta-title}}>
-  <meta name="twitter:description" content={{page.meta-description}}>
+  <meta name="twitter:title" content="{{page.meta-title}}">
+  <meta name="twitter:description" content="{{page.meta-description}}">
   <meta name="twitter:creator" content="@cogssandakan">
   <!-- Twitter summary card with large image must be at least 280x150px -->
   <meta name="twitter:image" content="{{site.baseurl}}/assets/img/worship2a.jpg">
@@ -32,11 +32,11 @@ url3: /bahasa-malaysia/
   <meta property="fb:app_id" content="149572635665595">
   <!-- must have app id-->
   <meta property="og:type" content="website">
-  <meta property="og:url" content={{page.urllink}}>
-  <meta property="og:title" content={{page.meta-title}}>
-  <meta property="og:description" content={{page.meta-description}}>
+  <meta property="og:url" content="{{page.urllink}}">
+  <meta property="og:title" content="{{page.meta-title}}">
+  <meta property="og:description" content="{{page.meta-description}}">
   <meta property="og:image" content="{{site.baseurl}}/assets/img/worship2a.jpg">
-  <meta property="og:image:alt" content={{page.meta-image-alt}}>
+  <meta property="og:image:alt" content="{{page.meta-image-alt}}">
   <style>
   .preloader-container {
       position: fixed;
@@ -193,7 +193,7 @@ url3: /bahasa-malaysia/
                       <div class="bulletin-description">
                           <div class="title">{{page.blt-title}}</div>
                           <div class="date-published">{{page.blt-date}}</div>
-                          <a class="bulletin-download w-button" href="{{site.baseurl}}/assets/pdf/18-01-28-eng-min.pdf" target="_blank">{{page.blt-download}}</a>
+                          <a class="bulletin-download w-button" href="{{site.baseurl}}/assets/pdf/{{page.blt-link}}" target="_blank">{{page.blt-download}}</a>
                       </div>
                   </div>
               </div>
@@ -213,7 +213,7 @@ url3: /bahasa-malaysia/
                       </div>
                       <div class="welcome-button-container">
                           <a class="visit w-button" href="#">{{page.visit-btn}}</a>
-                          <a class="history w-button" href="History/journey.html">{{page.history-btn}}</a>
+                          <a class="history w-button" href="history/journey.html">{{page.history-btn}}</a>
                       </div>
                   </div>
                   <div class="welcome-column-2 w-col w-col-6">

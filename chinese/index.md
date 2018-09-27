@@ -1,7 +1,7 @@
 ---
 # Editing for Chinese Version
 layout: chi
-language: "zh-Hans"
+lang: "zh-Hans"
 meta-title: 善牧堂教会(COGS)官方网站 - 圣公会教堂
 meta-description: 您可以找到所有与山打根善牧堂教会有关的活动，包括新闻，通告和信息
 urllink: http://www.cogssandakan.com/chinese/
@@ -25,6 +25,7 @@ blt-text: 每周下载PDF格式的周刊
 blt-pgraph: 我们每周都会上传周刊，以便您可以在智能手机上阅读（每周崇拜仍有周刊纸张）。
 blt-title: 最新周刊
 blt-date: 1月20日2018
+blt-link: 01-27-28-chi-min.pdf
 blt-download: 现在下载
 
 heading1: 欢迎回来
