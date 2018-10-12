@@ -64,6 +64,29 @@ confirmationpdf: assets/download/Confirmation.pdf
 marriage: 婚礼申请表格
 marriagepdf: assets/download/Marriage.pdf
 
+visit-title: 计划拜访
+visit-pgraph: 请在下面填写您的详细资料
+visit-close: 关闭
+
+visit-name: 姓名
+visit-email: 电子邮件
+visit-contact: 联系电话
+visit-additional: 您希望我们了解的其他信息
+
+visit-v1: 成人
+visit-v2: 成人
+visit-v3: 儿童
+visit-v4: 儿童
+visit-v5: 婴儿
+visit-v6: 婴儿
+visit-date: 日期
+visit-service: 主日崇拜
+visit-service1: 星期六 中文
+visit-service2: 星期日 中文
+visit-service3: 星期日 英文
+visit-service4: 星期日 国文
+visit-submit: 提交
+
 newsletter1: 善牧堂 通讯
 newsletter2: 加入我们的会员，并获得我们最新的新闻和活动。不要错过您所关心的活动细节。
 newsletter3: 请输入您的电子邮件

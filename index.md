@@ -64,6 +64,29 @@ confirmationpdf: assets/download/Confirmation.pdf
 marriage: Marriage Application Form
 marriagepdf: assets/download/Marriage.pdf
 
+visit-title: Plan a Visit
+visit-pgraph: Please fill in your details below
+visit-close: Close
+
+visit-name: Name
+visit-email: Email
+visit-contact: Contact Number
+visit-additional: Additional info that you would like us to know (optional)
+
+visit-v1: Adult
+visit-v2: Adults
+visit-v3: Child
+visit-v4: Children
+visit-v5: Infant
+visit-v6: Infants
+visit-date: Date
+visit-service: Service
+visit-service1: Saturday Chinese/Hakka
+visit-service2: Sunday Chinese/Hakka
+visit-service3: Sunday English
+visit-service4: Sunday Bahasa Malaysia
+
+visit-submit: Submit
 
 newsletter1: COGS Newsletter
 newsletter2: Join our members and be notified about our latest news and activities. Never miss the details of our events that you care.

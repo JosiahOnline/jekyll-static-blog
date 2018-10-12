@@ -1,8 +1,8 @@
 <section class="plan-visit">
     <div class="container">
         <div class="title">
-            <h1>Plan a Visit</h1>
-            <h3>Please fill in your details below</h3><span class="close-button" title="Close">Close</span>
+            <h1>{{page.visit-title}}</h1>
+            <h3>{{page.visit-pgraph}}</h3><span class="close-button" title="Close">{{page.visit-close}}</span>
         </div>
         <form data-name="Email Form" id="email-form" name="email-form" action="https://formspree.io/josiahsoh@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="New Visitor(s) Planning A Visit @COGS" />
@@ -10,64 +10,64 @@
             <div class="form-container">
                 <div class="form-row reduce-width">
                     <!--DON't add autofocus="autofocus" show the input element should automatically get focus once the page reload-->
-                    <input class="form-field w-input" data-name="Name 1" id="name-1" maxlength="256" name="Name" placeholder="Name:" required="required" type="text">
+                    <input class="form-field w-input" data-name="Name 1" id="name-1" maxlength="256" name="Name" placeholder="{{page.visit-name}}:" required="required" type="text">
                 </div>
                 <div class="form-row reduce-width">
-                    <input class="form-field w-input" data-name="Email 1" id="email-1" maxlength="256" name="Email" placeholder="Email:" required="required" type="email">
+                    <input class="form-field w-input" data-name="Email 1" id="email-1" maxlength="256" name="Email" placeholder="{{page.visit-email}}:" required="required" type="email">
                 </div>
                 <div class="form-row reduce-width">
-                    <input class="form-field w-input" data-name="Contact 1" id="contact-1" maxlength="256" name="Contact" placeholder="Contact Number:" required="required" type="text">
+                    <input class="form-field w-input" data-name="Contact 1" id="contact-1" maxlength="256" name="Contact" placeholder="{{page.visit-contact}}:" required="required" type="text">
                 </div>
             </div>
-            <textarea class="form-field text-area w-input" data-name="Additonal Info" id="additional-info" maxlength="5000" name="Additional Info" placeholder="Additional info that you would like us to know (optional)"></textarea>
+            <textarea class="form-field text-area w-input" data-name="Additonal Info" id="additional-info" maxlength="5000" name="Additional Info" placeholder="{{page.visit-additional}}"></textarea>
             <div class="selection">
                 <select class="adult" name="Adults">
-                    <option value="1 Adult">1 Adult</option>
-                    <option value="2 Adults">2 Adults</option>
-                    <option value="3 Adults">3 Adults</option>
-                    <option value="4 Adults">4 Adults</option>
-                    <option value="5 Adults">5 Adults</option>
-                    <option value="6 Adults">6 Adults</option>
-                    <option value="7 Adults">7 Adults</option>
-                    <option value="8 Adults">8 Adults</option>
-                    <option value="9 Adults">9 Adults</option>
-                    <option value="10 Adults">10 Adults</option>
+                    <option value="1 Adult">1 {{page.visit-v1}}</option>
+                    <option value="2 Adults">2 {{page.visit-v2}}</option>
+                    <option value="3 Adults">3 {{page.visit-v2}}</option>
+                    <option value="4 Adults">4 {{page.visit-v2}}</option>
+                    <option value="5 Adults">5 {{page.visit-v2}}</option>
+                    <option value="6 Adults">6 {{page.visit-v2}}</option>
+                    <option value="7 Adults">7 {{page.visit-v2}}</option>
+                    <option value="8 Adults">8 {{page.visit-v2}}</option>
+                    <option value="9 Adults">9 {{page.visit-v2}}</option>
+                    <option value="10 Adults">10 {{page.visit-v2}}</option>
                 </select>
                 <br>
                 <select class="child" name="Child">
-                    <option value="0 Child">0 Child</option>
-                    <option value="1 Child">1 Child</option>
-                    <option value="2 Children">2 Children</option>
-                    <option value="3 Children">3 Children</option>
-                    <option value="4 Children">4 Children</option>
-                    <option value="5 Children">5 Children</option>
-                    <option value="6 Children">6 Children</option>
-                    <option value="7 Children">7 Children</option>
-                    <option value="8 Children">8 Children</option>
+                    <option value="0 Child">0 {{page.visit-v3}}</option>
+                    <option value="1 Child">1 {{page.visit-v3}}</option>
+                    <option value="2 Children">2 {{page.visit-v4}}</option>
+                    <option value="3 Children">3 {{page.visit-v4}}</option>
+                    <option value="4 Children">4 {{page.visit-v4}}</option>
+                    <option value="5 Children">5 {{page.visit-v4}}</option>
+                    <option value="6 Children">6 {{page.visit-v4}}</option>
+                    <option value="7 Children">7 {{page.visit-v4}}</option>
+                    <option value="8 Children">8 {{page.visit-v4}}</option>
                 </select>
                 <br>
                 <select class="infant" name="Infant">
-                    <option value="0 Infant">0 Infant</option>
-                    <option value="1 Infants">1 Infants</option>
-                    <option value="2 Infants">2 Infants</option>
-                    <option value="3 Infants">3 Infants</option>
+                    <option value="0 Infant">0 {{page.visit-v5}}</option>
+                    <option value="1 Infants">1 {{page.visit-v6}}</option>
+                    <option value="2 Infants">2 {{page.visit-v6}}</option>
+                    <option value="3 Infants">3 {{page.visit-v6}}</option>
                 </select>
                 <br>
-                <p class="select-date">Date: </p>
-                <input type="date" name="year/month/day" value="2017-08-01" id="attendance-date" class="service-date" />
+                <p class="select-date">{{page.visit-date}}: </p>
+                <input type="date" name="year/month/day" value="2018-08-01" id="attendance-date" class="service-date" />
                 <br>
                 <br>
-                <p class="attend-service">Service: </p>
+                <p class="attend-service">{{page.visit-service}}: </p>
                 <select class="service-time" name="Service Time">
-                    <option value="Saturday ENGLISH 7:30pm">Saturday Chinese/Hakka - 7:30pm</option>
-                    <option value="Sunday CHINESE 7:00am">Sunday Chinese/Hakka - 7:00am</option>
-                    <option value="Sunday ENGLISH 9:30am">Sunday English - 9:30am</option>
-                    <option value="Sunday BM 9:30am">Sunday Bahasa Malaysia - 9:30am</option>
-                    <option value="Sunday CHINESE 2:30pm">Sunday Chinese/Hakka - 2:30pm</option>
+                    <option value="Saturday ENGLISH 7:30pm">{{page.visit-service1}} - 7:30pm</option>
+                    <option value="Sunday CHINESE 7:00am">{{page.visit-service2}} - 7:00am</option>
+                    <option value="Sunday ENGLISH 9:30am">{{page.visit-service3}} - 9:30am</option>
+                    <option value="Sunday BM 9:30am">{{page.visit-service4}} - 9:30am</option>
+                    <option value="Sunday CHINESE 2:30pm">{{page.visit-service2}} - 2:30pm</option>
                 </select>
                 <br>
             </div>
-            <input class="button full-width w-button plan-submit" data-wait="Please wait..." type="submit" value="Submit">
+            <input class="button full-width w-button plan-submit" data-wait="Please wait..." type="submit" value="{{page.visit-submit}}">
 
         </form>
     </div>

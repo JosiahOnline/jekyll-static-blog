@@ -64,6 +64,30 @@ confirmationpdf: assets/download/Confirmation.pdf
 marriage: Borang Permohonan Perkahwinan
 marriagepdf: assets/download/Marriage.pdf
 
+visit-title: Rancangan Lawatan
+visit-pgraph: Sila masukkan butiran peribadi anda di bawah
+visit-close: Tutup
+
+visit-name: Nama
+visit-email: Emel
+visit-contact: Nombor Telefon
+visit-additional: Maklumat tambahan yang perlu kami tahu
+
+visit-v1: Dewasa
+visit-v2: Dewasa
+visit-v3: Kanak-Kanak
+visit-v4: Kanak-Kanak
+visit-v5: Bayi
+visit-v6: Bayi
+visit-date: Tarikh
+visit-service: Ibadah
+visit-service1: Sabtu CINA
+visit-service2: Ahad CINA
+visit-service3: Ahad BI
+visit-service4: Ahad BM
+
+visit-submit: Hantar
+
 newsletter1: Berita COGS
 newsletter2: Sertai kami dan dapatkan maklumat mengenai berita dan aktiviti terkini. Jangan terlepas sebarang perincian aktiviti kami yang melibatkan anda.
 newsletter3: MASUKKAN EMEL ANDA DI SINI
