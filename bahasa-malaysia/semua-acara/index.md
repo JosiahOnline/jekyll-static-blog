@@ -40,4 +40,3 @@ past-pgraph: Klik di <span>sini</span> untuk maklumat lanjut!
 
 copyright: COGS SANDAKAN @ Hakcipta 2018.
 ---
-{% include upcoming-bm.html %}

@@ -43,4 +43,3 @@ past-pgraph: Click <span>here</span> for all pictures & videos
 
 copyright: COGS SANDAKAN @ Copyright 2018.
 ---
-{% include upcoming-english.html %}

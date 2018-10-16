@@ -332,6 +332,31 @@ layout: default
                 </a>
             </article>
             <div class="top-news">
+              <!-- Testing feature weird output as limit:16 only came out 8 posts. things changed if chinese version added new post
+              {% for post in site.categories.past limit:16 %}
+              {% if post.version contains "english"%}
+              <article class="news">
+                <a rel="canonical" href="{{ post.url }}">
+                                <img class="news-image" src="{{post.image-path}}">
+                                <div class="newsdescription">
+                                    <h1 class="top-news-title">{{post.title}}</h1>
+                                    <p class="news-pgraph2">{{post.description}}</p>
+                                </div>
+                            </a>
+                <div class="card__share">
+                  <div class="card__social">
+                    <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A/{{post.share-link}}" target="_blank"><span class="fa fa-facebook"></span></a>
+                    <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A/{{post.share-link}}" target="_blank"><span class="fa fa-twitter"></span></a>
+                    <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A/{{post.share-link}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                    <a class="share-icon whatsapp" href="whatsapp://send?text=http:/{{post.share-link}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                  </div>
+                  <a class="share-toggle share-icon" href="#"></a>
+                </div>
+              </article>
+               {% endif %}
+              {% endfor %}
+            -->
+
                 <article class="news">
                     <a rel="canonical" href="http://www.cogssandakan.com/News/Past/Singing_Competition18.html"><img class="news-image" src="https://res.cloudinary.com/trippleninja/image/upload/v1535874394/Sisters%27%20Fellowship/Singing%20Competition%202018/ssc47.jpg">
                         <div class="newsdescription">

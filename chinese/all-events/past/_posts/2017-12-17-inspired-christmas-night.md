@@ -1,7 +1,7 @@
 ---
 layout: post
 year: 2018
-version: english
+version: chinese
 event: past
 title: 鼓动人心
 description: 特别嘉宾 - 羅小白 S.White
