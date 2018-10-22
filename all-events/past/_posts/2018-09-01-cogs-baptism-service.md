@@ -3,12 +3,12 @@ layout: post
 year: 2018
 version: english
 event: past
-title: Children Bible Camp
-date: 20 - 22/03/2017
+title: COGS Baptism Service
+date: 01 Sept 2018
 categories: all-events past
-image-path: /assets/img/past/ChildrenBibleCamp.jpg
-share-link: /:categories/:date/:title
-
+image-path: ../assets/img/past/
+share-link: /all-events/past/cogs-baptism-service
+permalink: /:categories/:title
 
 # For Meta Tag
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - COGS Christmas Service 2017
