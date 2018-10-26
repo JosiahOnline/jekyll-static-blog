@@ -29,13 +29,14 @@ upcoming-h2: Upcoming Events
 
 #Ongoing Events
 ongoing-h2: Ongoing Events
-ongoing-link: all-events/ongoing/_posts/2018-01-05-cogs-church-services.md
+ongoing-link: /all-events/ongoing/cogs-church-services
+ongoing-url: /assets/img/worship1a.jpg
 ongoing-news: Church Services
 ongoing-pgraph: Click <span>here</span> for more information!
 
 #Past Events
 past-h2: Past Events
-past-link: all-events/past/_posts/2018-01-05-cogs-church-services.md
+past-link: /all-events/past/2017/12/17/inspired-christmas-night
 past-url: https://res.cloudinary.com/trippleninja/image/upload/v1514560579/Inspired%20Christmas%20Night/Inpsired17.jpg
 past-news: Inspired Christmas Night
 past-description: Special Guest - 羅小白 S.White
