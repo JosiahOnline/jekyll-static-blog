@@ -31,14 +31,14 @@
     <meta property="og:image" content="{{page.image-path}}"/>
     <meta property="og:image:alt" content="{{page.og-image}}"/>
 
-    <link href="/assets/css/font.css"{{ relative_url }} rel="stylesheet" type="text/css">
+
+    <!-- Above syntax solved the problem of inserting a variable inside a liquid tags-->
+    <!-- <link href="/assets/css/font.css"{{ relative_url }} rel="stylesheet" type="text/css">
     <link href="/assets/css/{{page.theme}}"{{ relative_url }} rel="stylesheet" type="text/css">
     <link href="/assets/css/{{page.css}}"{{ | relative_url }} rel="stylesheet" type="text/css">
-    <!-- Above syntax solved the problem of inserting a variable inside a liquid tags-->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href={{"/assets/img/favicon/favicon2-96x96.png" | relative_url }} rel="shortcut icon" type="image/x-icon">
-    <link href={{"/assets/img/favicon/apple-icon2-180x180.png" | relative_url }} rel="apple-touch-icon">
+    <link href={{"/assets/img/favicon/apple-icon2-180x180.png" | relative_url }} rel="apple-touch-icon"> -->
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {

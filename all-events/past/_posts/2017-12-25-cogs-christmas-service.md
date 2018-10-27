@@ -1,5 +1,6 @@
 ---
 layout: theme6
+theme: theme6.css
 year: 2018
 version: english
 event: past
@@ -14,7 +15,7 @@ share-link: /all-events/past/2017/12/25/cogs-christmas-service
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - COGS Christmas Service 2017
 meta-description: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event - COGS Christmas Service(2017) was held in Vision Primary School Sandakan
 og-image: Christmas Service in Vision Primary School Sandakan
-css: christmas-service.css
+
 
 
 #Pictures
