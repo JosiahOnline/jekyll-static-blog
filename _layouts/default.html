@@ -1,8 +1,4 @@
----
-url1: /
-url2: /chinese/
-url3: /bahasa-malaysia/
----
+--- url1: / url2: /chinese/ url3: /bahasa-malaysia/ ---
 <!DOCTYPE html>
 <!-- Update your html tag to include the itemscope and itemtype attributes, and og for Open Graph. -->
 <html lang={{page.lang}} itemscope itemtype="http://schema.org/Organization" prefix="og: http://ogp.me/ns#">
@@ -38,23 +34,23 @@ url3: /bahasa-malaysia/
   <meta property="og:image" content="{{site.baseurl}}/assets/img/worship2a.jpg">
   <meta property="og:image:alt" content="{{page.meta-image-alt}}">
   <style>
-  .preloader-container {
+    .preloader-container {
       position: fixed;
       height: 100vh;
       width: 100%;
       background-color: #f0f2f2;
       transition: all 2s ease;
       z-index: 10000
-  }
+    }
 
-  .preloader {
+    .preloader {
       position: absolute;
       top: 50%;
       left: 41%;
       transform: translate(-50%, -50%)
-  }
+    }
 
-  .pulse {
+    .pulse {
       font-family: Oswald, sans-serif;
       text-align: center;
       width: 100px;
@@ -66,47 +62,46 @@ url3: /bahasa-malaysia/
       background: #141e28;
       border-radius: 50%;
       animation: animate 2s linear infinite
-  }
+    }
 
-  @keyframes animate {
+    @keyframes animate {
       0% {
-          box-shadow: 0 0 0 0 rgba(20, 30, 40, .7), 0 0 50px 0 rgba(20, 30, 40, .7)
+        box-shadow: 0 0 0 0 rgba(20, 30, 40, .7), 0 0 50px 0 rgba(20, 30, 40, .7)
       }
       25% {
-          box-shadow: 0 0 0 50px rgba(20, 30, 40, .1.5), 0 0 0 10px rgba(20, 30, 40, .6)
+        box-shadow: 0 0 0 50px rgba(20, 30, 40, .1.5), 0 0 0 10px rgba(20, 30, 40, .6)
       }
       540% {
-          box-shadow: 0 0 0 100px rgba(20, 30, 40, .1.5), 0 0 0 50px rgba(20, 30, 40, .6)
+        box-shadow: 0 0 0 100px rgba(20, 30, 40, .1.5), 0 0 0 50px rgba(20, 30, 40, .6)
       }
       75% {
-          box-shadow: 0 0 0 200px rgba(20, 30, 40, 0), 0 0 0 100px rgba(20, 30, 40, 0)
+        box-shadow: 0 0 0 200px rgba(20, 30, 40, 0), 0 0 0 100px rgba(20, 30, 40, 0)
       }
       100% {
-          box-shadow: 0 0 0 300PX rgba(20, 30, 40, 0), 0 0 0 200px rgba(20, 30, 40, 0)
+        box-shadow: 0 0 0 300PX rgba(20, 30, 40, 0), 0 0 0 200px rgba(20, 30, 40, 0)
       }
-  }
+    }
 
-  @media screen and (max-width:1280px) {
+    @media screen and (max-width:1280px) {
       .preloader {
-          top: 55%
+        top: 55%
       }
       @media screen and (max-width:1024px) {
-          .preloader {
-              left: 50%
-          }
+        .preloader {
+          left: 50%
+        }
       }
       @media screen and (max-width:970px) and (max-height:490px) {
-          .pulse {
-              font-size: 2.3rem
-          }
+        .pulse {
+          font-size: 2.3rem
+        }
       }
       @media screen and (max-width:768px) {
-          .pulse {
-              font-size: 1.8rem
-          }
+        .pulse {
+          font-size: 1.8rem
+        }
       }
-  }
-
+    }
   </style>
   <link href="{{site.baseurl}}/assets/css/font.css" rel="stylesheet" type="text/css">
   <link href="{{site.baseurl}}/assets/css/basic.css" rel="stylesheet" type="text/css">
@@ -133,196 +128,195 @@ url3: /bahasa-malaysia/
   </section>
 
   <div id="mNav" class="main-nav">
-      <div class="nav-container">
-          <div class="cogs-logo">
-              <span class="beta">BETA</span><a class="brand-logo" href="#">COGS <br><p>SANDAKAN</p></a>
-              <div class="multiple-lang">
-                  <div class="english"><a href="{{site.baseurl}}{{layout.url1}}" {% if page.title contains "English Version" %} class=" current"{% endif %}>English</a></div>
-                  <div class="chinese"><a  href="{{site.baseurl}}{{layout.url2}}" {% if page.title contains "Chinese Version" %} class=" current"{% endif %}>Chinese</a></div>
-                  <div class="bm"><a href="{{site.baseurl}}{{layout.url3}}" {% if page.title contains "BM Version" %} class=" current"{% endif %}>BM</a></div>
-              </div>
-          </div>
-          <nav class="navbar">
-              <div id="mySidenav" class="menu-links">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
-                  <a rel="canonical" class="nav-link addborder active" href="#home">{{page.nav1}}</a>
-                  <a rel="canonical" class="nav-link addborder" href="#welcome">{{page.nav2}}</a>
-                  <a rel="canonical" class="nav-link addborder" href="#announcements">{{page.nav3}}</a>
-                  <a rel="canonical" class="nav-link addborder" href="#education">{{page.nav4}}</a>
-                  <a rel="canonical" class="nav-link addborder" href="#download">{{page.nav5}}</a>
-                  <a rel="canonical" class="nav-link addborder" href="#contact">{{page.nav6}}</a>
-              </div>
-          </nav>
+    <div class="nav-container">
+      <div class="cogs-logo">
+        <span class="beta">BETA</span><a class="brand-logo" href="#">COGS <br><p>SANDAKAN</p></a>
+        <div class="multiple-lang">
+          <div class="english"><a href="{{site.baseurl}}{{layout.url1}}" {% if page.title contains "English Version" %} class=" current" {% endif %}>English</a></div>
+          <div class="chinese"><a href="{{site.baseurl}}{{layout.url2}}" {% if page.title contains "Chinese Version" %} class=" current" {% endif %}>Chinese</a></div>
+          <div class="bm"><a href="{{site.baseurl}}{{layout.url3}}" {% if page.title contains "BM Version" %} class=" current" {% endif %}>BM</a></div>
+        </div>
       </div>
+      <nav class="navbar">
+        <div id="mySidenav" class="menu-links">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+          <a rel="canonical" class="nav-link addborder active" href="#home">{{page.nav1}}</a>
+          <a rel="canonical" class="nav-link addborder" href="#welcome">{{page.nav2}}</a>
+          <a rel="canonical" class="nav-link addborder" href="#announcements">{{page.nav3}}</a>
+          <a rel="canonical" class="nav-link addborder" href="#education">{{page.nav4}}</a>
+          <a rel="canonical" class="nav-link addborder" href="#download">{{page.nav5}}</a>
+          <a rel="canonical" class="nav-link addborder" href="#contact">{{page.nav6}}</a>
+        </div>
+      </nav>
+    </div>
   </div>
 
   <div id="scrollDown" class="mobile-nav">
-      <div class="mobile-container">
-          <div class="COGS-title">
-              <h1>{{page.logo}}</h1>
-          </div>
-          <div class="navburger">
-              <h1>{{page.menu}}</h1>
-              <div class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()"></div>
-          </div>
+    <div class="mobile-container">
+      <div class="COGS-title">
+        <h1>{{page.logo}}</h1>
       </div>
+      <div class="navburger">
+        <h1>{{page.menu}}</h1>
+        <div class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()"></div>
+      </div>
+    </div>
   </div>
   <div class="main-content">
-      <section class="home-section" id="home">
-          <div id="transparentBg" class="transparent-layer"></div>
-          <div class="home-container adjust-padding-lr">
-              <div class="hero-title-wrapper">
-                  {{page.fly-text}}
-                  <div class="hero-subheading">{{page.heading}}</div>
-                  <div class="hero-button-container">
-                      <a class="hollow-button white" href="#welcome">{{page.welcome}}</a>
-                      <a class="hollow-button red" href="#announcements">{{page.announcements}}</a>
-                  </div>
-              </div>
+    <section class="home-section" id="home">
+      <div id="transparentBg" class="transparent-layer"></div>
+      <div class="home-container adjust-padding-lr">
+        <div class="hero-title-wrapper">
+          {{page.fly-text}}
+          <div class="hero-subheading">{{page.heading}}</div>
+          <div class="hero-button-container">
+            <a class="hollow-button white" href="#welcome">{{page.welcome}}</a>
+            <a class="hollow-button red" href="#announcements">{{page.announcements}}</a>
           </div>
-      </section>
-      <div class="bulletin-section adjust-padding-td">
-          <div class="bulletin-flex adjust-padding-lr">
-              <div class="bulletin-container-1">
-                  <div class="bulletin-text">{{page.blt-text}}</div>
-                  <p class="bulletin-pgraph">{{page.blt-pgraph}}</p>
-              </div>
-              <div class="bulletin-container-2">
-                  <div class="bulletin-row">
-                      <div class="bulletin-image"></div>
-                      <div class="bulletin-description">
-                          <div class="title">{{page.blt-title}}</div>
-                          <div class="date-published">{{page.blt-date}}</div>
-                          <a class="bulletin-download w-button" href="{{site.baseurl}}/assets/pdf/{{page.blt-link}}" target="_blank">{{page.blt-download}}</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
-      <section class="section" id="welcome">
-          <div class="welcome-container adjust-padding-lr">
-              <div class="section-title-group">
-                  <h2 class="centered section-heading">{{page.heading1}}</h2>
-                  <div class="center section-subheading">{{page.subheading1}}</div>
-              </div>
-              <div class="welcome-row w-row">
-                  <div class="welcome-column-1 w-col w-col-6">
-                      <p class="welcome-pgraph">"{{page.pgraph1}}"</p>
-                      <div class="welcome-author">
-                          {{page.pastor-msg}}
-                      </div>
-                      <div class="welcome-button-container">
-                          <a class="visit w-button" href="#">{{page.visit-btn}}</a>
-                          <a class="history w-button" href="history">{{page.history-btn}}</a>
-                      </div>
-                  </div>
-                  <div class="welcome-column-2 w-col w-col-6">
-                      <div class="group-photo-container">
-                          <img class="photo-pcc" sizes="(max-width: 767px) 92vw, (max-width: 991px) 44vw, 35vw" src="{{site.baseurl}}/assets/img/pcc.jpg">
-                      </div>
-                      <div class="group-photo-caption">{{page.pcc}}</div>
-                  </div>
-              </div>
+    </section>
+    <div class="bulletin-section adjust-padding-td">
+      <div class="bulletin-flex adjust-padding-lr">
+        <div class="bulletin-container-1">
+          <div class="bulletin-text">{{page.blt-text}}</div>
+          <p class="bulletin-pgraph">{{page.blt-pgraph}}</p>
+        </div>
+        <div class="bulletin-container-2">
+          <div class="bulletin-row">
+            <div class="bulletin-image"></div>
+            <div class="bulletin-description">
+              <div class="title">{{page.blt-title}}</div>
+              <div class="date-published">{{page.blt-date}}</div>
+              <a class="bulletin-download w-button" href="{{site.baseurl}}/assets/pdf/{{page.blt-link}}" target="_blank">{{page.blt-download}}</a>
+            </div>
           </div>
-      </section>
-      <div class="feedback-section adjust-padding-td">
-          <div class="feedback-container adjust-padding-lr">
-              <div class="feedback-text">{{page.feedback-text}}</div>
-              <p class="feedback-pgraph">{{page.feedback-pgraph}}</p>
-          </div>
+        </div>
       </div>
+    </div>
+    <section class="section" id="welcome">
+      <div class="welcome-container adjust-padding-lr">
+        <div class="section-title-group">
+          <h2 class="centered section-heading">{{page.heading1}}</h2>
+          <div class="center section-subheading">{{page.subheading1}}</div>
+        </div>
+        <div class="welcome-row w-row">
+          <div class="welcome-column-1 w-col w-col-6">
+            <p class="welcome-pgraph">"{{page.pgraph1}}"</p>
+            <div class="welcome-author">
+              {{page.pastor-msg}}
+            </div>
+            <div class="welcome-button-container">
+              <a class="visit w-button" href="#">{{page.visit-btn}}</a>
+              <a class="history w-button" href="history">{{page.history-btn}}</a>
+            </div>
+          </div>
+          <div class="welcome-column-2 w-col w-col-6">
+            <div class="group-photo-container">
+              <img class="photo-pcc" sizes="(max-width: 767px) 92vw, (max-width: 991px) 44vw, 35vw" src="{{site.baseurl}}/assets/img/pcc.jpg">
+            </div>
+            <div class="group-photo-caption">{{page.pcc}}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="feedback-section adjust-padding-td">
+      <div class="feedback-container adjust-padding-lr">
+        <div class="feedback-text">{{page.feedback-text}}</div>
+        <p class="feedback-pgraph">{{page.feedback-pgraph}}</p>
+      </div>
+    </div>
     {{content}}
     <div class="feedback-section adjust-padding-td">
-        <div class="feedback-container adjust-padding-lr">
-            <div class="feedback-text">{{page.feedback-text}}</div>
-            <p class="feedback-pgraph">{{page.feedback-pgraph}}</p>
-        </div>
+      <div class="feedback-container adjust-padding-lr">
+        <div class="feedback-text">{{page.feedback-text}}</div>
+        <p class="feedback-pgraph">{{page.feedback-pgraph}}</p>
+      </div>
     </div>
     <section class="section" id="education">
-        <div class="adjust-padding-lr">
-            <div class="section-title-group">
-                <h2 class="centered section-heading">{{page.education}}</h2>
-                <div class="center section-subheading">{{page.diocese}}</div>
-            </div>
+      <div class="adjust-padding-lr">
+        <div class="section-title-group">
+          <h2 class="centered section-heading">{{page.education}}</h2>
+          <div class="center section-subheading">{{page.diocese}}</div>
+        </div>
 
-            <div class="news-container" id="downloadPDF">
-                <div class="events-icon">
-                    <a href="#"><img src="{{site.baseurl}}/assets/img/edu.png"></a>
-                    <h2>{{page.edutitle}}</h2>
-                </div>
-                <article class="main-news">
-                    <a rel="canonical" href="http://www.cogssandakan.com/Education/Tadika/Tadika_Good_Shepherd.html"><img class="main-image round-radius" src="https://res.cloudinary.com/trippleninja/image/upload/v1529656778/Tadika/tgs51.jpg">
+        <div class="news-container" id="downloadPDF">
+          <div class="events-icon">
+            <a href="#"><img src="{{site.baseurl}}/assets/img/edu.png"></a>
+            <h2>{{page.edutitle}}</h2>
+          </div>
+          <article class="main-news">
+            <a rel="canonical" href="http://www.cogssandakan.com/Education/Tadika/Tadika_Good_Shepherd.html"><img class="main-image round-radius" src="https://res.cloudinary.com/trippleninja/image/upload/v1529656778/Tadika/tgs51.jpg">
                         <div class="main-news-description">
                             <h1 class="main-news-title">{{page.tadika}}</h1>
                             <p class="news-pgraph3">{{page.tadikadescription}}</p>
                             <p class="news-pgraph1">{{page.edupgraph}}</p>
                         </div>
                     </a>
-                </article>
-                <article class="main-news">
-                    <a rel="canonical" href="http://www.cogssandakan.com/Education/Vision/Vision_Primary_School.html"><img class="main-image round-radius" src="https://res.cloudinary.com/trippleninja/image/upload/v1530883100/VisionSchool/vs2.jpg">
+          </article>
+          <article class="main-news">
+            <a rel="canonical" href="http://www.cogssandakan.com/Education/Vision/Vision_Primary_School.html"><img class="main-image round-radius" src="https://res.cloudinary.com/trippleninja/image/upload/v1530883100/VisionSchool/vs2.jpg">
                         <div class="main-news-description">
                             <h1 class="main-news-title">{{page.vision}}</h1>
                             <p class="news-pgraph3">{{page.visiondescription}}</p>
                             <p class="news-pgraph1">{{page.edupgraph}}</p>
                         </div>
                     </a>
-                </article>
-            </div>
-            <!-- End of Education Container -->
+          </article>
         </div>
+        <!-- End of Education Container -->
+      </div>
     </section>
     <section class="call-to-action-section adjust-padding-td">
-        <div class="container adjust-padding-lr">
-            <div class="call-to-action-row">
-                <div class="call-to-action-description">
-                    <h2 class="call-to-action-heading">{{page.donation}}</h2>
-                    <p class="call-to-action-pgraph">{{page.donationpgraph}}</p>
-                </div>
-                <div class="call-to-action-form align-right">
-                    <div class="w-form">
-                        <form class="form cogs-news-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick" />
-                            <input type="hidden" name="hosted_button_id" value="WLDAYXRBLX2ZG" />
-                            <input type="image" src="https://josiahonline.github.io/jekyll-static-blog/assets/img/Donate.jpg" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                            <img alt="" border="0" src="https://www.paypal.com/en_MY/i/scr/pixel.gif" width="1" height="1" />
-                        </form>
-
-                        <div class="w-form-done">
-                            <div>Thank you! Your submission has been received!</div>
-                        </div>
-                        <div class="w-form-fail">
-                            <div>Oops! Something went wrong while submitting the form</div>
-                        </div>
-                    </div>
-                    <div class="nospam">{{page.newsletter4}}</div>
-                </div>
+      <div class="container adjust-padding-lr">
+        <div class="call-to-action-row">
+          <div class="call-to-action-description">
+            <h2 class="call-to-action-heading">{{page.donation}}</h2>
+            <p class="call-to-action-pgraph">{{page.donationpgraph}}</p>
+          </div>
+          <div class="call-to-action-form align-right">
+            <div class="w-form">
+              <form class="form cogs-news-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="WLDAYXRBLX2ZG" />
+                <input type="image" src="https://josiahonline.github.io/jekyll-static-blog/assets/img/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_MY/i/scr/pixel.gif" width="1" height="1" />
+              </form>
+              <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form</div>
+              </div>
             </div>
+            <div class="nospam">{{page.newsletter4}}</div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="section" id="download">
-        <div class="adjust-padding-lr">
-            <div class="section-title-group">
-                <h2 class="centered section-heading">{{page.download}}</h2>
-                <div class="center section-subheading">{{page.cogsform}}</div>
-            </div>
+      <div class="adjust-padding-lr">
+        <div class="section-title-group">
+          <h2 class="centered section-heading">{{page.download}}</h2>
+          <div class="center section-subheading">{{page.cogsform}}</div>
+        </div>
 
-            <div class="news-container" id="downloadPDF">
-                <div class="events-icon">
-                    <a href="#"><img src="{{site.baseurl}}/assets/img/download1.png"></a>
-                    <h2>{{page.downloadfree}}</h2>
-                </div>
-                <article class="main-news">
-                    <a rel="canonical" href="https://s3-ap-southeast-1.amazonaws.com/cornerstone-media-server/NECF/NECF+40+Days+Fast+%26+Prayer+Book+-Eng+Adult+2018.pdf" target="_blank"><img class="main-image round-radius">
+        <div class="news-container" id="downloadPDF">
+          <div class="events-icon">
+            <a href="#"><img src="{{site.baseurl}}/assets/img/download1.png"></a>
+            <h2>{{page.downloadfree}}</h2>
+          </div>
+          <article class="main-news">
+            <a rel="canonical" href="https://s3-ap-southeast-1.amazonaws.com/cornerstone-media-server/NECF/NECF+40+Days+Fast+%26+Prayer+Book+-Eng+Adult+2018.pdf" target="_blank"><img class="main-image round-radius">
     <!--                      Temporary removed     src="https://res.cloudinary.com/trippleninja/image/upload/v1533973674/Download/CHI1.jpg"-->
                         <div class="main-news-description onlybg">
                             <h1 class="main-news-title"> {{page.fast-pray}}:{{page.fast-title}}</h1>
                             <p class="news-pgraph3">{{page.fastpgraph}}</span></p>
                         </div>
                     </a>
-                </article>
-                <div class="top-news">
-                    <!--
+          </article>
+          <div class="top-news">
+            <!--
                     <article class="news">
                         <a rel="canonical" href="Download/Membership-Roll.pdf" target="_blank"><img class="news-image" src="http://res.cloudinary.com/trippleninja/image/upload/v1514464691/Christmas%20Day%20Service%2017/christmas6.jpg">
                             <div class="newsdescription">
@@ -332,31 +326,31 @@ url3: /bahasa-malaysia/
                         </a>
                     </article>
     -->
-                    <article class="news">
-                        <a rel="canonical" href="{{page.baptismpdf}}" target="_blank"><img class="news-image" src="{{site.baseurl}}/assets/img/baptism2.jpg">
+            <article class="news">
+              <a rel="canonical" href="{{page.baptismpdf}}" target="_blank"><img class="news-image" src="{{site.baseurl}}/assets/img/baptism2.jpg">
                             <div class="newsdescription">
                                 <h1 class="top-news-title">{{page.baptism}}</h1>
                                 <p class="news-pgraph2">{{page.downloadprint}}</p>
                             </div>
                         </a>
-                    </article>
-                    <article class="news">
-                        <a rel="canonical" href="{{page.confirmationpdf}}" target="_blank"><img class="news-image" src="{{site.baseurl}}/assets/img/confirmation.jpg">
+            </article>
+            <article class="news">
+              <a rel="canonical" href="{{page.confirmationpdf}}" target="_blank"><img class="news-image" src="{{site.baseurl}}/assets/img/confirmation.jpg">
                             <div class="newsdescription">
                                 <h1 class="top-news-title">{{page.confirmation}}</h1>
                                 <p class="news-pgraph2">{{page.downloadprint}}</p>
                             </div>
                         </a>
-                    </article>
-                    <article class="news">
-                        <a rel="canonical" href="{{page.marriagepdf}}" target="_blank"><img class="news-image" src="{{site.baseurl}}/assets/img/marriage.jpg">
+            </article>
+            <article class="news">
+              <a rel="canonical" href="{{page.marriagepdf}}" target="_blank"><img class="news-image" src="{{site.baseurl}}/assets/img/marriage.jpg">
                             <div class="newsdescription">
                                 <h1 class="top-news-title">{{page.marriage}}</h1>
                                 <p class="news-pgraph2">{{page.downloadprint}}</p>
                             </div>
                         </a>
-                    </article>
-                    <!--
+            </article>
+            <!--
                     <article class="news">
                         <a rel="canonical" href="Download/Education.pdf" target="_blank"><img class="news-image" src="http://res.cloudinary.com/trippleninja/image/upload/v1521795783/News%20Images/education.jpg">
                             <div class="newsdescription">
@@ -374,112 +368,111 @@ url3: /bahasa-malaysia/
                         </a>
                     </article>
     -->
-                </div>
-            </div>
-            <!-- End of Download PDF Container -->
+          </div>
         </div>
-    </section>
-  <section class="call-to-action-section adjust-padding-td">
-      <div class="container adjust-padding-lr">
-          <div class="call-to-action-row">
-              <div class="call-to-action-description">
-                  <h2 class="call-to-action-heading">{{page.newsletter1}}</h2>
-                  <p class="call-to-action-pgraph">{{page.newsletter2}}</p>
-              </div>
-              <div class="call-to-action-form align-right">
-                  <div class="w-form">
-                      <form class="form cogs-news-form" data-name="Email Form 2" id="email-form-2" name="email-form-2" action="https://formspree.io/josiahsoh@gmail.com" method="POST">
-                          <input type="hidden" name="_subject" value="New Request for COGS Newsletter" />
-                          <input type="hidden" name="_cc" value="cogssandakan2017@gmail.com" />
-                          <input type="text" name="_gotcha" style="display:none" />
-                          <input class="text-field w-input" data-name="Email 2" id="email-2" maxlength="256" name="Email" placeholder="{{page.newsletter3}}" required="required" type="email">
-                          <input class="submit-button w-button" data-wait="Please wait..." type="submit" value="Subscribe">
-                      </form>
-                      <div class="w-form-done">
-                          <div>Thank you! Your submission has been received!</div>
-                      </div>
-                      <div class="w-form-fail">
-                          <div>Oops! Something went wrong while submitting the form</div>
-                      </div>
-                  </div>
-                  <div class="nospam">{{page.newsletter4}}</div>
-              </div>
-          </div>
+        <!-- End of Download PDF Container -->
       </div>
-  </section>
-  <section class="section section-contact" id="contact">
-      <div class="adjust-padding-lr">
-          <div class="section-title-group">
-              <h2 class="centered section-heading">{{page.contact-heading}}</h2>
-              <div class="center section-subheading">{{page.contact-subheading}}</div>
+    </section>
+    <section class="call-to-action-section adjust-padding-td">
+      <div class="container adjust-padding-lr">
+        <div class="call-to-action-row">
+          <div class="call-to-action-description">
+            <h2 class="call-to-action-heading">{{page.newsletter1}}</h2>
+            <p class="call-to-action-pgraph">{{page.newsletter2}}</p>
           </div>
-          <div class="form-wrapper squeezed w-form">
-              <form data-name="Email Form 3" id="email-form-3" name="email-form-3" action="https://formspree.io/josiahsoh@gmail.com" method="POST">
-                  <input type="hidden" name="_subject" value="New Contact Form COGS" />
-                  <input type="hidden" name="_cc" value="cogssandakan2017@gmail.com" />
-                  <div class="w-row">
-                      <div class="column-remove-padding w-col w-col-6">
-                          <!--DON't add autofocus="autofocus" show the input element should automatically get focus once the page reload-->
-                          <input class="form-field w-input" data-name="Name" id="name-3" maxlength="256" name="Name" placeholder="{{page.contact-name}}" required="required" type="text">
-                      </div>
-                      <div class="column-remove-padding w-col w-col-6">
-                          <input class="form-field w-input" data-name="Email" id="email-3" maxlength="256" name="Email" placeholder="{{page.contact-email}}" required="required" type="email">
-                      </div>
-                      <div class="column-remove-padding w-col w-col-6">
-                          <input class="form-field w-input" data-name="Contact" id="contact-3" maxlength="256" name="Contact" placeholder="{{page.contact-number}}" required="required" type="text">
-                      </div>
-                  </div>
-                  <textarea class="form-field text-area w-input" data-name="Message" id="message" maxlength="5000" name="message" placeholder="{{page.contact-message}}" required="required"></textarea>
-                  <input class="send-message-button button full-width w-button" data-wait="Please wait..." type="submit" value="Send Message">
+          <div class="call-to-action-form align-right">
+            <div class="w-form">
+              <form class="form cogs-news-form" data-name="Email Form 2" id="email-form-2" name="email-form-2" action="https://formspree.io/josiahsoh@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Request for COGS Newsletter" />
+                <input type="hidden" name="_cc" value="cogssandakan2017@gmail.com" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <input class="text-field w-input" data-name="Email 2" id="email-2" maxlength="256" name="Email" placeholder="{{page.newsletter3}}" required="required" type="email">
+                <input class="submit-button w-button" data-wait="Please wait..." type="submit" value="Subscribe">
               </form>
-              <div class="success-message w-form-done">
-                  <p class="paragraph-form">Thank you! Your submission has been received!</p>
+              <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
               </div>
-              <div class="success-message w-form-fail">
-                  <p class="paragraph-form">Oops! Something went wrong while submitting the form :(</p>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form</div>
               </div>
+            </div>
+            <div class="nospam">{{page.newsletter4}}</div>
           </div>
-          <div class="contact-section">
-              <div class="address">
-                  <div class="location">
-                      <h2>{{page.address1}}</h2>
-                      <address>
+        </div>
+      </div>
+    </section>
+    <section class="section section-contact" id="contact">
+      <div class="adjust-padding-lr">
+        <div class="section-title-group">
+          <h2 class="centered section-heading">{{page.contact-heading}}</h2>
+          <div class="center section-subheading">{{page.contact-subheading}}</div>
+        </div>
+        <div class="form-wrapper squeezed w-form">
+          <form data-name="Email Form 3" id="email-form-3" name="email-form-3" action="https://formspree.io/josiahsoh@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Contact Form COGS" />
+            <input type="hidden" name="_cc" value="cogssandakan2017@gmail.com" />
+            <div class="w-row">
+              <div class="column-remove-padding w-col w-col-6">
+                <!--DON't add autofocus="autofocus" show the input element should automatically get focus once the page reload-->
+                <input class="form-field w-input" data-name="Name" id="name-3" maxlength="256" name="Name" placeholder="{{page.contact-name}}" required="required" type="text">
+              </div>
+              <div class="column-remove-padding w-col w-col-6">
+                <input class="form-field w-input" data-name="Email" id="email-3" maxlength="256" name="Email" placeholder="{{page.contact-email}}" required="required" type="email">
+              </div>
+              <div class="column-remove-padding w-col w-col-6">
+                <input class="form-field w-input" data-name="Contact" id="contact-3" maxlength="256" name="Contact" placeholder="{{page.contact-number}}" required="required" type="text">
+              </div>
+            </div>
+            <textarea class="form-field text-area w-input" data-name="Message" id="message" maxlength="5000" name="message" placeholder="{{page.contact-message}}" required="required"></textarea>
+            <input class="send-message-button button full-width w-button" data-wait="Please wait..." type="submit" value="Send Message">
+          </form>
+          <div class="success-message w-form-done">
+            <p class="paragraph-form">Thank you! Your submission has been received!</p>
+          </div>
+          <div class="success-message w-form-fail">
+            <p class="paragraph-form">Oops! Something went wrong while submitting the form :(</p>
+          </div>
+        </div>
+        <div class="contact-section">
+          <div class="address">
+            <div class="location">
+              <h2>{{page.address1}}</h2>
+              <address>
                         BATU 5 1/2 JALAN LABUK,  90000,<br>
                         SANDAKAN, SABAH<br>
                         MALAYSIA<br>
                       </address>
 
-                      <div class="contact-info">
-                          <h2>{{page.contact-info1}}</h2>
-                          <p>{{page.contact-info2}}: 089-216051 / 216081;
-                            <br>{{page.contact-info3}}: 089-271862;
-                            <br> {{page.contact-info4}}: cogssandakan2017@gmail.com
-                            <br>
-                          </p>
-                      </div>
-                      <div class="office-hour">
-                          <h2>{{page.office-hour1}}</h2>
-                          <p>{{page.office-hour2}}: 8am - 4:30pm
-                              <br> ({{page.office-hour3}}: 12pm - 1:30pm)
-                              <br> {{page.office-hour4}}: 8am - 12:30pm
-                              <br> {{page.office-hour5}}
-                              <br>
-                          </p>
-                      </div>
-                  </div>
-                  <div class="googlemap">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5694.615237996983!2d118.05824688778112!3d5.859688235315518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x426517fd094b9575!2sChurch+Of+The+Good+Shepherd!5e0!3m2!1sen!2smy!4v1499424551533" frameborder="0" style="border:0" allowfullscreen></iframe>
-                      <a class="direction-button w-button" href="https://goo.gl/maps/NjHZFjR3Gcx" target="_blank">{{page.map-direction}}</a>
-                  </div>
+              <div class="contact-info">
+                <h2>{{page.contact-info1}}</h2>
+                <p>{{page.contact-info2}}: 089-216051 / 216081;
+                  <br>{{page.contact-info3}}: 089-271862;
+                  <br> {{page.contact-info4}}: cogssandakan2017@gmail.com
+                  <br>
+                </p>
               </div>
+              <div class="office-hour">
+                <h2>{{page.office-hour1}}</h2>
+                <p>{{page.office-hour2}}: 8am - 4:30pm
+                  <br> ({{page.office-hour3}}: 12pm - 1:30pm)
+                  <br> {{page.office-hour4}}: 8am - 12:30pm
+                  <br> {{page.office-hour5}}
+                  <br>
+                </p>
+              </div>
+            </div>
+            <div class="googlemap">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5694.615237996983!2d118.05824688778112!3d5.859688235315518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x426517fd094b9575!2sChurch+Of+The+Good+Shepherd!5e0!3m2!1sen!2smy!4v1499424551533"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+              <a class="direction-button w-button" href="https://goo.gl/maps/NjHZFjR3Gcx" target="_blank">{{page.map-direction}}</a>
+            </div>
           </div>
+        </div>
       </div>
-  </section>
-  {% include mission-statement.html %}
-  {% include planvisit.html %}
-  {% include rotate.html %}
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
-  <script src="{{site.baseurl}}/assets/js/main.js" type="text/javascript"></script>
+    </section>
+    {% include mission-statement.html %} {% include planvisit.html %} {% include rotate.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+    <script src="{{site.baseurl}}/assets/js/main.js" type="text/javascript"></script>
 
 </body>
 

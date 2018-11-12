@@ -89,7 +89,7 @@ visit-service4: Sunday Bahasa Malaysia
 visit-submit: Submit
 
 donation: COGS Donation
-donationpgraph: We are a nonprofit organization with a small budget and a big mission. We rely on generous people like you to donate the time and money that makes our work possible.
+donationpgraph: We are a nonprofit organization with a small budget and a big mission. Accept credit or debit cards even if you don't have a PayPal account.
 
 newsletter1: COGS Newsletter
 newsletter2: Join our members and be notified about our latest news and activities. Never miss the details of our events that you care.
