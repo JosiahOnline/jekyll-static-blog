@@ -14,7 +14,17 @@ $(document).ready(function () {
         $(this).parent().find('div').toggleClass('card__social--active');
         $(this).toggleClass('share-expanded');
     });
-
+    
+//    $(".slideContainer").click(function () {
+//        $(".newsAutoChange").css('display', 'block');
+//        $(".newsAutoChange").css('overflow', 'hidden');
+//    });
+//
+//    $(".closeNews").click(function () {
+//        $(".newsAutoChange").css('display', 'none');
+//        $(".newsAutoChange").css('overflow', 'scroll');
+//    });
+    
     $(".share-button").click(function () {
         $(".share-button").css('display', 'none');
         $(".web__share").css('display', 'inline-block');
@@ -52,26 +62,26 @@ function closeNav() {
     document.getElementById("mNav").style.overflowY = "hidden";
 }
 
-
-var iScrollPos = 0;
-$(window).scroll(function () {
-    var iCurScrollPos = $(this).scrollTop();
-    if (window.matchMedia("(max-width: 1024px)").matches) {
-        if (iCurScrollPos > iScrollPos) {
-            $("#scrollDown").css('display', 'none');
-        } else {
-            $("#scrollDown").css('display', 'block');
-        }
-        iScrollPos = iCurScrollPos;
-
-        var triggered_times = 0;
-        if ($(window).scrollTop() + $(window).height() > $(document).height() - 100 && triggered_times === 0) {
-            $("#scrollDown").css("display", "block");
-
-            triggered_times = 1;
-        }
-    }
-});
+// Disable because user can't find the menu bar especially those who are not familiar with the technologies.
+//var iScrollPos = 0;
+//$(window).scroll(function () {
+//    var iCurScrollPos = $(this).scrollTop();
+//    if (window.matchMedia("(max-width: 1024px)").matches) {
+//        if (iCurScrollPos > iScrollPos) {
+//            $("#scrollDown").css('display', 'none');
+//        } else {
+//            $("#scrollDown").css('display', 'block');
+//        }
+//        iScrollPos = iCurScrollPos;
+//
+//        var triggered_times = 0;
+//        if ($(window).scrollTop() + $(window).height() > $(document).height() - 100 && triggered_times === 0) {
+//            $("#scrollDown").css("display", "block");
+//
+//            triggered_times = 1;
+//        }
+//    }
+//});
 
 
 $(document).ready(function () {
@@ -87,7 +97,6 @@ $(document).ready(function () {
             }, 1500);
         }
     });
-
 
     $(function () {
         setTimeout(function () {
@@ -132,6 +141,17 @@ $(document).ready(function () {
     });
 });
 
+//  var timeleft = 10;
+//    var downloadTimer = setInterval(function(){
+//    timeleft--;
+//    document.getElementById("countdowntimer").textContent = timeleft;
+//    if(timeleft <= 0)
+//        clearInterval(downloadTimer);
+//    },1000);
+//    document.getElementsByClassName("newsAutoChange").style.display = "none";
+//    document.getElementsByClassName("newsAutoChange").style.overflow = "scroll";
+//    
+
 
 if (navigator.userAgent.match(/Android/i) ||
     navigator.userAgent.match(/webOS/i) ||
@@ -153,17 +173,18 @@ if (navigator.userAgent.match(/Android/i) ||
 
 $(document).ready(function () {
     // set the max height
-    if ((window.matchMedia('(max-height: 460px)').matches) && (window.innerWidth > window.innerHeight)) {
+    if ((window.matchMedia('(max-height: 460px)').matches) && (window.matchMedia('(orientation: landscape)').matches)) {
         $("#rotateDevice").css("display", "block");
     } else {
         $("#rotateDevice").css("display", "none");
     }
 });
 
-$(window).resize(function () {
-    if ((window.matchMedia('(max-height: 460px)').matches) && (window.innerWidth > window.innerHeight)) {
-        $("#rotateDevice").css("display", "block");
-    } else {
-        $("#rotateDevice").css("display", "none");
-    }
-});
+
+//$(window).resize(function () {
+//    if ((window.matchMedia('(orientation: landscape)').matches)) {
+//        $("#rotateDevice").css("display", "block");
+//    } else {
+//        $("#rotateDevice").css("display", "none");
+//    }
+//});

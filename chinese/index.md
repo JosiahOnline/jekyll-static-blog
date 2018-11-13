@@ -89,7 +89,7 @@ visit-submit: 提交
 
 donation: 向善牧堂教会(COGS) 捐款
 donationpgraph: 善牧堂教会(COGS) 是一个预算少，使命大的非营利组织。即使您没有PayPal帐户，我们也接受信用卡或转账卡。请点击
-donate-btn: 以经行网上银行转账。
+donate-btn: 以进行网上银行转账。
 
 newsletter1: 善牧堂 通讯
 newsletter2: 加入我们的会员，并获得我们最新的新闻和活动。不要错过您所关心的活动细节。
