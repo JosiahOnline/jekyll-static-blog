@@ -88,6 +88,10 @@ visit-service4: Ahad BM
 
 visit-submit: Hantar
 
+donation: Derma kepada COGS
+donationpgraph: Gereja Gembala Baik (COGS) adalah organisasi bukan keuntungan dengan anggaran kecil dan misi besar. Kami menerima kad kredit atau debit walaupun anda tidak mempunyai akaun PayPal. Sila klik
+donate-btn: untuk meneruskan pemindahan perbankan dalam talian.
+
 newsletter1: Berita COGS
 newsletter2: Sertai kami dan dapatkan maklumat mengenai berita dan aktiviti terkini. Jangan terlepas sebarang perincian aktiviti kami yang melibatkan anda.
 newsletter3: MASUKKAN EMEL ANDA DI SINI

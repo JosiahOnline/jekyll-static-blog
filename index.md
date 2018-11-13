@@ -88,8 +88,9 @@ visit-service4: Sunday Bahasa Malaysia
 
 visit-submit: Submit
 
-donation: COGS Donation
-donationpgraph: We are a nonprofit organization with a small budget and a big mission. Accept credit or debit cards even if you don't have a PayPal account.
+donation: Donation to COGS
+donationpgraph: The Church of the Good Shepherd (COGS) is a non-profit organization with a small budget and a big mission. We accept credit or debit cards even if you don't have a PayPal account. Please click
+donate-btn: to proceed online banking transfer.
 
 newsletter1: COGS Newsletter
 newsletter2: Join our members and be notified about our latest news and activities. Never miss the details of our events that you care.

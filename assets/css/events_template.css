@@ -39,7 +39,7 @@ img {
 p, button {
     margin-top: 0;
     margin-bottom: 0;
-}
+} 
 
 .w-container {
     margin-left: auto;
@@ -155,7 +155,7 @@ p, button {
     border-color: #141e28;color: #141e28;outline-width: 0;
 }
 .textfield:focus {
-    outline-color: #141e28;
+    outline-color: #141e28; 
 }
 input[type=search]:focus {
   width: 57%;
@@ -288,14 +288,14 @@ button {
 }
 .filter-buttons .tablinks.active{
     color: white;
-    background-color: rgb(70,134,200);
+    background-color: rgb(70,134,200); 
 }
 .filter-buttons .button.chi_tab {
     font-size: 1.3rem;
 }
 .sort-buttons button.active{
     color: white;
-    background-color: #34495e;
+    background-color: #34495e; 
 }
 .filter-buttons button:hover, .filter-buttons button:focus, .filter-buttons button:active {
     border-radius: 2px;
@@ -399,7 +399,7 @@ span.chi_nounderline {
         font-size: 20px;
     }
     .main-message {
-        padding-top: 12%;
+        padding-top: 12%;    
     }
 }
 
@@ -408,7 +408,7 @@ span.chi_nounderline {
         font-size: 18px;
     }
     .main-message {
-        padding-top: 10%;
+        padding-top: 10%;    
     }
 }
 
@@ -417,7 +417,7 @@ span.chi_nounderline {
         font-size: 20px;
     }
     .main-message {
-        padding-top: 12%;
+        padding-top: 12%;    
     }
     .filter-container {
         width: 77%;
@@ -429,7 +429,7 @@ span.chi_nounderline {
         font-size: 18px;
     }
     .main-message {
-        padding-top: 10%;
+        padding-top: 10%;    
     }
 }
 
@@ -453,7 +453,7 @@ span.chi_nounderline {
         font-size: 16px;
     }
     .main-message {
-        padding-top: 16%;
+        padding-top: 16%;    
     }
     .main-message h1 {
         font-size: 2.5rem;
@@ -478,7 +478,7 @@ span.chi_nounderline {
         font-size: 15px;
     }
     .main-message {
-        padding-top: 12%;
+        padding-top: 12%;    
     }
 }
 
@@ -493,7 +493,7 @@ span.chi_nounderline {
         font-size: 10px;
     }
     .main-message {
-        padding-top: 10%;
+        padding-top: 10%;    
     }
     .filter-container {
         width: 72%;
@@ -593,10 +593,10 @@ span.chi_nounderline {
 }
 /*----------- Samsung Mega -----------------*/
 @media screen and ( max-width: 480px) and (max-height: 900px) {
-
+    
 }
 
-@media screen and ( max-width: 430px) and (max-height: 740px) {
+@media screen and ( max-width: 430px) and (max-height: 840px) {
     html {
         font-size: 14px;
     }
@@ -629,12 +629,12 @@ span.chi_nounderline {
         font-size: 0.9rem;
         height: 45px;
     }
-
-
+    
+    
 }
 
 @media screen and ( max-width: 430px) and (max-height: 660px) {
-
+    
 }
 @media screen and ( max-width: 380px) {
     html {
@@ -677,12 +677,12 @@ span.chi_nounderline {
 }
 
 @media screen and ( max-width: 360px) and ( max-height: 640px) {
-
+   
 }
 
 
 @media screen and ( max-width: 360px) and ( max-height: 530px) {
-
+    
 }
 
 @media screen and ( max-width: 320px) and ( max-height: 570px) {
@@ -692,5 +692,5 @@ span.chi_nounderline {
 }
 
 @media screen and ( max-width: 320px) and ( max-height: 480px) {
-
+    
 }
