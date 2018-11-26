@@ -29,7 +29,8 @@ upcoming-h2: 即将的活动
 
 #Ongoing Events
 ongoing-h2: 经常的活动
-ongoing-link: chinese/all-events/ongoing/_posts/2018-01-05-cogs-church-services.md
+ongoing-link: chinese/all-events/ongoing/cogs-church-services
+ongoing-url: /assets/img/worship1a.jpg
 ongoing-news: 教会崇拜
 ongoing-pgraph: 点击<span>这里</span>以查看更多信息
 

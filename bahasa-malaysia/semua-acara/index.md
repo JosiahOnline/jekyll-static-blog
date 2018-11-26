@@ -26,13 +26,14 @@ upcoming-h2: Akan Datang
 
 #Ongoing Events
 ongoing-h2: Sedang Berlangsung
-ongoing-link: bahasa-malaysia/semua-acara/sedang-berlangsung/_posts/2018-01-05-waktu_ibadah_cogs.md
-ongoing-news: Waktu Ibadah
+ongoing-link: /bahasa-malaysia/semua-acara/sedang-berlangsung/2018-01-05-waktu-kebaktian-cogs
+ongoing-url: /assets/img/worship1a.jpg
+ongoing-news: Waktu Kebaktian
 ongoing-pgraph: Klik di <span>sini</span> untuk maklumat lanjut!
 
 #Past Events
 past-h2: Sudah Berlalu
-past-link: bahasa-malaysia/semua-acara/sudah-berlalu/_posts/2017-12-17-inspired-christmas-night.md
+past-link: /bahasa-malaysia/semua-acara/sudah-berlalu/_posts/2017-12-17-inspired-christmas-night.md
 past-url: https://res.cloudinary.com/trippleninja/image/upload/v1514560579/Inspired%20Christmas%20Night/Inpsired17.jpg
 past-news: Inspirasi Malam Krismas
 past-description: Special Guest - 羅小白 S.White
