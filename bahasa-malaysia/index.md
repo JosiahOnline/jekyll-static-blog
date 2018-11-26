@@ -79,8 +79,6 @@ visit-v3: Kanak-Kanak
 visit-v4: Kanak-Kanak
 visit-v5: Bayi
 visit-v6: Bayi
-visit-date: Tarikh
-visit-service: Ibadah
 visit-service1: Sabtu CINA
 visit-service2: Ahad CINA
 visit-service3: Ahad BI

@@ -79,8 +79,6 @@ visit-v3: 儿童
 visit-v4: 儿童
 visit-v5: 婴儿
 visit-v6: 婴儿
-visit-date: 日期
-visit-service: 主日崇拜
 visit-service1: 星期六 中文
 visit-service2: 星期日 中文
 visit-service3: 星期日 英文

@@ -80,8 +80,6 @@ visit-v3: Child
 visit-v4: Children
 visit-v5: Infant
 visit-v6: Infants
-visit-date: Date
-visit-service: Service
 visit-service1: Saturday Chinese/Hakka
 visit-service2: Sunday Chinese/Hakka
 visit-service3: Sunday English
