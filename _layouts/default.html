@@ -17,7 +17,7 @@ url3: /bahasa-malaysia/
   <!-- Schema.org markup for Google+ -->
   <meta itemprop="name" content="{{page.meta-title}}">
   <meta itemprop="description" content="{{page.meta-description}}">
-  <meta itemprop="image" content="{{site.baseurl}}/assets/img/worship2a.jpg">
+  <meta itemprop="image" content="{{site.url}}{{site.baseurl}}/assets/img/worship2a.jpg">
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
@@ -26,16 +26,16 @@ url3: /bahasa-malaysia/
   <meta name="twitter:description" content="{{page.meta-description}}">
   <meta name="twitter:creator" content="@cogssandakan">
   <!-- Twitter summary card with large image must be at least 280x150px -->
-  <meta name="twitter:image" content="{{site.baseurl}}/assets/img/worship2a.jpg">
+  <meta name="twitter:image" content="{{site.url}}{{site.baseurl}}/assets/img/worship2a.jpg">
 
   <!-- Open Graph data -->
   <meta property="fb:app_id" content="149572635665595">
   <!-- must have app id-->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{page.urllink}}">
+  <meta property="og:url" content="{{site.url}}{{site.baseurl}}/{{page.urllink}}">
   <meta property="og:title" content="{{page.meta-title}}">
   <meta property="og:description" content="{{page.meta-description}}">
-  <meta property="og:image" content="{{site.baseurl}}/assets/img/worship2a.jpg">
+  <meta property="og:image" content="{{site.url}}{{site.baseurl}}/assets/img/worship2a.jpg">
   <meta property="og:image:alt" content="{{page.meta-image-alt}}">
   <style>
     .preloader-container {
@@ -113,7 +113,7 @@ url3: /bahasa-malaysia/
   <link href="{{site.baseurl}}/assets/css/main.css" rel="stylesheet" type="text/css">
   <link href="{{site.baseurl}}/assets/css/articles.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> {% include favicon.html %}
-  <link rel="canonical" href={{page.urllink}}> {% include google-analytics.html %}
+  <link rel="canonical" href={{site.url}}{{site.baseurl}}/{{page.urllink}}> {% include google-analytics.html %}
 
 </head>
 
