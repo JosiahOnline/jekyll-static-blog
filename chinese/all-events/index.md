@@ -37,8 +37,8 @@ ongoing-pgraph: 点击<span>这里</span>以查看更多信息
 
 #Past Events
 past-h2: 过去的活动
-past-link: chinese/all-events/past/_posts/2018-01-05-cogs-church-services.md
-past-url: https://res.cloudinary.com/trippleninja/image/upload/v1514560579/Inspired%20Christmas%20Night/Inpsired17.jpg
+past-link: chinese/all-events/past/cogs-confirmation-service
+past-url: https://res.cloudinary.com/trippleninja/image/upload/v1536433446/Confirmation%20Service/Sept2018/cs36.jpg
 past-news: COGS 坚振礼崇拜
 past-description: 9月08日2018年
 past-pgraph: 点击<span>这里</span>以查看更多信息

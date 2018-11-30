@@ -6,6 +6,7 @@ event: past
 title: J世代青少年营会
 description: 05 - 06/07/2017
 categories: all-events past
-image-path: /assets/img/past/jgeneration2.jpg
-share-link: /all-events/past/2017/07/05/j-generation-camp
+image-path: ../../assets/img/past/jgeneration2.jpg
+share-link: chinese/all-events/past/j-generation-camp
+permalink: /:categories/:title
 ---

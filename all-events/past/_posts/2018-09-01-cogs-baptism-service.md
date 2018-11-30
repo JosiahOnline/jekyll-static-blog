@@ -7,7 +7,7 @@ title: COGS Baptism Service
 date: 01 Sept 2018
 categories: all-events past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1536432419/Baptism%20Service/Sept2018/bs24.jpg
-share-link: /all-events/past/cogs-baptism-service
+share-link: all-events/past/cogs-baptism-service
 permalink: /:categories/:title
 
 # For Meta Tag
