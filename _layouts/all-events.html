@@ -25,7 +25,7 @@
   <!-- Open Graph data -->
   <meta property="fb:app_id" content="149572635665595" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{site.url}}/{{site.baseurl}}{{page.url}}" />
+  <meta property="og:url" content="{{site.url}}/{{site.baseurl}}/{{page.url}}" />
   <meta property="og:title" content="{{page.meta-title}}" />
   <meta property="og:description" content="{{page.meta-description}}" />
   <meta property="og:image" content="{{site.url}}/{{site.baseurl}}/assets/img/worship2a.jpg" />
@@ -109,8 +109,8 @@
           <h2>{{page.ongoing-h2}}</h2>
         </div>
         <article class="main-news" data-groups="upcoming" data-date="2017-12-17" data-title="Weekly Church Services">
-          <a rel="canonical" href="{{site.baseurl}}{{page.ongoing-link}}">
-                        <img class="main-image round-radius" src="{{site.baseurl}}{{page.ongoing-url}}">
+          <a rel="canonical" href="{{site.baseurl}}/{{page.ongoing-link}}">
+                        <img class="main-image round-radius" src="{{site.baseurl}}/{{page.ongoing-url}}">
                         <div class="main-news-description">
                             <h1 class="main-news-title">{{page.ongoing-news}}</h1>
                             <p class="news-pgraph3">{{page.ongoing-pgraph}}</p>
@@ -121,7 +121,7 @@
           {% for post in site.categories.ongoing %}
           <!-- {% if post.version contains page.version  and post.event == "ongoing" %} -->
           <article class="news">
-            <a rel="canonical" href="{{site.baseurl}}{{ post.share-link }}">
+            <a rel="canonical" href="{{site.baseurl}}/{{ post.share-link }}">
                             <img class="news-image" src="{{post.image-path}}">
                             <div class="newsdescription">
                                 <h1 class="top-news-title">{{post.title}}</h1>
@@ -153,7 +153,7 @@
           <h2>{{page.past-h2}}</h2>
         </div>
         <article class="main-news" data-groups="past" data-date="2017-12-17" data-title="Weekly ch Churh Bulletin">
-          <a rel="canonical" href="{{site.baseurl}}{{page.past-link}}"><img class="main-image round-radius" src="{{page.past-url}}">
+          <a rel="canonical" href="{{site.baseurl}}/{{page.past-link}}"><img class="main-image round-radius" src="{{page.past-url}}">
                             <div class="main-news-description">
                                 <h1 class="main-news-title">{{page.past-news}}</h1>
                                 <p class="news-pgraph3">{{page.past-description}}</p>
@@ -165,7 +165,7 @@
           {% for post in site.categories.past %}
           <!-- {% if post.version contains page.version  and post.event == "past"%} -->
           <article class="news">
-            <a rel="canonical" href="{{site.baseurl}}{{ post.url }}">
+            <a rel="canonical" href="{{site.baseurl}}/{{ post.url }}">
                             <img class="news-image" src="{{post.image-path}}">
                             <div class="newsdescription">
                                 <h1 class="top-news-title">{{post.title}}</h1>

@@ -84,7 +84,7 @@
 .rotate-pic {
     height: 23vh;
     width: 23vh;
-    background-image: url('../History/img/rotate.png');
+    background-image: url('../img/History/rotate.png');
     background-size: contain;
     margin: 0 auto;
 }

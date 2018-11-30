@@ -1,4 +1,4 @@
-/************ This css consists of ******************************** 
+/************ This css consists of ********************************
 ************* (1) Top Nav *****************************************
 ************* (2) Footer Section **********************************
 ************* (3) Pop Up Message **********************************
@@ -346,12 +346,12 @@
 }
 
 @media screen and ( max-width: 1280px) and ( max-height: 960px) {
-    
+
 }
 
 @media screen and ( max-width: 1280px) and (max-height: 670px) {
     .footer {
-        padding: 5px;    
+        padding: 5px;
     }
 }
 
@@ -412,7 +412,7 @@
 
 
 @media screen and ( max-width: 970px) and (max-height: 490px) {
-    
+
     .footer {
         min-height: 50px;
     }
@@ -443,7 +443,7 @@
 }
 
 @media screen and ( max-width: 610px) and (max-height: 850px) {
-    
+
 }
 
 
@@ -595,7 +595,7 @@
 .rotate-pic {
     height: 23vh;
     width: 23vh;
-    background-image: url('../History/img/rotate.png');
+    background-image: url('../img/History/rotate.png');
     background-size: contain;
     margin: 0 auto;
 }

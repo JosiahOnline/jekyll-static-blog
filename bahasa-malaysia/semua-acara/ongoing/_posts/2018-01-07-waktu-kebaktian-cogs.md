@@ -5,9 +5,10 @@ version: bahasa-malaysia
 event: ongoing
 title: Waktu Kebaktian COGS
 description: Klik di sini untuk maklumat lanjut!
-categories: semua-acara sedang-berlangsung
-image-path: ../assets/img/worship1a.jpg
-share-link: bahasa-malaysia/semua-acara/sedang-berlangsung/2018-01-05-waktu-kebaktian-cogs
+categories: semua-acara ongoing
+image-path: ../../assets/img/worship1a.jpg
+share-link: bahasa-malaysia/semua-acara/ongoing/waktu-kebaktian-cogs
+permalink: /:categories/:title
 
 lang: "ms"
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Acara yang Sedang Berlangsung - Waktu Ibadah (COGS)

@@ -6,7 +6,7 @@ event: ongoing
 title: 教会崇拜
 description: 点击<span class="chi_nounderline">这里</span>获取更多信息!
 categories: all-events ongoing
-image-path: ../assets/img/worship1a.jpg
+image-path: ../../assets/img/worship1a.jpg
 share-link: chinese/all-events/ongoing/cogs-church-services
 permalink: /:categories/:title
 
