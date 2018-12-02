@@ -1,12 +1,12 @@
 ---
 layout: post
-year: 2018
+year: 2017
 version: chinese
 event: past
 title: 儿童圣经营会
-description: 20 - 22/03/2017
+description: 3月20 - 22日2017年
 categories: all-events past
 image-path: ../../assets/img/past/ChildrenBibleCamp.jpg
-share-link: chinese/all-events/past/children-bible-camp
-permalink: /:categories/:title
+share-link: chinese/all-events/past/2017/children-bible-camp
+permalink: /:categories/:year/:title
 ---

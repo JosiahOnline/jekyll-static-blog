@@ -1,16 +1,16 @@
 ---
 layout: theme6
 theme: theme6.css
-year: 2018
+year: 2017
 version: english
 event: past
 title: COGS Christmas Service
-date: 25/12/2017
+description: 25 Dec 2017
 categories: all-events past
 bgimage: https://res.cloudinary.com/trippleninja/image/upload/v1536432419/Baptism%20Service/Sept2018/bs24.jpg
 image-path: http://res.cloudinary.com/trippleninja/image/upload/v1514464675/Christmas%20Day%20Service%2017/christmas1.jpg
-share-link: all-events/past/cogs-christmas-service
-permalink: /:categories/:title
+share-link: all-events/past/2017/cogs-christmas-service
+permalink: /:categories/:year/:title
 
 # For Meta Tag
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - COGS Christmas Service 2017

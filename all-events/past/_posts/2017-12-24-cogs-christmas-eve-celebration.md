@@ -1,14 +1,14 @@
 ---
 layout: theme6
-year: 2018
+year: 2017
 version: english
 event: past
 title: COGS Christmas Eve Celebration
-description: 24/12/2017
+description: 24 Dec 2017
 categories: all-events past
 image-path: http://res.cloudinary.com/trippleninja/image/upload/v1514464898/Christmas%20Eve%20Service%2017/Eve1.jpg
-share-link: all-events/past/cogs-christmas-eve-celebration
-permalink: /:categories/:title
+share-link: all-events/past/2017/cogs-christmas-eve-celebration
+permalink: /:categories/:year/:title
 
 # For Meta Tag
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - Christmas Eve Celebration 2017

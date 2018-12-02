@@ -4,11 +4,11 @@ year: 2018
 version: chinese
 event: past
 title: COGS 圣洗礼崇拜
-date: 01 Sept 2018
+description: 9月1日2018年
 categories: all-events past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1536432419/Baptism%20Service/Sept2018/bs24.jpg
-share-link: chinese/all-events/past/cogs-baptism-service
-permalink: /:categories/:title
+share-link: chinese/all-events/past/2018/cogs-baptism-service
+permalink: /:categories/:year/:title
 
 # For Meta Tag
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - COGS Christmas Service 2017

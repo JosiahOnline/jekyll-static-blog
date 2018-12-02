@@ -4,9 +4,9 @@ year: 2018
 version: chinese
 event: past
 title: COGS 儿童复活节
-date: 01 April 2018
+description: 4月1日2018年
 categories: all-events past
 image-path: http://res.cloudinary.com/trippleninja/image/upload/v1523027105/Children%20Easter/easter1.jpg
-share-link: chinese/all-events/past/cogs-children-easter
-permalink: /:categories/:title
+share-link: chinese/all-events/past/2018/cogs-children-easter
+permalink: /:categories/:year/:title
 ---
