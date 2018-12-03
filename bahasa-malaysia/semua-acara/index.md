@@ -35,7 +35,7 @@ ongoing-pgraph: Klik di <span>sini</span> untuk maklumat lanjut!
 past-h2: Acara Yang Sudah Berlalu
 
 #Ads
-ad-h2: Memperkenalkan Laman Web Rasmi Pedoman Harian
+ad-h2: Memperkenalkan Pedoman Harian
 ad-link: https://pedomanharian.org/
 ad-url: https://res.cloudinary.com/trippleninja/image/upload/v1510301472/Christmas/new_year1.jpg
 ad-news: Philippians 4:13

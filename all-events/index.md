@@ -37,7 +37,7 @@ ongoing-pgraph: Click <span>here</span> for more information!
 past-h2: Past Events
 
 #Ads
-ad-h2: Introducing Our Daily Bread Official Website
+ad-h2: Introducing Our Daily Bread Website
 ad-link: https://odb.org/
 ad-url: https://res.cloudinary.com/trippleninja/image/upload/v1510301472/Christmas/new_year1.jpg
 ad-news: Philippians 4:13
