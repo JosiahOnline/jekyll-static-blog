@@ -148,19 +148,23 @@
     <!-- End of Oncoming events -->
     <div class="setting-width">
       <div class="news-container reduce-margin tabcontent" id="pastEvents">
+        <div class="events-icon">
+          <a><img src="{{site.baseurl}}/assets/img/odb.png"></a>
+          <h2>{{page.ad-h2}}</h2>
+        </div>
+        <article class="main-news" data-groups="past" data-date="2017-12-17" data-title="Weekly ch Churh Bulletin">
+          <a rel="canonical" href="{{page.ad-link}}"><img class="main-image round-radius" src="{{page.ad-url}}">
+                            <div class="main-news-description">
+                                <h1 class="main-news-title">{{page.ad-news}}</h1>
+                                <p class="news-pgraph3">{{page.ad-description}}</p>
+                                <p class="news-pgraph1">{{page.ad-pgraph}}</p>
+                            </div>
+                        </a>
+        </article>
         <div class="events-icon add-radius">
           <a><img src="{{site.baseurl}}/assets/img/trumpet.png"></a>
           <h2>{{page.past-h2}}</h2>
         </div>
-        <article class="main-news" data-groups="past" data-date="2017-12-17" data-title="Weekly ch Churh Bulletin">
-          <a rel="canonical" href="{{site.baseurl}}/{{page.past-link}}"><img class="main-image round-radius" src="{{page.past-url}}">
-                            <div class="main-news-description">
-                                <h1 class="main-news-title">{{page.past-news}}</h1>
-                                <p class="news-pgraph3">{{page.past-description}}</p>
-                                <p class="news-pgraph1">{{page.past-pgraph}}</p>
-                            </div>
-                        </a>
-        </article>
         <div class="top-news">
           {% for post in site.categories.past %}
           <!-- {% if post.version contains page.version  and post.event == "past"%} -->

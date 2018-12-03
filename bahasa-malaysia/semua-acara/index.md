@@ -32,12 +32,15 @@ ongoing-news: Waktu Kebaktian
 ongoing-pgraph: Klik di <span>sini</span> untuk maklumat lanjut!
 
 #Past Events
-past-h2: Sudah Berlalu
-past-link: bahasa-malaysia/semua-acara/sudah-berlalu/_posts/2017-12-17-inspired-christmas-night.md
-past-url: https://res.cloudinary.com/trippleninja/image/upload/v1514560579/Inspired%20Christmas%20Night/Inpsired17.jpg
-past-news: Inspirasi Malam Krismas
-past-description: Special Guest - 羅小白 S.White
-past-pgraph: Klik di <span>sini</span> untuk maklumat lanjut!
+past-h2: Acara Yang Sudah Berlalu
+
+#Ads
+ad-h2: Memperkenalkan Laman Web Rasmi Pedoman Harian
+ad-link: https://pedomanharian.org/
+ad-url: https://res.cloudinary.com/trippleninja/image/upload/v1510301472/Christmas/new_year1.jpg
+ad-news: Philippians 4:13
+ad-description: "Dengan kuasa yang diberikan Kristus kepada saya, saya mempunyai kekuatan untuk menghadapi segala rupa keadaan."
+ad-pgraph: Klik di <span>sini</span> untuk mengakses bahan rohani dari《Pedoman Harian》.
 
 copyright: COGS SANDAKAN @ Hakcipta 2018.
 ---

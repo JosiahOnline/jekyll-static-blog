@@ -35,11 +35,14 @@ ongoing-pgraph: Click <span>here</span> for more information!
 
 #Past Events
 past-h2: Past Events
-past-link: all-events/past/2017/12/17/inspired-christmas-night
-past-url: https://res.cloudinary.com/trippleninja/image/upload/v1514560579/Inspired%20Christmas%20Night/Inpsired17.jpg
-past-news: Inspired Christmas Night
-past-description: Special Guest - 羅小白 S.White
-past-pgraph: Click <span>here</span> for all pictures & videos
+
+#Ads
+ad-h2: Introducing Our Daily Bread Official Website
+ad-link: https://odb.org/
+ad-url: https://res.cloudinary.com/trippleninja/image/upload/v1510301472/Christmas/new_year1.jpg
+ad-news: Philippians 4:13
+ad-description: "I can do all this through him who gives me strength."
+ad-pgraph: Click <span>here</span> to access spiritual material from《Our Daily Bread》 .
 
 copyright: COGS SANDAKAN @ Copyright 2018.
 ---

@@ -37,11 +37,14 @@ ongoing-pgraph: 点击<span>这里</span>以查看更多信息
 
 #Past Events
 past-h2: 过去的活动
-past-link: chinese/all-events/past/cogs-confirmation-service
-past-url: https://res.cloudinary.com/trippleninja/image/upload/v1536433446/Confirmation%20Service/Sept2018/cs36.jpg
-past-news: COGS 坚振礼崇拜
-past-description: 9月08日2018年
-past-pgraph: 点击<span>这里</span>以查看更多信息
+
+#Ads
+ad-h2: 介绍灵命日粮简体中文网站
+ad-link: https://simplified-odb.org/
+ad-url: https://res.cloudinary.com/trippleninja/image/upload/v1510301472/Christmas/new_year1.jpg
+ad-news: 腓立比書 4:13
+ad-description: "我靠著那加給我力量的，凡事都能做。"
+ad-pgraph: 点击<span>这里</span>以获取《灵命日粮》这本众人熟悉的灵修材料。
 
 copyright: 山打根善牧堂版权所有©2018.
 ---
