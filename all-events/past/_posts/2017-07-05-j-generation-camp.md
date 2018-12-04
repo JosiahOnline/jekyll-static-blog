@@ -12,6 +12,7 @@ share-link: all-events/past/2017/j-generation-camp
 permalink: /:categories/:year/:title
 
 # For Meta Tag
+lang: "en"
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - J Generation Youth Camp 2017
 meta-description: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event - The Diocess Youth Camp J Generation was organized in COGS Sandakan during August 2017
 image-description: Praying for the Youth Generation in The Church of The Good Shepherds(COGS)

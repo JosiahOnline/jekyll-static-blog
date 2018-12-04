@@ -12,6 +12,7 @@ share-link: all-events/past/2017/children-bible-camp
 permalink: /:categories/:year/:title
 
 # For Meta Tag
+lang: "en"
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - Children Bible Camp March 2017
 meta-description: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event - A Children Bible Camp organized in COGS Sandakan on March 2017
 image-description: Children in The Church of The Good Shepherds(COGS)

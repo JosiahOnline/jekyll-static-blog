@@ -12,6 +12,7 @@ share-link: all-events/past/2017/sandakan-interchurch
 permalink: /:categories/:year/:title
 
 # For Meta Tag
+lang: "en"
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - Sandakan Interchurch Christmas Celebration
 meta-description: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event - This event was organised by the Sandakan Municipal Council (SMC) and Sandakan Inter Church (SIC)
 image-description: Christmas Celebration in Sandakan Municipal field
