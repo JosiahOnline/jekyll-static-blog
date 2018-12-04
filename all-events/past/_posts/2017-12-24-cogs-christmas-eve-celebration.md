@@ -1,5 +1,5 @@
 ---
-layout: theme6
+layout: piclayout
 year: 2017
 version: english
 event: past

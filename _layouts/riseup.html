@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Article" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{page.meta-title}}</title>
+    <meta name="description" content="{{page.meta-title}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{page.meta-title}}">
+    <meta itemprop="description" content="{{page.meta-description}}">
+    <meta itemprop="image" content="{{page.image-path}}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cogssandakan">
+    <meta name="twitter:title" content="{{page.meta-title}}">
+    <meta name="twitter:description" content="{{page.meta-description}}">
+    <meta name="twitter:creator" content="@cogssandakan">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image" content="{{page.image-path}}">
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="149572635665595"/><!-- must have app id-->
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="{{site.baseurl}}{{page.share-link}}"/>
+    <meta property="og:title" content="{{page.meta-title}}"/>
+    <meta property="og:description" content="{{page.meta-description}}"/>
+    <meta property="og:image" content="{{page.image-path}}"/>
+    <meta property="og:image:alt" content="{{page.image-description}}"/>
+
+<link href="{{site.baseurl}}/assets/css/font.css" rel="stylesheet" type="text/css">
+<link href="{{site.baseurl}}/assets./css/theme6.css" rel="stylesheet" type="text/css">
+
+<link href="{{site.baseurl}}/assets/img/favicon/favicon2-96x96.png" rel="shortcut icon" type="image/x-icon">
+<link href="{{site.baseurl}}/assets/img/favicon/apple-icon2-180x180.png" rel="apple-touch-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .main-section {
+        background-image: url({{page.image-path}});
+    }
+    .transparent-layer {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    .verse-container .verse-pgraph {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .link, .text-block {
+        color: black;
+    }
+    .scroll-container .scroll-down {
+        line-height: 35px;
+        padding: 8px 16px;
+        border-radius: 50px;
+        background-color: rgba(245,245,245,1);
+        -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    }
+
+    .scroll-down img {
+        margin-bottom: 5px;
+    }
+
+    .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8, .pic9, .pic10 {
+        height: 100vh;
+        width: 100%;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width:1370px) and (orientation:landscape) {
+        .scroll-container .scroll-down {
+            line-height: 45px;
+            padding: 10px 22px;
+        }
+    }
+
+    @media screen and (max-width:1370px) and (max-height: 670px) {
+        .scroll-container .scroll-down {
+            line-height: 35px;
+        }
+    }
+
+    @media screen and (max-width:1281px) and (max-height: 951px) {
+        .scroll-container .scroll-down {
+            line-height: 37px;
+            padding: 7px 20px;
+        }
+        .scroll-down img {
+            margin-bottom: 3px;
+        }
+    }
+
+    @media screen and (max-width:1100px) {
+        .scroll-container .scroll-down {
+            font-size: 0.9rem;
+            line-height: 32px;
+            padding: 5px 20px;
+        }
+        .scroll-down img {
+            width: 22px;
+            margin-bottom: 1px;
+        }
+    }
+
+    @media screen and (max-width:1024px) {
+        .top-nav {
+            background-color: rgba(245,245,245,0.9);
+        }
+        .scroll-container .scroll-down {
+            font-size: 1rem;
+            line-height: 50px;
+            padding: 13px 22px;
+        }
+    }
+
+    @media screen and (max-width:1024px) and (max-height:770px)  {
+        .scroll-container .scroll-down {
+            font-size: 0.9rem;
+            line-height: 32px;
+            padding: 8px 20px;
+        }
+    }
+
+    @media screen and (max-width:1024px) and (max-height:770px)  {
+        .scroll-container .scroll-down {
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width:800px) and (max-height:1140px) {
+        .scroll-container .scroll-down {
+            line-height: 45px;
+            padding: 10px 22px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .scroll-container .scroll-down {
+            line-height: 50px;
+        }
+    }
+
+    @media screen and ( max-width: 610px ) and ( max-height: 940px ) {
+        .scroll-container .scroll-down {
+            font-size: 0.8rem;
+            line-height: 40px;
+            padding: 8px 20px;
+        }
+    }
+
+    @media screen and (max-width:430px) and (max-height:840px) {
+        .scroll-container .scroll-down {
+            line-height: 28px;
+            padding: 10px 20px;
+        }
+    }
+
+    @media screen and (max-width:430px) and (max-height:630px) {
+        .scroll-container {
+            bottom: 10px;
+        }
+        .scroll-container .scroll-down {
+            padding: 6px 16px;
+        }
+    }
+
+    @media screen and ( max-width: 380px) {
+        .scroll-container .scroll-down {
+            padding: 6px 16px;
+        }
+    }
+
+    @media screen and ( max-width: 380px) and ( max-height: 560px) {
+        .scroll-container .scroll-down {
+            font-size: 0.7rem;
+        }
+    }
+
+    @media screen and ( max-width: 360px) and ( max-height: 640px) {
+        .scroll-container .scroll-down {
+            font-size: 0.7rem;
+        }
+    }
+</style>
+<body class="body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P44M4ZR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="fullpage">
+    <div class="main-section section">
+      <div class="transparent-layer"></div>
+      <div class="top-nav">
+        <div class="top-container">
+          <div class="text-block">{{page.logo}}</div>
+          <a href="http://www.cogssandakan.com/News/COGS_All_Events.html" class="link">{{page.back}}</a>
+        </div>
+      </div>
+      <div class="verse-container">
+        <p class="verse-pgraph">{{page.main-message}}</p>
+        <div class="scroll-container">
+          <h1 class="link scroll-down">{{page.scroll-down}} <img src={{"/assets/img/arrow-down(b).png" | relative_url }}></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="share-info section">
+      <div class="share-container w-container">
+        <p class="share-pgraph">{{page.share-pgraph}}</p>
+        <div class="share-button" target="_blank"><span>{{page.click}}</span></div>
+        <div class="web__share">
+          <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{site.baseurl}}/{{page.share-link}}" target="_blank"><span class="fa fa-facebook"></span></a>
+          <a class="share-icon twitter" href="https://twitter.com/share?url={{site.url}}{{site.baseurl}}/{{page.share-link}}" target="_blank"><span class="fa fa-twitter"></span></a>
+          <a class="share-icon googleplus" href="https://plus.google.com/share?url={{site.url}}{{site.baseurl}}/{{page.share-link}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+          <a class="share-icon whatsapp" href="whatsapp://send?text={{site.url}}{{site.baseurl}}/{{page.share-link}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+        </div>
+      </div>
+      <div class="scroll2-container">
+        <h1 class="link scroll-down">{{page.scroll-down}} <img src={{"/assets/img/arrow-down(b).png" | relative_url }} ></h1>
+      </div>
+    </div>
+
+    <div class="section slide-container">
+      {{content}}
+
+      <div class="fb-container">
+        <a href="https://www.facebook.com/cogssandakan" target="_blank" class="link fb-link">{{page.all-pictures}} <img src={{"/assets/img/social/fb3.png" | relative_url }}></a><span class="tooltiptext">{{page.fb-pic}}</span>
+      </div>
+    </div>
+    {% include footer.html %}
+  </div>
+  {% include rotate.html %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="{{site.baseurl}}/assets/js/jquery.fullPage.min.js" | relative_url }} type="text/javascript"></script>
+  <script src="{{site.baseurl}}/assets/js/event.js" | relative_url }} type="text/javascript"></script>
+
+</body>
+
+</html>

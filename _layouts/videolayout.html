@@ -39,7 +39,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     .main-section {
-        background-image: url{{page.bgimage}};
+        background-image: url({{page.image-path}});
     }
 </style>
 <body class="body">
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="verse-container">
-        <p class="verse-pgraph"></p>
+        <p class="verse-pgraph">{{page.main-message}}</p>
         <div class="scroll-container">
           <h1 class="link scroll-down">{{page.scroll-down}} <img src={{"/assets/img/arrow-down.png" | relative_url }}></h1>
         </div>
@@ -70,10 +70,10 @@
         <p class="share-pgraph">{{page.share-pgraph}}</p>
         <div class="share-button" target="_blank"><span>{{page.click}}</span></div>
         <div class="web__share">
-          <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//{{site.url}}{{page.share-link}}" target="_blank"><span class="fa fa-facebook"></span></a>
-          <a class="share-icon twitter" href="https://twitter.com/share?url=http%3A//{{site.url}}{{page.share-link}}" target="_blank"><span class="fa fa-twitter"></span></a>
-          <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//{{site.url}}{{page.share-link}}" target="_blank"><span class="fa fa-google-plus"></span></a>
-          <a class="share-icon whatsapp" href="whatsapp://send?text=http://{{site.url}}{{page.share-link}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
+          <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{site.baseurl}}/{{page.share-link}}" target="_blank"><span class="fa fa-facebook"></span></a>
+          <a class="share-icon twitter" href="https://twitter.com/share?url={{site.url}}{{site.baseurl}}/{{page.share-link}}" target="_blank"><span class="fa fa-twitter"></span></a>
+          <a class="share-icon googleplus" href="https://plus.google.com/share?url={{site.url}}{{site.baseurl}}/{{page.share-link}}" target="_blank"><span class="fa fa-google-plus"></span></a>
+          <a class="share-icon whatsapp" href="whatsapp://send?text={{site.url}}{{site.baseurl}}/{{page.share-link}}" target="_blank"><span class="fa fa-whatsapp"></span></a>
         </div>
       </div>
       <div class="scroll2-container">
@@ -84,10 +84,18 @@
     <div class="section slide-container">
       {{content}}
 
+      <div class="scroll-container">
+          <h1 class="link scroll-down">{{page.scroll-down}} <img src={{"/assets/img/arrow-down(b).png" | relative_url }} ></h1>
+      </div>
+    </div>
+
+    <div class="youtube section">
+      <iframe width="560" height="315" src="{{page.youtube}}" frameborder="0" allowfullscreen></iframe>
       <div class="fb-container">
         <a href="https://www.facebook.com/cogssandakan" target="_blank" class="link fb-link">{{page.all-pictures}} <img src={{"/assets/img/social/fb3.png" | relative_url }}></a><span class="tooltiptext">{{page.fb-pic}}</span>
       </div>
     </div>
+
     {% include footer.html %}
   </div>
   {% include rotate.html %}
