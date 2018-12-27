@@ -11,7 +11,6 @@ image-path: http://res.cloudinary.com/trippleninja/image/upload/v1514560579/Insp
 share-link: all-events/past/2017/inspired-christmas-night
 permalink: /:categories/:year/:title
 
-
 # For Meta Tag
 lang: "en"
 meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - Inspired Christmas Night 2017
