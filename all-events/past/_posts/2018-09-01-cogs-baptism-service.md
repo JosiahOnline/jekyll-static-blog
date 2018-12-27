@@ -12,9 +12,11 @@ share-link: all-events/past/2018/cogs-baptism-service
 permalink: /:categories/:year/:title
 
 # For Meta Tag
-meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - COGS Christmas Service 2017
-meta-description: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event - COGS Christmas Service(2017) was held in Vision Primary School Sandakan
-image-description: Christmas Service in Vision Primary School Sandakan
+meta-title: TThe Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event -  COGS Baptism Service Sept 2018
+meta-description: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event -  COGS Baptism Service was organized in (COGS), Sandakan during 01 September 2018
+image-description: COGS Baptism Service Sept 2018
+
+main-message: COGS Baptism Service was organized in COGS Sandakan
 
 # For Page Information
 logo: COGS SANDAKAN
@@ -137,6 +139,97 @@ copyright: COGS SANDAKAN @ Copyright 2018.
     <div class="pic-container">
         <h1 class="slide-heading">
             Picture 16
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432406/Baptism%20Service/Sept2018/bs17.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 17
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432417/Baptism%20Service/Sept2018/bs18.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 18
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432417/Baptism%20Service/Sept2018/bs19.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 19
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432416/Baptism%20Service/Sept2018/bs20.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 20
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432416/Baptism%20Service/Sept2018/bs21.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 21
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432414/Baptism%20Service/Sept2018/bs22.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 22
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432416/Baptism%20Service/Sept2018/bs23.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 23
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432419/Baptism%20Service/Sept2018/bs24.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 24
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432365/Baptism%20Service/Sept2018/bs25.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 25
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432375/Baptism%20Service/Sept2018/bs26.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 26
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432371/Baptism%20Service/Sept2018/bs27.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 27
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432379/Baptism%20Service/Sept2018/bs28.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 28
+        </h1>
+    </div>
+</div>
+<div class="slide"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1536432389/Baptism%20Service/Sept2018/bs29.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Picture 29
         </h1>
     </div>
 </div>
