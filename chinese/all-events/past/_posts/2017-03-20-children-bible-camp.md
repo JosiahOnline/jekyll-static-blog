@@ -35,70 +35,70 @@ copyright: COGS SANDAKAN @ Copyright 2018.
 <div class="slide active"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730432/Children%20Bible%20Camp%2017/camp27.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 1
+            图片 1
         </h1>
     </div>
 </div>
 <div class="slide pic2"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730375/Children%20Bible%20Camp%2017/camp16.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 2
+            图片 2
         </h1>
     </div>
 </div>
 <div class="slide pic3"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730389/Children%20Bible%20Camp%2017/camp41.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 3
+            图片 3
         </h1>
     </div>
 </div>
 <div class="slide pic4"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730443/Children%20Bible%20Camp%2017/camp3.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 4
+            图片 4
         </h1>
     </div>
 </div>
 <div class="slide pic5"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730439/Children%20Bible%20Camp%2017/camp29.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 5
+            图片 5
         </h1>
     </div>
 </div>
 <div class="slide pic6"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730364/Children%20Bible%20Camp%2017/camp35.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 6
+            图片 6
         </h1>
     </div>
 </div>
 <div class="slide pic7"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730359/Children%20Bible%20Camp%2017/camp34.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 7
+            图片 7
         </h1>
     </div>
 </div>
 <div class="slide pic8"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730393/Children%20Bible%20Camp%2017/camp40.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 8
+            图片 8
         </h1>
     </div>
 </div>
 <div class="slide pic9"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730428/Children%20Bible%20Camp%2017/camp45.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 9
+            图片 9
         </h1>
     </div>
 </div>
 <div class="slide pic10"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1507730362/Children%20Bible%20Camp%2017/camp1.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 10
+            图片 10
         </h1>
     </div>
 </div>

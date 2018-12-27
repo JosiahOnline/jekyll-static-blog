@@ -34,140 +34,140 @@ copyright: COGS SANDAKAN @ Copyright 2018.
 <div class="slide active"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464525/Children%20Christmas%20Celebration%2017/2.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 1
+            图片 1
         </h1>
     </div>
 </div>
 <div class="slide pic2"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464513/Children%20Christmas%20Celebration%2017/3.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 2
+            图片 2
         </h1>
     </div>
 </div>
 <div class="slide pic3"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464527/Children%20Christmas%20Celebration%2017/4.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 3
+            图片 3
         </h1>
     </div>
 </div>
 <div class="slide pic4"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464547/Children%20Christmas%20Celebration%2017/5.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 4
+            图片 4
         </h1>
     </div>
 </div>
 <div class="slide pic5"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464541/Children%20Christmas%20Celebration%2017/6.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 5
+            图片 5
         </h1>
     </div>
 </div>
 <div class="slide pic6"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464556/Children%20Christmas%20Celebration%2017/7.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 6
+            图片 6
         </h1>
     </div>
 </div>
 <div class="slide pic7"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464540/Children%20Christmas%20Celebration%2017/8.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 7
+            图片 7
         </h1>
     </div>
 </div>
 <div class="slide pic8"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464540/Children%20Christmas%20Celebration%2017/9.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 8
+            图片 8
         </h1>
     </div>
 </div>
 <div class="slide pic9"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464549/Children%20Christmas%20Celebration%2017/10.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 9
+            图片 9
         </h1>
     </div>
 </div>
 <div class="slide pic10"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464559/Children%20Christmas%20Celebration%2017/11.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 10
+            图片 10
         </h1>
     </div>
 </div>
 <div class="slide pic11"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464553/Children%20Christmas%20Celebration%2017/12.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 11
+            图片 11
         </h1>
     </div>
 </div>
 <div class="slide pic12"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464567/Children%20Christmas%20Celebration%2017/13.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 12
+            图片 12
         </h1>
     </div>
 </div>
 <div class="slide pic13"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464557/Children%20Christmas%20Celebration%2017/14.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 13
+            图片 13
         </h1>
     </div>
 </div>
 <div class="slide pic14"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464523/Children%20Christmas%20Celebration%2017/15.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 14
+            图片 14
         </h1>
     </div>
 </div>
 <div class="slide pic15"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464519/Children%20Christmas%20Celebration%2017/16.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 15
+            图片 15
         </h1>
     </div>
 </div>
 <div class="slide pic16"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464533/Children%20Christmas%20Celebration%2017/17.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 16
+            图片 16
         </h1>
     </div>
 </div>
 <div class="slide pic17"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464526/Children%20Christmas%20Celebration%2017/18.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 17
+            图片 17
         </h1>
     </div>
 </div>
 <div class="slide pic18"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464522/Children%20Christmas%20Celebration%2017/24.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 18
+            图片 18
         </h1>
     </div>
 </div>
 <div class="slide pic19"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464568/Children%20Christmas%20Celebration%2017/31.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 19
+            图片 19
         </h1>
     </div>
 </div>
 <div class="slide pic20"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464600/Children%20Christmas%20Celebration%2017/33.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 20
+            图片 20
         </h1>
     </div>
 </div>

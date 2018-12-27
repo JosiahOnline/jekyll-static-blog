@@ -17,7 +17,7 @@ meta-title: 善牧堂 (山打根圣公会教堂) | 过去的活动 - 山打根 I
 meta-description: 善牧堂 (山打根圣公会教堂) | 过去的活动 - 此次活动由山打根市议会（SMC）和山打根国Interchurch（SIC）组织。
 image-description: 在山打根市政领域的圣诞节庆祝
 
-main-message: 
+main-message:
 
 # For Page Information
 logo: 山打根圣公会善牧堂(COGS)
@@ -34,98 +34,98 @@ copyright: COGS SANDAKAN @ Copyright 2018.
 <div class="slide active"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826134/Interchurch%20Christmas/sic-1.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 1
+            图片 1
         </h1>
     </div>
 </div>
 <div class="slide pic2"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826145/Interchurch%20Christmas/sic-2.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 2
+            图片 2
         </h1>
     </div>
 </div>
 <div class="slide pic3"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826138/Interchurch%20Christmas/sic-3.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 3
+            图片 3
         </h1>
     </div>
 </div>
 <div class="slide pic4"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826140/Interchurch%20Christmas/sic-4.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 4
+            图片 4
         </h1>
     </div>
 </div>
 <div class="slide pic5"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826140/Interchurch%20Christmas/sic-5.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 5
+            图片 5
         </h1>
     </div>
 </div>
 <div class="slide pic6"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826137/Interchurch%20Christmas/sic-6.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 6
+            图片 6
         </h1>
     </div>
 </div>
 <div class="slide pic7"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826148/Interchurch%20Christmas/sic-7.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 7
+            图片 7
         </h1>
     </div>
 </div>
 <div class="slide pic8"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826146/Interchurch%20Christmas/sic-8.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 8
+            图片 8
         </h1>
     </div>
 </div>
 <div class="slide pic9"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826150/Interchurch%20Christmas/sic-9.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 9
+            图片 9
         </h1>
     </div>
 </div>
 <div class="slide pic10"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826147/Interchurch%20Christmas/sic-10.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 10
+            图片 10
         </h1>
     </div>
 </div>
 <div class="slide pic11"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826154/Interchurch%20Christmas/sic-11.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 11
+            图片 11
         </h1>
     </div>
 </div>
 <div class="slide pic12"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826153/Interchurch%20Christmas/sic-12.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 12
+            图片 12
         </h1>
     </div>
 </div>
 <div class="slide pic13"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826154/Interchurch%20Christmas/sic-13.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 13
+            图片 13
         </h1>
     </div>
 </div>
 <div class="slide pic14"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1512826156/Interchurch%20Christmas/sic-14.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 14
+            图片 14
         </h1>
     </div>
 </div>

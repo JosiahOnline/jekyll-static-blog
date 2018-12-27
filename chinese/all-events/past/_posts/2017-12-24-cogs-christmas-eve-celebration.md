@@ -17,7 +17,7 @@ meta-title: 善牧堂 (山打根圣公会教堂) | 过去的活动 - 平安夜�
 meta-description: 善牧堂 (山打根圣公会教堂) | 过去的活动 - 庆祝圣诞节的原因是因为我们的主耶稣为我们而死。让我们聚在一起纪念他的牺牲和爱！
 image-description: 平安夜崇拜(联合)在善牧堂 (山打根圣公会教堂)
 
-main-message: 平安夜崇拜(联合)在善牧堂 
+main-message: 平安夜崇拜(联合)在善牧堂
 
 # For Page Information
 logo: 山打根圣公会善牧堂(COGS)
@@ -33,105 +33,105 @@ copyright: COGS SANDAKAN @ Copyright 2018.
 <div class="slide active"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464884/Christmas%20Eve%20Service%2017/Eve2.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 1
+            图片 1
         </h1>
     </div>
 </div>
 <div class="slide pic2"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464898/Christmas%20Eve%20Service%2017/Eve1.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 2
+            图片 2
         </h1>
     </div>
 </div>
 <div class="slide pic3"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464888/Christmas%20Eve%20Service%2017/Eve3.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 3
+            图片 3
         </h1>
     </div>
 </div>
 <div class="slide pic4"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464895/Christmas%20Eve%20Service%2017/Eve4.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 4
+            图片 4
         </h1>
     </div>
 </div>
 <div class="slide pic5"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464916/Christmas%20Eve%20Service%2017/Eve5.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 5
+            图片 5
         </h1>
     </div>
 </div>
 <div class="slide pic6"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464905/Christmas%20Eve%20Service%2017/Eve6.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 6
+            图片 6
         </h1>
     </div>
 </div>
 <div class="slide pic7"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464909/Christmas%20Eve%20Service%2017/Eve7.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 7
+            图片 7
         </h1>
     </div>
 </div>
 <div class="slide pic8"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464897/Christmas%20Eve%20Service%2017/Eve8.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 8
+            图片 8
         </h1>
     </div>
 </div>
 <div class="slide pic9"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464899/Christmas%20Eve%20Service%2017/Eve9.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 9
+            图片 9
         </h1>
     </div>
 </div>
 <div class="slide pic10"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464906/Christmas%20Eve%20Service%2017/Eve10.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 10
+            图片 10
         </h1>
     </div>
 </div>
 <div class="slide pic11"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464915/Christmas%20Eve%20Service%2017/Eve11.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 11
+            图片 11
         </h1>
     </div>
 </div>
 <div class="slide pic12"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464920/Christmas%20Eve%20Service%2017/Eve12.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 12
+            图片 12
         </h1>
     </div>
 </div>
 <div class="slide pic13"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464917/Christmas%20Eve%20Service%2017/Eve13.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 13
+            图片 13
         </h1>
     </div>
 </div>
 <div class="slide pic14"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464887/Christmas%20Eve%20Service%2017/Eve14.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 14
+            图片 14
         </h1>
     </div>
 </div>
 <div class="slide pic15"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464918/Christmas%20Eve%20Service%2017/Eve15.jpg">
     <div class="pic-container">
         <h1 class="slide-heading">
-            Picture 15
+            图片 15
         </h1>
     </div>
 </div>
