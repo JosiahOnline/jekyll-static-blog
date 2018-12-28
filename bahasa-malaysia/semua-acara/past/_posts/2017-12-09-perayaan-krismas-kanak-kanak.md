@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: videolayout
+theme: theme6.css
 year: 2017
 version: bahasa-malaysia
 event: past
@@ -9,4 +10,164 @@ categories: semua-acara past
 image-path: http://res.cloudinary.com/trippleninja/image/upload/v1514464583/Children%20Christmas%20Celebration%2017/22.jpg
 share-link: bahasa-malaysia/semua-acara/past/2017/perayaan-krismas-kanak-kanak
 permalink: /:categories/:year/:title
+
+# For Meta Tag
+lang: "ms"
+meta-title: The Church of The Good Shepherd (COGS) Sandakan | Acara yang Sudah Berlalu - Perayaan Krismas Kanak-Kanak
+meta-description: The Church of The Good Shepherd (Gereja Anglikan di Sandakan) | Acara yang Sudah Berlalu - Sertai kami bersama dan perayaan Natal dengan semua kawan anda, semua anak-anak dialu-alukan untuk menyertai!
+image-description: Kanak-kanak di Gereja Good Shepherd Sandakan(COGS)
+
+main-message: "YESUS - Cahaya Dunia"
+youtube: https://www.youtube.com/embed/D3aXU5fgbGg
+
+# For Page Information
+logo: COGS SANDAKAN
+back: ACARA
+scroll-down: Skrol ke bawah
+share-pgraph: Adakah anda tahu bahawa maklumat ini boleh dikongsikan melalui Facebook, Twitter, GooglePlus dan Whatsapp? Klik butang di bawah, kongsi dan jemput rakan-rakan atau keluarga anda untuk menyertai acara ini!
+click: Klik untuk kongsi
+picture: Gambar
+all-pictures: ACARA COGS
+fb-pic: Klik untuk semua gambar di Facebook
+copyright: COGS SANDAKAN @ Copyright 2018.
 ---
+<div class="slide active"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464525/Children%20Christmas%20Celebration%2017/2.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 1
+        </h1>
+    </div>
+</div>
+<div class="slide pic2"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464513/Children%20Christmas%20Celebration%2017/3.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 2
+        </h1>
+    </div>
+</div>
+<div class="slide pic3"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464527/Children%20Christmas%20Celebration%2017/4.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 3
+        </h1>
+    </div>
+</div>
+<div class="slide pic4"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464547/Children%20Christmas%20Celebration%2017/5.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 4
+        </h1>
+    </div>
+</div>
+<div class="slide pic5"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464541/Children%20Christmas%20Celebration%2017/6.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 5
+        </h1>
+    </div>
+</div>
+<div class="slide pic6"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464556/Children%20Christmas%20Celebration%2017/7.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 6
+        </h1>
+    </div>
+</div>
+<div class="slide pic7"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464540/Children%20Christmas%20Celebration%2017/8.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 7
+        </h1>
+    </div>
+</div>
+<div class="slide pic8"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464540/Children%20Christmas%20Celebration%2017/9.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 8
+        </h1>
+    </div>
+</div>
+<div class="slide pic9"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464549/Children%20Christmas%20Celebration%2017/10.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 9
+        </h1>
+    </div>
+</div>
+<div class="slide pic10"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464559/Children%20Christmas%20Celebration%2017/11.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 10
+        </h1>
+    </div>
+</div>
+<div class="slide pic11"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464553/Children%20Christmas%20Celebration%2017/12.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 11
+        </h1>
+    </div>
+</div>
+<div class="slide pic12"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464567/Children%20Christmas%20Celebration%2017/13.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 12
+        </h1>
+    </div>
+</div>
+<div class="slide pic13"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464557/Children%20Christmas%20Celebration%2017/14.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 13
+        </h1>
+    </div>
+</div>
+<div class="slide pic14"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464523/Children%20Christmas%20Celebration%2017/15.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 14
+        </h1>
+    </div>
+</div>
+<div class="slide pic15"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464519/Children%20Christmas%20Celebration%2017/16.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 15
+        </h1>
+    </div>
+</div>
+<div class="slide pic16"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464533/Children%20Christmas%20Celebration%2017/17.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 16
+        </h1>
+    </div>
+</div>
+<div class="slide pic17"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464526/Children%20Christmas%20Celebration%2017/18.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 17
+        </h1>
+    </div>
+</div>
+<div class="slide pic18"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464522/Children%20Christmas%20Celebration%2017/24.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 18
+        </h1>
+    </div>
+</div>
+<div class="slide pic19"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464568/Children%20Christmas%20Celebration%2017/31.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 19
+        </h1>
+    </div>
+</div>
+<div class="slide pic20"><img src="http://res.cloudinary.com/trippleninja/image/upload/v1514464600/Children%20Christmas%20Celebration%2017/33.jpg">
+    <div class="pic-container">
+        <h1 class="slide-heading">
+            Gambar 20
+        </h1>
+    </div>
+</div>
