@@ -2,32 +2,32 @@
 layout: piclayout
 theme: theme6.css
 year: 2018
-version: english
+version: chinese
 event: past
-title: Bishop Open House
-description: 29 Dec 2018
+title: 会督门户开放日
+description: 12月29日2018年
 categories: all-events past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1550732223/Christmas/Bishop%20Open%20House/4.jpg
-share-link: all-events/past/2018/bishop-open-house
+share-link: chinese/all-events/past/2018/bishop-open-house
 permalink: /:categories/:year/:title
 
 # For Meta Tag
-lang: "en"
-meta-title: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event -  Bishop Open House 2018
-meta-description: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event -  Bishop Open House was organized in Vision School Sandakan 2018
-image-description: Bishop Open House 2018
+lang: "zh-Hans"
+meta-title: 善牧堂 (山打根圣公会教堂) | 过去的活动 -   会督门户开放日
+meta-description: 善牧堂 (山打根圣公会教堂) | 过去的活动 -   在圣愿学校礼堂举办的会督门户开放日
+image-description: 在圣愿学校礼堂举办的会督门户开放日
 
-main-message: Bishop Open House was organized in Vision School Sandakan
+main-message: 会督门户开放日 2018年
 
 # For Page Information
-logo: COGS SANDAKAN
-back: EVENTS
-scroll-down: Scroll Down
-share-pgraph: Do you know you can share this info and post in Facebook, Twitter, GooglePlus and even Whatsapp group? Just click below button and choose the right social media to share!
-click: Click to Share
-picture: Picture
-all-pictures: All PICTURES
-fb-pic: Click here for all pictures in our Facebook
+logo: 山打根圣公会善牧堂(COGS)
+back: 活动
+scroll-down: 向下滑动
+share-pgraph: 您知道您可以分享这些信息，并发布在Facebook，Twitter，GooglePlus甚至Whatsapp组？只需点击下面的按钮，分享并邀请您的朋友/家人加入这个活动！
+click: 点击分享
+picture: 图片
+all-pictures: 所有图片
+fb-pic: 点击此处查看我们Facebook上的所有图片
 copyright: COGS SANDAKAN @ Copyright 2018.
 ---
 

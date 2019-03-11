@@ -7,7 +7,7 @@ event: past
 title: Children Motivation Camp
 description: 20 - 22 Aug 2018
 categories: all-events past
-image-path: https://res.cloudinary.com/trippleninja/image/upload/v1543756391/COGS%20Children/ChildrenMotivationCamp1.jpg
+image-path: https://res.cloudinary.com/trippleninja/image/upload/v1550839123/COGS%20Children/cmc6.jpg
 share-link: all-events/past/2018/children-motivation-camp
 permalink: /:categories/:year/:title
 

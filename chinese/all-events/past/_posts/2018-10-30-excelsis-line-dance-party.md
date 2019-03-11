@@ -2,32 +2,32 @@
 layout: piclayout
 theme: theme6.css
 year: 2018
-version: english
+version: chinese
 event: past
 title: Excelsis Line Dance Jamming Party
-description: 30 Oct 2018
+description: 10月30日2018年
 categories: all-events past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1552269038/LineDance/NovParty2018/Nov12.jpg
-share-link: all-events/past/2018/excelsis-line-dance-party
+share-link: chinese/all-events/past/2018/excelsis-line-dance-party
 permalink: /:categories/:year/:title
 
 # For Meta Tag
-lang: "en"
-meta-title: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event -  COGS Excelsis Line Dance Party 2018
-meta-description: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event -  COGS Excelsis Line Dance Party was organized in (COGS), Sandakan during 30 October 2018
-image-description: COGS Excelsis Line Dance Party 2018
+lang: "zh-Hans"
+meta-title: 善牧堂 (山打根圣公会教堂) | 过去的活动 -   COGS Excelsis Line Dance Party NOV 2018
+meta-description: 善牧堂 (山打根圣公会教堂) | 过去的活动 -   在善牧堂举办的COGS Excelsis Line Dance Party
+image-description: COGS Excelsis Line Dance Party NOV 2018
 
-main-message: COGS Excelsis Line Dance Party was organized in COGS Sandakan
+main-message: 在善牧堂举办的COGS Excelsis Line Dance Party
 
 # For Page Information
-logo: COGS SANDAKAN
-back: EVENTS
-scroll-down: Scroll Down
-share-pgraph: Do you know you can share this info and post in Facebook, Twitter, GooglePlus and even Whatsapp group? Just click below button and choose the right social media to share!
-click: Click to Share
-picture: Picture
-all-pictures: All PICTURES
-fb-pic: Click here for all pictures in our Facebook
+logo: 山打根圣公会善牧堂(COGS)
+back: 活动
+scroll-down: 向下滑动
+share-pgraph: 您知道您可以分享这些信息，并发布在Facebook，Twitter，GooglePlus甚至Whatsapp组？只需点击下面的按钮，分享并邀请您的朋友/家人加入这个活动！
+click: 点击分享
+picture: 图片
+all-pictures: 所有图片
+fb-pic: 点击此处查看我们Facebook上的所有图片
 copyright: COGS SANDAKAN @ Copyright 2018.
 ---
 
