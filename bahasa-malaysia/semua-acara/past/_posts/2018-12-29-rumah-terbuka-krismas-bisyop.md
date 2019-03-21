@@ -8,7 +8,7 @@ title: Rumah Terbuka Krismas Bisyop
 description: 29 Disember 2018
 categories: all-events past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1550732223/Christmas/Bishop%20Open%20House/4.jpg
-share-link: all-events/past/2018/rumah-terbuka-krismas-bisyop
+share-link: bahasa-malaysia/semua-acara/past/2018/rumah-terbuka-krismas-bisyop
 permalink: /:categories/:year/:title
 
 # For Meta Tag

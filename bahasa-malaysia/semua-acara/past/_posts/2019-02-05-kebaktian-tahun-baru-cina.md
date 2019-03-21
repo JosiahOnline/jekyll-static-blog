@@ -8,7 +8,7 @@ title: Kebaktian Tahun Baru Cina
 description: 05 Feb 2019
 categories: all-events past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1548499667/News%20Images/cny2.jpg
-share-link: all-events/past/2019/kebaktian-tahun-baru-cina
+share-link: bahasa-malaysia/semua-acara/past/2019/kebaktian-tahun-baru-cina
 permalink: /:categories/:year/:title
 
 # For Meta Tag
