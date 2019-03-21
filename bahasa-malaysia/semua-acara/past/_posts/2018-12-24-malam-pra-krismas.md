@@ -2,31 +2,31 @@
 layout: piclayout
 theme: theme6.css
 year: 2018
-version: english
+version: bahasa-malaysia
 event: past
-title: COGS Christmas Eve Celebration
-description: 24 Dec 2018
+title: Malam Pra Krismas
+description: 24 Disember 2018
 categories: all-events past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1550732167/Christmas/Christmas%20Eve/2018/eve12.jpg
-share-link: all-events/past/2018/cogs-christmas-eve
+share-link: all-events/past/2018/malam-pra-krismas
 permalink: /:categories/:year/:title
 
 # For Meta Tag
-lang: "en"
-meta-title: The Church of The Good Shepherd (COGS) Sandakan | Past Event - Christmas Eve Celebration 2018
-meta-description: The Church of The Good Shepherd (Anglican Church in Sandakan) | Past Event - Christmas Eve Celebration was held in The Church of The Good Shepherd Sandakan
-image-description: Christmas Eve Celebration in The Church of The Good Shepherds(COGS)
+lang: "ms"
+meta-title: The Church of The Good Shepherd (COGS) Sandakan | Acara yang Sudah Berlalu - Malam Pra Krismas 2018
+meta-description: The Church of The Good Shepherd (COGS) Sandakan | Acara yang Sudah Berlalu - Malam Pra Krismas diadakan di Gereja Anglikan COGS
+image-description: Malam Pra Krismas diadakan di Gereja Anglikan COGS
 
 
 # For Page Information
 logo: COGS SANDAKAN
-back: EVENTS
-scroll-down: Scroll Down
-share-pgraph: Do you know you can share this info and post in Facebook, Twitter, GooglePlus and even Whatsapp group? Just click below button and choose the right social media to share!
-click: Click to Share
-picture: Picture
-all-pictures: All PICTURES
-fb-pic: Click here for all pictures in our Facebook
+back: ACARA
+scroll-down: Skrol ke bawah
+share-pgraph: Adakah anda tahu bahawa maklumat ini boleh dikongsikan melalui Facebook, Twitter, GooglePlus dan Whatsapp? Klik butang di bawah, kongsi dan jemput rakan-rakan atau keluarga anda untuk menyertai acara ini!
+click: Klik untuk kongsi
+picture: Gambar
+all-pictures: ACARA COGS
+fb-pic: Klik untuk semua gambar di Facebook
 copyright: COGS SANDAKAN @ Copyright 2018.
 ---
 <div class="slide active"><img src="https://res.cloudinary.com/trippleninja/image/upload/v1550732165/Christmas/Christmas%20Eve/2018/eve1.jpg">
