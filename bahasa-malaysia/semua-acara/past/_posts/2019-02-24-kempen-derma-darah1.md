@@ -6,7 +6,7 @@ version: bahasa-malaysia
 event: past
 title: Kempen Derma Darah 1
 description: 24 Feb 2019
-categories: all-events past
+categories: semua-acara past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1551062914/Blood%20Donation/Feb%202019/bd5.jpg
 share-link: bahasa-malaysia/semua-acara/past/2019/kempen-derma-darah1
 permalink: /:categories/:year/:title

@@ -6,7 +6,7 @@ version: bahasa-malaysia
 event: past
 title: Malam Pra Krismas
 description: 24 Disember 2018
-categories: all-events past
+categories: semua-acara past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1550732167/Christmas/Christmas%20Eve/2018/eve12.jpg
 share-link: bahasa-malaysia/semua-acara/past/2018/malam-pra-krismas
 permalink: /:categories/:year/:title
