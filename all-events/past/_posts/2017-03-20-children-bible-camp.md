@@ -9,7 +9,7 @@ description: 20 - 22 March 2017
 categories: all-events past
 image-path: https://res.cloudinary.com/trippleninja/image/upload/v1543756390/COGS%20Children/ChildrenBibleCamp.jpg
 share-link: all-events/past/2017/children-bible-camp
-permalink: /:categories/:year/:title
+permalink: /:categories/:year/:title 
 
 # For Meta Tag
 lang: "en"
