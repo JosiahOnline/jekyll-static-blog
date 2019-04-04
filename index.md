@@ -37,19 +37,6 @@ visit-btn: Plan a Visit
 history-btn: Our Journey
 pcc: Archdeacon Yong Thiam Choy and PCC Members
 
-feedback-text: Your feedback matters!
-feedback-pgraph: This website is currently in <span>BETA</span> version and our aim is to inform visitors about our latest activities, news, events and announcements. We appreciate if you can rate this website for better improvement. Do click <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank">here</a></span> and let us know your feedback. Thank you!
-
-education: Education
-diocese: Anglican Diocese of Sabah
-edutitle: Our Education
-tadika: Tadika Good Shepherd
-tadikadescription: Suitable Pre-school Activities
-edupgraph: Click <span>here</span> for more information!
-
-vision: Vision School Primary
-visiondescription: Character Above Academics
-
 download: Download
 cogsform: COGS Application Forms & Others
 downloadfree: FREE Download

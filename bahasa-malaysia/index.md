@@ -36,19 +36,6 @@ visit-btn: Rancangan Lawatan
 history-btn: Perjalanan Kami
 pcc: Archdeacon Yong Thiam Choy dan Ahli PCC
 
-feedback-text: Maklum balas anda!
-feedback-pgraph: Laman web ini kini dalam versi <span>BETA</span> dan sasaran kami adalah untuk memberitahu pelawat tentang aktiviti terkini, berita, kejadian/peristiwa dan pengumuman. Kami berbesar hati sekiranya anda boleh memberi maklum balas demi penambahbaikan laman web ini. Sila klik di <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank">sini</a></span> untuk maklum balas anda. Terima kasih!
-
-education: Pendidikan
-diocese: Anglikan Sabah Diosis
-edutitle: Pendidikan Kami
-tadika: Tadika Good Shepherd
-tadikadescription: Aktiviti Pra Sekolah yang sesuai
-edupgraph: Klik di <span>sini</span> untuk maklumat lanjut!
-
-vision: Sekolah Rendah Visi
-visiondescription: Watak Di Atas Akademik
-
 download: Muat Turun
 cogsform: Borang Permohonan & Lain-lain
 downloadfree: Muat Turun Percuma

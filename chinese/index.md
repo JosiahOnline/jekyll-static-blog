@@ -36,19 +36,6 @@ visit-btn: 计划拜访
 history-btn: 我们的旅程
 pcc: 会吏长熊添财和本堂理事委员会
 
-feedback-text: 您的意见很重要！
-feedback-pgraph: 本网站目前在<span>测试</span>版本中。我们的目的是告知访客关于我们的最新活动，新闻和通告。我们感谢您能评价这个网站以获得更好的改进。请点击 <span><a href="https://goo.gl/forms/CMb7j9jtieQ6QbVJ2" target="_blank" class="chi_nounderline">这里</a></span> 并让我们知道您的意见。谢谢！
-
-education: 教育
-diocese: 沙巴圣公会教区
-edutitle: 我们的教育
-tadika: 善牧堂幼儿园
-tadikadescription: 适合学前活动
-edupgraph: 点击<span>这里</span>以查看更多信息
-
-vision: 圣愿小学
-visiondescription: Character Above Academics
-
 download: 下载
 cogsform: 善牧堂 申请表格及其他
 downloadfree: 免费下载
